@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-14T23:57:43.959529-04:00",
+  "last_updated": "2026-09-15T00:04:58.846171-04:00",
   "timezone": "America/Detroit",
-  "event_count": 5,
+  "event_count": 9,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,13 +13,15 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 0,
+    "Oakland": 4,
     "Washtenaw": 5
   },
   "category_counts": {
     "voter-outreach": 3,
-    "volunteer": 1,
-    "demonstration": 1
+    "volunteer": 2,
+    "demonstration": 1,
+    "party-meeting": 2,
+    "fundraising": 1
   },
   "sources": [
     {
@@ -171,6 +173,74 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/turn-i-into-we-protest-dexter-2-2/2026-09-18/",
       "description": "“Turn ‘I’ into ‘We’” Protest - Dexter Organizer: Dexter Strong, Dexter Cares. Weekly protest in Dexter called “Turn ‘I’ into ‘We’” every Friday, 4:00 - 5:00. Location: Monument Park (where Baker Road […]"
+    },
+    {
+      "id": "096f44a445070c86",
+      "title": "OCDP Commissioner Member Roundtable",
+      "county": "Oakland",
+      "date": "2026-09-25",
+      "time": "13:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Party Meeting",
+      "category": "party-meeting",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/ocdp-commissioner-member-roundtable",
+      "description": ""
+    },
+    {
+      "id": "1caa7644cdd646ab",
+      "title": "OCDP Post Card Writing Party",
+      "county": "Oakland",
+      "date": "2026-09-25",
+      "time": "13:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/ocdp-post-card-writing-party-1",
+      "description": "Sign up here: https://midems.controlshift.app/events/ocdp-post-card-writing-party"
+    },
+    {
+      "id": "e7bc1098a746a034",
+      "title": "OCDP Executive Committee Meeting",
+      "county": "Oakland",
+      "date": "2026-10-13",
+      "time": "19:00",
+      "end_time": "",
+      "location": "Oakland County Democratic Party` (map)",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Party Meeting",
+      "category": "party-meeting",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/ocdp-executive-committee-meeting-1",
+      "description": ""
+    },
+    {
+      "id": "4955a35e6acf990b",
+      "title": "65th Annual Phil Hart Dinner",
+      "county": "Oakland",
+      "date": "2026-10-17",
+      "time": "18:30",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Fundraising Event",
+      "category": "fundraising",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/65th-annual-phil-hart-dinner",
+      "description": ""
     }
   ]
 }
