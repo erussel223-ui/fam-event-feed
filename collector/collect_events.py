@@ -1,7 +1,13 @@
 import json
+import re
+import hashlib
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from urllib.parse import urljoin
+
+import requests
+from bs4 import BeautifulSoup
 
 
 # ============================================================
@@ -10,19 +16,22 @@ from zoneinfo import ZoneInfo
 # ============================================================
 #
 # PURPOSE:
-# Collect public political, civic, government, community,
-# and advocacy events that may be useful to FAM members.
+# Collect upcoming public engagement opportunities for:
 #
-# INITIAL COUNTIES:
-# - Ingham
-# - Wayne
-# - Oakland
-# - Washtenaw
+# - Ingham County
+# - Wayne County
+# - Oakland County
+# - Washtenaw County
 #
-# The collector will eventually pull events from multiple
-# sources, standardize them, remove expired events and
-# duplicates, sort them chronologically, and write the
-# results to events.json.
+# The collector standardizes events and writes them to
+# events.json for use by the FAM Squarespace dashboard.
+#
+# CURRENT STATUS:
+#
+# Ingham     - source framework created
+# Wayne      - source framework created
+# Oakland    - source framework created
+# Washtenaw  - LIVE collector enabled
 #
 # ============================================================
 
@@ -37,41 +46,43 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 
 OUTPUT_FILE = ROOT_DIR / "events.json"
 
+REQUEST_TIMEOUT = 30
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 "
+        "(Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 "
+        "(KHTML, like Gecko) "
+        "Chrome/140.0 Safari/537.36 "
+        "FAM-Public-Engagement-Collector/1.0"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,"
+        "application/xml;q=0.9,*/*;q=0.8"
+    ),
+    "Accept-Language": "en-US,en;q=0.9"
+}
+
 
 # ============================================================
 # SOURCE CONFIGURATION
 # ============================================================
-#
-# Multiple sources may be monitored for the same county.
-#
-# source_type values may include:
-#
-# political
-# government
-# community
-# civic
-# college
-# black-community
-# legislative
-#
-# ============================================================
 
 SOURCES = [
 
-
-    # ========================================================
+    # --------------------------------------------------------
     # INGHAM COUNTY
-    # ========================================================
+    # --------------------------------------------------------
 
     {
         "id": "ingham-democrats",
         "county": "Ingham",
         "name": "Ingham County Democratic Party",
         "url": "",
-        "enabled": True,
+        "enabled": False,
         "source_type": "political"
     },
-
 
     {
         "id": "ingham-county-government",
@@ -81,7 +92,6 @@ SOURCES = [
         "enabled": True,
         "source_type": "government"
     },
-
 
     {
         "id": "ingham-democratic-caucus",
@@ -97,9 +107,9 @@ SOURCES = [
     },
 
 
-    # ========================================================
+    # --------------------------------------------------------
     # WAYNE COUNTY
-    # ========================================================
+    # --------------------------------------------------------
 
     {
         "id": "wayne-county-government",
@@ -109,7 +119,6 @@ SOURCES = [
         "enabled": True,
         "source_type": "government"
     },
-
 
     {
         "id": "wayne-democratic-precinct-delegates",
@@ -121,9 +130,9 @@ SOURCES = [
     },
 
 
-    # ========================================================
+    # --------------------------------------------------------
     # OAKLAND COUNTY
-    # ========================================================
+    # --------------------------------------------------------
 
     {
         "id": "oakland-democrats",
@@ -137,9 +146,9 @@ SOURCES = [
     },
 
 
-    # ========================================================
+    # --------------------------------------------------------
     # WASHTENAW COUNTY
-    # ========================================================
+    # --------------------------------------------------------
 
     {
         "id": "washtenaw-democrats",
@@ -156,43 +165,254 @@ SOURCES = [
 
 
 # ============================================================
-# SOURCE HELPERS
+# GENERAL HELPERS
 # ============================================================
 
 def get_source(source_id):
-    """
-    Returns a configured source by its ID.
-    """
 
     for source in SOURCES:
 
-        if source["id"] == source_id:
+        if source.get("id") == source_id:
             return source
 
     return None
 
 
 def source_is_enabled(source_id):
-    """
-    Checks whether a source exists and is enabled.
-    """
 
     source = get_source(source_id)
 
     if not source:
         return False
 
-    return source.get("enabled", False)
+    return bool(
+        source.get("enabled", False)
+    )
+
+
+def clean_text(value):
+
+    if value is None:
+        return ""
+
+    return " ".join(
+        str(value).split()
+    ).strip()
+
+
+def download_page(url):
+
+    print(
+        f"  Requesting: {url}"
+    )
+
+    response = requests.get(
+        url,
+        headers=HEADERS,
+        timeout=REQUEST_TIMEOUT
+    )
+
+    print(
+        f"  HTTP status: {response.status_code}"
+    )
+
+    response.raise_for_status()
+
+    print(
+        f"  Downloaded {len(response.text):,} "
+        "characters."
+    )
+
+    return response.text
 
 
 # ============================================================
-# STANDARD EVENT STRUCTURE
+# EVENT CLASSIFICATION
 # ============================================================
 #
-# Every source will eventually be converted into this same
-# structure so Squarespace does not need to understand the
-# different formats used by the source websites.
+# These are neutral event-type classifications.
+# They do not score or rank political importance.
 #
+# ============================================================
+
+def classify_event(
+    title,
+    description=""
+):
+
+    text = clean_text(
+        f"{title} {description}"
+    ).lower()
+
+
+    if (
+        "town hall" in text
+        or "townhall" in text
+    ):
+
+        return (
+            "Town Hall",
+            "town-hall"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "county committee",
+            "monthly meeting",
+            "committee meeting",
+            "club meeting",
+            "membership meeting",
+            "executive committee",
+            "general membership"
+        ]
+    ):
+
+        return (
+            "Party Meeting",
+            "party-meeting"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "voter registration",
+            "register voters",
+            "voter outreach",
+            "voter education"
+        ]
+    ):
+
+        return (
+            "Voter Outreach",
+            "voter-outreach"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "door knock",
+            "door knocking",
+            "knocking doors",
+            "knocking on doors",
+            "canvass",
+            "canvassing"
+        ]
+    ):
+
+        return (
+            "Canvassing",
+            "canvassing"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "postcard",
+            "phone bank",
+            "volunteer"
+        ]
+    ):
+
+        return (
+            "Volunteer",
+            "volunteer"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "rally",
+            "protest",
+            "demonstration",
+            "march"
+        ]
+    ):
+
+        return (
+            "Public Demonstration",
+            "demonstration"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "training",
+            "workshop",
+            "seminar"
+        ]
+    ):
+
+        return (
+            "Training / Workshop",
+            "training"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "candidate forum",
+            "candidate event",
+            "candidate meet",
+            "meet the candidate"
+        ]
+    ):
+
+        return (
+            "Candidate Event",
+            "candidate-event"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "public hearing",
+            "commission meeting",
+            "board meeting",
+            "city council",
+            "county commission"
+        ]
+    ):
+
+        return (
+            "Government Meeting",
+            "government-meeting"
+        )
+
+
+    if any(
+        phrase in text
+        for phrase in [
+            "farmer's market",
+            "farmers market",
+            "festival",
+            "community event",
+            "resource fair"
+        ]
+    ):
+
+        return (
+            "Community Event",
+            "community"
+        )
+
+
+    return (
+        "Public Event",
+        "civic"
+    )
+
+
+# ============================================================
+# STANDARD EVENT RECORD
 # ============================================================
 
 def create_event(
@@ -212,37 +432,1082 @@ def create_event(
     description=""
 ):
 
+    title = clean_text(title)
+
+    county = clean_text(county)
+
+    date = clean_text(date)
+
+    time = clean_text(time)
+
+    end_time = clean_text(end_time)
+
+    location = clean_text(location)
+
+    city = clean_text(city)
+
+    host = clean_text(host)
+
+    event_type = clean_text(event_type)
+
+    category = clean_text(category)
+
+    source_name = clean_text(source_name)
+
+    source_url = clean_text(source_url)
+
+    event_url = clean_text(event_url)
+
+    description = clean_text(description)
+
+
+    unique_string = (
+        f"{title}|"
+        f"{county}|"
+        f"{date}|"
+        f"{time}|"
+        f"{event_url}"
+    )
+
+
+    event_id = hashlib.sha1(
+        unique_string.encode(
+            "utf-8"
+        )
+    ).hexdigest()[:16]
+
+
     return {
 
-        "title": title,
+        "id":
+            event_id,
 
-        "county": county,
+        "title":
+            title,
 
-        "date": date,
+        "county":
+            county,
 
-        "time": time,
+        "date":
+            date,
 
-        "end_time": end_time,
+        "time":
+            time,
 
-        "location": location,
+        "end_time":
+            end_time,
 
-        "city": city,
+        "location":
+            location,
 
-        "host": host,
+        "city":
+            city,
 
-        "type": event_type,
+        "host":
+            host,
 
-        "category": category,
+        "type":
+            event_type,
 
-        "source_name": source_name,
+        "category":
+            category,
 
-        "source_url": source_url,
+        "source_name":
+            source_name,
 
-        "event_url": event_url,
+        "source_url":
+            source_url,
 
-        "description": description
+        "event_url":
+            event_url,
+
+        "description":
+            description
 
     }
+
+
+# ============================================================
+# DATE HELPERS
+# ============================================================
+
+MONTHS = {
+
+    "january": 1,
+
+    "february": 2,
+
+    "march": 3,
+
+    "april": 4,
+
+    "may": 5,
+
+    "june": 6,
+
+    "july": 7,
+
+    "august": 8,
+
+    "september": 9,
+
+    "october": 10,
+
+    "november": 11,
+
+    "december": 12
+
+}
+
+
+def parse_event_date(text):
+
+    text = clean_text(text)
+
+    if not text:
+        return ""
+
+
+    # --------------------------------------------------------
+    # FULL MONTH + DAY + YEAR
+    # Example:
+    # September 15, 2026
+    # --------------------------------------------------------
+
+    pattern_with_year = (
+        r"("
+        + "|".join(MONTHS.keys())
+        + r")"
+        r"\s+"
+        r"(\d{1,2})"
+        r"(?:st|nd|rd|th)?"
+        r",?\s+"
+        r"(20\d{2})"
+    )
+
+
+    match = re.search(
+        pattern_with_year,
+        text,
+        re.IGNORECASE
+    )
+
+
+    if match:
+
+        month = MONTHS[
+            match.group(1).lower()
+        ]
+
+        day = int(
+            match.group(2)
+        )
+
+        year = int(
+            match.group(3)
+        )
+
+        try:
+
+            parsed = datetime(
+                year,
+                month,
+                day
+            )
+
+            return parsed.strftime(
+                "%Y-%m-%d"
+            )
+
+        except ValueError:
+
+            return ""
+
+
+    # --------------------------------------------------------
+    # MONTH + DAY WITHOUT YEAR
+    # --------------------------------------------------------
+
+    pattern_without_year = (
+        r"("
+        + "|".join(MONTHS.keys())
+        + r")"
+        r"\s+"
+        r"(\d{1,2})"
+        r"(?:st|nd|rd|th)?"
+    )
+
+
+    match = re.search(
+        pattern_without_year,
+        text,
+        re.IGNORECASE
+    )
+
+
+    if not match:
+        return ""
+
+
+    month = MONTHS[
+        match.group(1).lower()
+    ]
+
+    day = int(
+        match.group(2)
+    )
+
+
+    today = datetime.now(
+        TIMEZONE
+    ).date()
+
+
+    year = today.year
+
+
+    try:
+
+        candidate = datetime(
+            year,
+            month,
+            day
+        ).date()
+
+    except ValueError:
+
+        return ""
+
+
+    # If the date appears far behind today's date,
+    # assume the calendar has rolled into the next year.
+
+    if (
+        candidate - today
+    ).days < -120:
+
+        year += 1
+
+
+    try:
+
+        parsed = datetime(
+            year,
+            month,
+            day
+        )
+
+    except ValueError:
+
+        return ""
+
+
+    return parsed.strftime(
+        "%Y-%m-%d"
+    )
+
+
+# ============================================================
+# TIME HELPERS
+# ============================================================
+
+def normalize_time(value):
+
+    value = clean_text(value)
+
+    if not value:
+        return ""
+
+
+    value = (
+        value
+        .replace(".", "")
+        .upper()
+    )
+
+
+    formats = [
+
+        "%I:%M %p",
+
+        "%I %p"
+
+    ]
+
+
+    for fmt in formats:
+
+        try:
+
+            parsed = datetime.strptime(
+                value,
+                fmt
+            )
+
+            return parsed.strftime(
+                "%H:%M"
+            )
+
+        except ValueError:
+
+            continue
+
+
+    return value
+
+
+def parse_event_times(text):
+
+    text = clean_text(text)
+
+
+    pattern = (
+        r"(?:@\s*)?"
+        r"(\d{1,2}"
+        r"(?::\d{2})?"
+        r"\s*"
+        r"[ap]\.?m\.?)"
+        r"(?:"
+        r"\s*(?:-|–|—|to)\s*"
+        r"(\d{1,2}"
+        r"(?::\d{2})?"
+        r"\s*"
+        r"[ap]\.?m\.?)"
+        r")?"
+    )
+
+
+    match = re.search(
+        pattern,
+        text,
+        re.IGNORECASE
+    )
+
+
+    if not match:
+
+        return (
+            "",
+            ""
+        )
+
+
+    start = normalize_time(
+        match.group(1)
+    )
+
+
+    end = ""
+
+
+    if match.group(2):
+
+        end = normalize_time(
+            match.group(2)
+        )
+
+
+    return (
+        start,
+        end
+    )
+
+
+# ============================================================
+# WASHTENAW CITY DETECTION
+# ============================================================
+
+def detect_washtenaw_city(location):
+
+    text = clean_text(
+        location
+    ).lower()
+
+
+    city_map = {
+
+        "ann arbor":
+            "Ann Arbor",
+
+        "ypsilanti":
+            "Ypsilanti",
+
+        "dexter":
+            "Dexter",
+
+        "chelsea":
+            "Chelsea",
+
+        "saline":
+            "Saline",
+
+        "manchester":
+            "Manchester",
+
+        "milan":
+            "Milan",
+
+        "whitmore lake":
+            "Whitmore Lake",
+
+        "pittsfield":
+            "Pittsfield Township",
+
+        "superior township":
+            "Superior Township"
+
+    }
+
+
+    for keyword, city in city_map.items():
+
+        if keyword in text:
+
+            return city
+
+
+    return ""
+
+
+# ============================================================
+# WASHTENAW COUNTY
+# LIVE EVENT COLLECTOR
+# ============================================================
+
+def collect_washtenaw_democratic_party_events():
+
+    source = get_source(
+        "washtenaw-democrats"
+    )
+
+
+    if not source:
+
+        print(
+            "  Washtenaw source configuration "
+            "not found."
+        )
+
+        return []
+
+
+    if not source.get(
+        "enabled",
+        False
+    ):
+
+        print(
+            "  Washtenaw source is disabled."
+        )
+
+        return []
+
+
+    source_url = source.get(
+        "url",
+        ""
+    )
+
+
+    if not source_url:
+
+        print(
+            "  Washtenaw source URL is missing."
+        )
+
+        return []
+
+
+    # --------------------------------------------------------
+    # THIS MESSAGE SHOULD APPEAR IN GITHUB ACTIONS
+    # --------------------------------------------------------
+
+    print(
+        "  Downloading Washtenaw calendar..."
+    )
+
+
+    html = download_page(
+        source_url
+    )
+
+
+    soup = BeautifulSoup(
+        html,
+        "html.parser"
+    )
+
+
+    events = []
+
+
+    # --------------------------------------------------------
+    # THE EVENTS CALENDAR
+    # WordPress plugin selectors
+    # --------------------------------------------------------
+
+    selectors = [
+
+        ".tribe-events-calendar-list__event-row",
+
+        "article.tribe-events-calendar-list__event",
+
+        ".tribe-events-calendar-list__event",
+
+        "article.type-tribe_events",
+
+        ".type-tribe_events"
+
+    ]
+
+
+    event_nodes = []
+
+
+    for selector in selectors:
+
+        nodes = soup.select(
+            selector
+        )
+
+
+        if nodes:
+
+            event_nodes = nodes
+
+            print(
+                f"  Working selector: {selector}"
+            )
+
+            break
+
+
+    print(
+        f"  Found {len(event_nodes)} "
+        "Washtenaw calendar records."
+    )
+
+
+    # --------------------------------------------------------
+    # DIAGNOSTIC INFORMATION
+    # --------------------------------------------------------
+
+    if not event_nodes:
+
+        print(
+            "  No event rows found using standard "
+            "calendar selectors."
+        )
+
+
+        tribe_links = soup.select(
+            "a[href*='/event/']"
+        )
+
+
+        print(
+            f"  Diagnostic: found "
+            f"{len(tribe_links)} links containing /event/."
+        )
+
+
+        page_title = soup.title.string \
+            if soup.title and soup.title.string \
+            else ""
+
+
+        print(
+            "  Page title: "
+            f"{clean_text(page_title)}"
+        )
+
+
+    # --------------------------------------------------------
+    # PROCESS EVENTS
+    # --------------------------------------------------------
+
+    for node in event_nodes:
+
+        try:
+
+            # =================================================
+            # TITLE + URL
+            # =================================================
+
+            title_link = node.select_one(
+                ".tribe-events-calendar-list__event-title a"
+            )
+
+
+            if not title_link:
+
+                title_link = node.select_one(
+                    "h3 a"
+                )
+
+
+            if not title_link:
+
+                title_link = node.select_one(
+                    "a[href*='/event/']"
+                )
+
+
+            if not title_link:
+
+                continue
+
+
+            title = clean_text(
+                title_link.get_text(
+                    " ",
+                    strip=True
+                )
+            )
+
+
+            if not title:
+
+                continue
+
+
+            event_url = urljoin(
+                source_url,
+                title_link.get(
+                    "href",
+                    ""
+                )
+            )
+
+
+            # =================================================
+            # DATE + TIME
+            # =================================================
+
+            event_date = ""
+
+            start_time = ""
+
+            end_time = ""
+
+
+            # -------------------------------------------------
+            # FIRST TRY HTML TIME ELEMENTS
+            # -------------------------------------------------
+
+            time_elements = node.select(
+                "time"
+            )
+
+
+            for time_element in time_elements:
+
+                datetime_value = clean_text(
+                    time_element.get(
+                        "datetime",
+                        ""
+                    )
+                )
+
+
+                if not datetime_value:
+
+                    continue
+
+
+                # Try ISO-style datetime
+
+                try:
+
+                    iso_value = (
+                        datetime_value
+                        .replace(
+                            "Z",
+                            "+00:00"
+                        )
+                    )
+
+
+                    parsed_datetime = (
+                        datetime.fromisoformat(
+                            iso_value
+                        )
+                    )
+
+
+                    event_date = (
+                        parsed_datetime.strftime(
+                            "%Y-%m-%d"
+                        )
+                    )
+
+
+                    if (
+                        parsed_datetime.hour != 0
+                        or parsed_datetime.minute != 0
+                    ):
+
+                        start_time = (
+                            parsed_datetime.strftime(
+                                "%H:%M"
+                            )
+                        )
+
+
+                    break
+
+
+                except ValueError:
+
+                    pass
+
+
+                # Try plain YYYY-MM-DD
+
+                try:
+
+                    parsed_date = (
+                        datetime.strptime(
+                            datetime_value[:10],
+                            "%Y-%m-%d"
+                        )
+                    )
+
+
+                    event_date = (
+                        parsed_date.strftime(
+                            "%Y-%m-%d"
+                        )
+                    )
+
+
+                    break
+
+
+                except ValueError:
+
+                    continue
+
+
+            # -------------------------------------------------
+            # DISPLAYED DATE/TIME TEXT
+            # -------------------------------------------------
+
+            date_element = node.select_one(
+                ".tribe-events-calendar-list__event-datetime"
+            )
+
+
+            date_text = ""
+
+
+            if date_element:
+
+                date_text = clean_text(
+                    date_element.get_text(
+                        " ",
+                        strip=True
+                    )
+                )
+
+
+            if not date_text:
+
+                date_text = clean_text(
+                    node.get_text(
+                        " ",
+                        strip=True
+                    )
+                )
+
+
+            if not event_date:
+
+                event_date = parse_event_date(
+                    date_text
+                )
+
+
+            parsed_start, parsed_end = (
+                parse_event_times(
+                    date_text
+                )
+            )
+
+
+            if parsed_start:
+
+                start_time = parsed_start
+
+
+            if parsed_end:
+
+                end_time = parsed_end
+
+
+            # =================================================
+            # VENUE / LOCATION
+            # =================================================
+
+            location = ""
+
+
+            venue_selectors = [
+
+                ".tribe-events-calendar-list__event-venue",
+
+                ".tribe-events-calendar-list__event-venue-title",
+
+                ".tribe-events-venue-details",
+
+                ".tribe-address"
+
+            ]
+
+
+            for selector in venue_selectors:
+
+                venue_element = (
+                    node.select_one(
+                        selector
+                    )
+                )
+
+
+                if venue_element:
+
+                    location = clean_text(
+                        venue_element.get_text(
+                            " ",
+                            strip=True
+                        )
+                    )
+
+
+                    if location:
+
+                        break
+
+
+            # =================================================
+            # DESCRIPTION
+            # =================================================
+
+            description = ""
+
+
+            description_selectors = [
+
+                ".tribe-events-calendar-list__event-description",
+
+                ".tribe-events-content",
+
+                ".tribe-events-calendar-list__event-details p"
+
+            ]
+
+
+            for selector in description_selectors:
+
+                description_element = (
+                    node.select_one(
+                        selector
+                    )
+                )
+
+
+                if description_element:
+
+                    description = clean_text(
+                        description_element.get_text(
+                            " ",
+                            strip=True
+                        )
+                    )
+
+
+                    if description:
+
+                        break
+
+
+            # =================================================
+            # CITY
+            # =================================================
+
+            city = detect_washtenaw_city(
+                location
+            )
+
+
+            # =================================================
+            # EVENT TYPE
+            # =================================================
+
+            event_type, category = (
+                classify_event(
+                    title,
+                    description
+                )
+            )
+
+
+            # =================================================
+            # REQUIRE DATE
+            # =================================================
+
+            if not event_date:
+
+                print(
+                    "  Skipping event because "
+                    "date could not be read: "
+                    f"{title}"
+                )
+
+                continue
+
+
+            # =================================================
+            # CREATE EVENT
+            # =================================================
+
+            event = create_event(
+
+                title=title,
+
+                county="Washtenaw",
+
+                date=event_date,
+
+                time=start_time,
+
+                end_time=end_time,
+
+                location=location,
+
+                city=city,
+
+                host=(
+                    "Washtenaw County "
+                    "Democratic Party Calendar"
+                ),
+
+                event_type=event_type,
+
+                category=category,
+
+                source_name=source.get(
+                    "name",
+                    ""
+                ),
+
+                source_url=source_url,
+
+                event_url=event_url,
+
+                description=description
+
+            )
+
+
+            events.append(
+                event
+            )
+
+
+            print(
+                "  Collected: "
+                f"{event_date} | {title}"
+            )
+
+
+        except Exception as error:
+
+            print(
+                "  Washtenaw event parse error: "
+                f"{error}"
+            )
+
+
+    print(
+        f"  Washtenaw parser produced "
+        f"{len(events)} events."
+    )
+
+
+    return events
+
+
+def collect_washtenaw_events():
+
+    events = []
+
+
+    try:
+
+        events.extend(
+            collect_washtenaw_democratic_party_events()
+        )
+
+
+    except Exception as error:
+
+        print(
+            "Washtenaw source error: "
+            f"{error}"
+        )
+
+
+    return events
+
+
+# ============================================================
+# OAKLAND COUNTY
+# ============================================================
+
+def collect_oakland_democratic_party_events():
+
+    source = get_source(
+        "oakland-democrats"
+    )
+
+
+    if not source_is_enabled(
+        "oakland-democrats"
+    ):
+
+        return []
+
+
+    # --------------------------------------------------------
+    # Oakland live parser will be added after the Washtenaw
+    # collector has been successfully verified.
+    # --------------------------------------------------------
+
+    return []
+
+
+def collect_oakland_events():
+
+    events = []
+
+
+    try:
+
+        events.extend(
+            collect_oakland_democratic_party_events()
+        )
+
+
+    except Exception as error:
+
+        print(
+            "Oakland source error: "
+            f"{error}"
+        )
+
+
+    return events
 
 
 # ============================================================
@@ -250,83 +1515,83 @@ def create_event(
 # ============================================================
 
 def collect_ingham_democratic_party_events():
-    """
-    Ingham County Democratic Party.
-
-    The official event-calendar endpoint still needs to be
-    confirmed before website-specific extraction is enabled.
-
-    This function remains active in the architecture so the
-    source can be added without changing the Squarespace feed.
-    """
 
     source = get_source(
         "ingham-democrats"
     )
 
+
     if not source:
+
         return []
 
-    if not source.get("enabled"):
-        return []
 
-    if not source.get("url"):
+    if not source.get(
+        "enabled",
+        False
+    ):
+
         print(
-            "Ingham Democratic Party: "
+            "  Ingham Democratic Party: "
             "calendar URL awaiting confirmation."
         )
 
         return []
 
+
+    if not source.get(
+        "url",
+        ""
+    ):
+
+        print(
+            "  Ingham Democratic Party: "
+            "calendar URL awaiting confirmation."
+        )
+
+        return []
+
+
     return []
 
 
 def collect_ingham_government_events():
-    """
-    General Ingham County public-event source.
-
-    Website-specific parsing will be added after the automated
-    workflow itself has been confirmed.
-    """
-
-    source = get_source(
-        "ingham-county-government"
-    )
 
     if not source_is_enabled(
         "ingham-county-government"
     ):
+
         return []
+
+
+    # --------------------------------------------------------
+    # Ingham government parser will be added after
+    # Washtenaw/Oakland testing.
+    # --------------------------------------------------------
 
     return []
 
 
 def collect_ingham_democratic_caucus_events():
-    """
-    Ingham County Democratic Caucus public meetings.
-
-    This source is separated from the general county website
-    because it has its own public meeting page.
-    """
-
-    source = get_source(
-        "ingham-democratic-caucus"
-    )
 
     if not source_is_enabled(
         "ingham-democratic-caucus"
     ):
+
         return []
+
+
+    # --------------------------------------------------------
+    # Ingham caucus parser will be added later.
+    # --------------------------------------------------------
 
     return []
 
 
 def collect_ingham_events():
-    """
-    Master Ingham County collector.
-    """
 
     events = []
+
 
     collectors = [
 
@@ -338,23 +1603,24 @@ def collect_ingham_events():
 
     ]
 
+
     for collector in collectors:
 
         try:
 
-            collected = collector()
-
             events.extend(
-                collected
+                collector()
             )
+
 
         except Exception as error:
 
             print(
-                f"Ingham source error "
+                "Ingham source error "
                 f"({collector.__name__}): "
                 f"{error}"
             )
+
 
     return events
 
@@ -364,55 +1630,43 @@ def collect_ingham_events():
 # ============================================================
 
 def collect_wayne_government_events():
-    """
-    Wayne County, Michigan government events.
-
-    This source can eventually include public meetings,
-    resource fairs, public forums and other engagement
-    opportunities.
-    """
-
-    source = get_source(
-        "wayne-county-government"
-    )
 
     if not source_is_enabled(
         "wayne-county-government"
     ):
+
         return []
+
+
+    # --------------------------------------------------------
+    # Wayne County Michigan government parser will be
+    # added later.
+    # --------------------------------------------------------
 
     return []
 
 
 def collect_wayne_precinct_delegate_events():
-    """
-    Wayne County Democratic Precinct Delegates.
-
-    IMPORTANT:
-    This source is intended for Wayne County, MICHIGAN.
-
-    It prevents the collector from accidentally using similarly
-    named Wayne County Democratic organizations in other states.
-    """
-
-    source = get_source(
-        "wayne-democratic-precinct-delegates"
-    )
 
     if not source_is_enabled(
         "wayne-democratic-precinct-delegates"
     ):
+
         return []
+
+
+    # --------------------------------------------------------
+    # Michigan Wayne County political event parser will be
+    # added later.
+    # --------------------------------------------------------
 
     return []
 
 
 def collect_wayne_events():
-    """
-    Master Wayne County collector.
-    """
 
     events = []
+
 
     collectors = [
 
@@ -422,115 +1676,24 @@ def collect_wayne_events():
 
     ]
 
+
     for collector in collectors:
 
         try:
 
-            collected = collector()
-
             events.extend(
-                collected
+                collector()
             )
+
 
         except Exception as error:
 
             print(
-                f"Wayne source error "
+                "Wayne source error "
                 f"({collector.__name__}): "
                 f"{error}"
             )
 
-    return events
-
-
-# ============================================================
-# OAKLAND COUNTY
-# ============================================================
-
-def collect_oakland_democratic_party_events():
-    """
-    Oakland County Democratic Party event collector.
-
-    Website-specific parsing will be added in the next stage.
-    """
-
-    source = get_source(
-        "oakland-democrats"
-    )
-
-    if not source_is_enabled(
-        "oakland-democrats"
-    ):
-        return []
-
-    return []
-
-
-def collect_oakland_events():
-    """
-    Master Oakland County collector.
-    """
-
-    events = []
-
-    try:
-
-        events.extend(
-            collect_oakland_democratic_party_events()
-        )
-
-    except Exception as error:
-
-        print(
-            "Oakland source error: "
-            f"{error}"
-        )
-
-    return events
-
-
-# ============================================================
-# WASHTENAW COUNTY
-# ============================================================
-
-def collect_washtenaw_democratic_party_events():
-    """
-    Washtenaw County Democratic Party event collector.
-
-    Website-specific parsing will be added in the next stage.
-    """
-
-    source = get_source(
-        "washtenaw-democrats"
-    )
-
-    if not source_is_enabled(
-        "washtenaw-democrats"
-    ):
-        return []
-
-    return []
-
-
-def collect_washtenaw_events():
-    """
-    Master Washtenaw County collector.
-    """
-
-    events = []
-
-    try:
-
-        events.extend(
-            collect_washtenaw_democratic_party_events()
-        )
-
-    except Exception as error:
-
-        print(
-            "Washtenaw source error: "
-            f"{error}"
-        )
 
     return events
 
@@ -540,58 +1703,80 @@ def collect_washtenaw_events():
 # ============================================================
 
 def validate_events(events):
-    """
-    Removes malformed records.
-
-    At minimum, an event needs:
-    - title
-    - county
-    - date
-    """
 
     valid_events = []
 
+
     allowed_counties = {
+
         "ingham",
+
         "wayne",
+
         "oakland",
+
         "washtenaw"
+
     }
+
 
     for event in events:
 
-        title = str(
+        title = clean_text(
             event.get(
                 "title",
                 ""
             )
-        ).strip()
+        )
 
-        county = str(
+
+        county = clean_text(
             event.get(
                 "county",
                 ""
             )
-        ).strip()
+        )
 
-        date = str(
+
+        date = clean_text(
             event.get(
                 "date",
                 ""
             )
-        ).strip()
+        )
+
 
         if not title:
+
+            print(
+                "Event skipped: missing title."
+            )
+
             continue
 
-        if not county:
+
+        if (
+            county.lower()
+            not in allowed_counties
+        ):
+
+            print(
+                "Event skipped: invalid county "
+                f"for {title}."
+            )
+
             continue
 
-        if county.lower() not in allowed_counties:
-            continue
 
         if not date:
+
+            print(
+                "Event skipped: missing date "
+                f"for {title}."
+            )
+
             continue
+
 
         try:
 
@@ -599,6 +1784,7 @@ def validate_events(events):
                 date,
                 "%Y-%m-%d"
             )
+
 
         except ValueError:
 
@@ -609,9 +1795,11 @@ def validate_events(events):
 
             continue
 
+
         valid_events.append(
             event
         )
+
 
     return valid_events
 
@@ -621,17 +1809,14 @@ def validate_events(events):
 # ============================================================
 
 def remove_expired_events(events):
-    """
-    Removes events after their calendar date has passed.
-
-    Events occurring today remain visible.
-    """
 
     today = datetime.now(
         TIMEZONE
     ).date()
 
+
     upcoming = []
+
 
     for event in events:
 
@@ -642,6 +1827,7 @@ def remove_expired_events(events):
                 "%Y-%m-%d"
             ).date()
 
+
         except (
             ValueError,
             KeyError,
@@ -650,86 +1836,94 @@ def remove_expired_events(events):
 
             continue
 
+
         if event_date >= today:
 
             upcoming.append(
                 event
             )
 
+
     return upcoming
 
 
 # ============================================================
-# REMOVE DUPLICATE EVENTS
+# REMOVE DUPLICATES
 # ============================================================
 
 def remove_duplicates(events):
-    """
-    Prevents the same event from appearing multiple times.
-
-    This becomes particularly important when an event appears
-    on both a county-government website and a political
-    organization's calendar.
-    """
 
     unique_events = []
 
     seen = set()
 
+
     for event in events:
 
-        title = (
-            event
-            .get(
+        event_url = clean_text(
+            event.get(
+                "event_url",
+                ""
+            )
+        ).lower()
+
+
+        title = clean_text(
+            event.get(
                 "title",
                 ""
             )
-            .strip()
-            .lower()
+        ).lower()
+
+
+        date = clean_text(
+            event.get(
+                "date",
+                ""
+            )
         )
 
-        date = event.get(
-            "date",
-            ""
-        )
 
-        county = (
-            event
-            .get(
+        county = clean_text(
+            event.get(
                 "county",
                 ""
             )
-            .strip()
-            .lower()
-        )
+        ).lower()
 
-        city = (
-            event
-            .get(
-                "city",
-                ""
+
+        if event_url:
+
+            key = (
+                "url",
+                event_url
             )
-            .strip()
-            .lower()
-        )
 
-        key = (
-            title,
-            date,
-            county,
-            city
-        )
+
+        else:
+
+            key = (
+                "event",
+                title,
+                date,
+                county
+            )
+
 
         if key in seen:
+
             continue
+
 
         seen.add(
             key
         )
 
+
         unique_events.append(
             event
         )
+
 
     return unique_events
 
@@ -739,9 +1933,6 @@ def remove_duplicates(events):
 # ============================================================
 
 def sort_events(events):
-    """
-    Sorts events from soonest to latest.
-    """
 
     return sorted(
 
@@ -756,8 +1947,9 @@ def sort_events(events):
 
             event.get(
                 "time",
-                ""
-            ),
+                "99:99"
+            )
+            or "99:99",
 
             event.get(
                 "title",
@@ -770,7 +1962,7 @@ def sort_events(events):
 
 
 # ============================================================
-# COUNT EVENTS BY COUNTY
+# COUNTY COUNTS
 # ============================================================
 
 def get_county_counts(events):
@@ -787,26 +1979,66 @@ def get_county_counts(events):
 
     }
 
+
     for event in events:
 
         county = event.get(
             "county"
         )
 
+
         if county in counts:
 
             counts[county] += 1
+
 
     return counts
 
 
 # ============================================================
-# ACTIVE SOURCE INFORMATION
+# CATEGORY COUNTS
+# ============================================================
+
+def get_category_counts(events):
+
+    counts = {}
+
+
+    for event in events:
+
+        category = clean_text(
+            event.get(
+                "category",
+                "civic"
+            )
+        )
+
+
+        if not category:
+
+            category = "civic"
+
+
+        counts[category] = (
+            counts.get(
+                category,
+                0
+            )
+            + 1
+        )
+
+
+    return counts
+
+
+# ============================================================
+# SOURCE STATUS
 # ============================================================
 
 def get_source_status():
 
     status = []
+
 
     for source in SOURCES:
 
@@ -845,11 +2077,19 @@ def get_source_status():
             "configured":
                 bool(
                     source.get(
-                        "url"
+                        "url",
+                        ""
                     )
+                ),
+
+            "url":
+                source.get(
+                    "url",
+                    ""
                 )
 
         })
+
 
     return status
 
@@ -864,11 +2104,20 @@ def write_event_feed(events):
         TIMEZONE
     )
 
+
     county_counts = (
         get_county_counts(
             events
         )
     )
+
+
+    category_counts = (
+        get_category_counts(
+            events
+        )
+    )
+
 
     feed = {
 
@@ -902,6 +2151,9 @@ def write_event_feed(events):
         "county_counts":
             county_counts,
 
+        "category_counts":
+            category_counts,
+
         "sources":
             get_source_status(),
 
@@ -909,6 +2161,7 @@ def write_event_feed(events):
             events
 
     }
+
 
     with OUTPUT_FILE.open(
         "w",
@@ -921,6 +2174,7 @@ def write_event_feed(events):
             indent=2,
             ensure_ascii=False
         )
+
 
     print()
 
@@ -947,11 +2201,35 @@ def write_event_feed(events):
         "County totals:"
     )
 
+
     for county, count in county_counts.items():
 
         print(
             f"  {county}: {count}"
         )
+
+
+    print()
+
+    print(
+        "Category totals:"
+    )
+
+
+    if category_counts:
+
+        for category, count in category_counts.items():
+
+            print(
+                f"  {category}: {count}"
+            )
+
+    else:
+
+        print(
+            "  No event categories yet."
+        )
+
 
     print()
 
@@ -981,14 +2259,18 @@ def run_collector(
             f"Checking {county_name} County..."
         )
 
+
         events = collector()
+
 
         print(
             f"{county_name}: "
             f"{len(events)} events collected."
         )
 
+
         return events
+
 
     except Exception as error:
 
@@ -996,6 +2278,7 @@ def run_collector(
             f"{county_name} collector failed: "
             f"{error}"
         )
+
 
         return []
 
@@ -1021,6 +2304,7 @@ def main():
     print(
         "Starting event collection..."
     )
+
 
     all_events = []
 
@@ -1091,6 +2375,7 @@ def main():
         "Validating events..."
     )
 
+
     all_events = validate_events(
         all_events
     )
@@ -1099,6 +2384,7 @@ def main():
     print(
         "Removing expired events..."
     )
+
 
     all_events = remove_expired_events(
         all_events
@@ -1109,6 +2395,7 @@ def main():
         "Removing duplicate events..."
     )
 
+
     all_events = remove_duplicates(
         all_events
     )
@@ -1118,13 +2405,14 @@ def main():
         "Sorting upcoming events..."
     )
 
+
     all_events = sort_events(
         all_events
     )
 
 
     # --------------------------------------------------------
-    # WRITE FEED
+    # WRITE JSON
     # --------------------------------------------------------
 
     write_event_feed(
