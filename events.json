@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-14T23:47:00.911096-04:00",
+  "last_updated": "2026-09-14T23:57:43.959529-04:00",
   "timezone": "America/Detroit",
-  "event_count": 0,
+  "event_count": 5,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,7 +14,12 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 0,
-    "Washtenaw": 0
+    "Washtenaw": 5
+  },
+  "category_counts": {
+    "voter-outreach": 3,
+    "volunteer": 1,
+    "demonstration": 1
   },
   "sources": [
     {
@@ -22,8 +27,9 @@
       "county": "Ingham",
       "name": "Ingham County Democratic Party",
       "source_type": "political",
-      "enabled": true,
-      "configured": false
+      "enabled": false,
+      "configured": false,
+      "url": ""
     },
     {
       "id": "ingham-county-government",
@@ -31,7 +37,8 @@
       "name": "Ingham County Government",
       "source_type": "government",
       "enabled": true,
-      "configured": true
+      "configured": true,
+      "url": "https://www.ingham.org/"
     },
     {
       "id": "ingham-democratic-caucus",
@@ -39,7 +46,8 @@
       "name": "Ingham County Democratic Caucus",
       "source_type": "government",
       "enabled": true,
-      "configured": true
+      "configured": true,
+      "url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php"
     },
     {
       "id": "wayne-county-government",
@@ -47,7 +55,8 @@
       "name": "Wayne County, Michigan",
       "source_type": "government",
       "enabled": true,
-      "configured": true
+      "configured": true,
+      "url": "https://www.waynecountymi.gov/"
     },
     {
       "id": "wayne-democratic-precinct-delegates",
@@ -55,7 +64,8 @@
       "name": "Wayne County Democratic Precinct Delegates",
       "source_type": "political",
       "enabled": true,
-      "configured": true
+      "configured": true,
+      "url": "https://miwcpd.com/"
     },
     {
       "id": "oakland-democrats",
@@ -63,7 +73,8 @@
       "name": "Oakland County Democratic Party",
       "source_type": "political",
       "enabled": true,
-      "configured": true
+      "configured": true,
+      "url": "https://www.oaklandcountydemocrats.org/events"
     },
     {
       "id": "washtenaw-democrats",
@@ -71,8 +82,95 @@
       "name": "Washtenaw County Democratic Party",
       "source_type": "political",
       "enabled": true,
-      "configured": true
+      "configured": true,
+      "url": "https://www.washtenawdems.org/calendar/list/"
     }
   ],
-  "events": []
+  "events": [
+    {
+      "id": "6a6e0d352528c3d5",
+      "title": "Sept 15 is National Voter Registration Day",
+      "county": "Washtenaw",
+      "date": "2026-09-15",
+      "time": "11:00",
+      "end_time": "19:00",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Voter Outreach",
+      "category": "voter-outreach",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/sept-15-is-national-voter-registration-day/",
+      "description": "Tuesday, September 15, 2026 (All day) To celebrate National Voter Registration Day on Tuesday, September 15, 2026, the League of Women Voters of Washtenaw County in partnership with the Ann […]"
+    },
+    {
+      "id": "141648ad13a44f52",
+      "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
+      "county": "Washtenaw",
+      "date": "2026-09-15",
+      "time": "11:00",
+      "end_time": "13:30",
+      "location": "Eastern Michigan University - Student Center 900 Oakwood St, Ypsilanti, MI, United States",
+      "city": "Ypsilanti",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Voter Outreach",
+      "category": "voter-outreach",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/washtenaw-democratic-party-emu-voter-outreach-fall-2026/2026-09-15/",
+      "description": "WCDP Spend a couple of hours walking up to EMU students and talking with each of them about voting and our Democratic slate of candidates. Ask questions to learn where […]"
+    },
+    {
+      "id": "d4351c80e8ff5a34",
+      "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
+      "county": "Washtenaw",
+      "date": "2026-09-16",
+      "time": "11:00",
+      "end_time": "13:30",
+      "location": "Eastern Michigan University - Student Center 900 Oakwood St, Ypsilanti, MI, United States",
+      "city": "Ypsilanti",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Voter Outreach",
+      "category": "voter-outreach",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/washtenaw-democratic-party-emu-voter-outreach-fall-2026/2026-09-16/",
+      "description": "WCDP Spend a couple of hours walking up to EMU students and talking with each of them about voting and our Democratic slate of candidates. Ask questions to learn where […]"
+    },
+    {
+      "id": "fe9f96f1d0da0cb4",
+      "title": "Postcards for Patriots",
+      "county": "Washtenaw",
+      "date": "2026-09-16",
+      "time": "13:00",
+      "end_time": "15:00",
+      "location": "York 1928 Packard St, Ann Arbor, MI",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots/2026-09-16/",
+      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
+    },
+    {
+      "id": "e92a246276d01459",
+      "title": "Dexter Friday Protest – Dexter",
+      "county": "Washtenaw",
+      "date": "2026-09-18",
+      "time": "16:00",
+      "end_time": "17:00",
+      "location": "Dexter 8077 Main St, Dexer, MI, United States",
+      "city": "Dexter",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/turn-i-into-we-protest-dexter-2-2/2026-09-18/",
+      "description": "“Turn ‘I’ into ‘We’” Protest - Dexter Organizer: Dexter Strong, Dexter Cares. Weekly protest in Dexter called “Turn ‘I’ into ‘We’” every Friday, 4:00 - 5:00. Location: Monument Park (where Baker Road […]"
+    }
+  ]
 }
