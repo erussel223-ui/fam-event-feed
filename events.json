@@ -1,4 +1,78 @@
 {
-  "last_updated": "",
+  "organization": "Freedmen Agenda League of Michigan",
+  "feed": "Public Engagement Opportunities",
+  "last_updated": "2026-09-14T23:47:00.911096-04:00",
+  "timezone": "America/Detroit",
+  "event_count": 0,
+  "counties_tracked": [
+    "Ingham",
+    "Wayne",
+    "Oakland",
+    "Washtenaw"
+  ],
+  "county_counts": {
+    "Ingham": 0,
+    "Wayne": 0,
+    "Oakland": 0,
+    "Washtenaw": 0
+  },
+  "sources": [
+    {
+      "id": "ingham-democrats",
+      "county": "Ingham",
+      "name": "Ingham County Democratic Party",
+      "source_type": "political",
+      "enabled": true,
+      "configured": false
+    },
+    {
+      "id": "ingham-county-government",
+      "county": "Ingham",
+      "name": "Ingham County Government",
+      "source_type": "government",
+      "enabled": true,
+      "configured": true
+    },
+    {
+      "id": "ingham-democratic-caucus",
+      "county": "Ingham",
+      "name": "Ingham County Democratic Caucus",
+      "source_type": "government",
+      "enabled": true,
+      "configured": true
+    },
+    {
+      "id": "wayne-county-government",
+      "county": "Wayne",
+      "name": "Wayne County, Michigan",
+      "source_type": "government",
+      "enabled": true,
+      "configured": true
+    },
+    {
+      "id": "wayne-democratic-precinct-delegates",
+      "county": "Wayne",
+      "name": "Wayne County Democratic Precinct Delegates",
+      "source_type": "political",
+      "enabled": true,
+      "configured": true
+    },
+    {
+      "id": "oakland-democrats",
+      "county": "Oakland",
+      "name": "Oakland County Democratic Party",
+      "source_type": "political",
+      "enabled": true,
+      "configured": true
+    },
+    {
+      "id": "washtenaw-democrats",
+      "county": "Washtenaw",
+      "name": "Washtenaw County Democratic Party",
+      "source_type": "political",
+      "enabled": true,
+      "configured": true
+    }
+  ],
   "events": []
 }
