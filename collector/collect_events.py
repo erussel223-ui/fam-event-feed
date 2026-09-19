@@ -78,7 +78,7 @@ SOURCES = [
         "id": "wayne-county-government",
         "county": "Wayne",
         "name": "Wayne County, Michigan",
-        "url": "https://www.waynecountymi.gov/",
+        "url": "https://www.waynecountymi.gov/Events-directory",
         "enabled": True,
         "source_type": "government"
     },
@@ -790,12 +790,292 @@ def collect_ingham_events():
 
 def collect_wayne_government_events():
 
-    if not source_is_enabled(
-        "wayne-county-government"
-    ):
+    source = get_source("wayne-county-government")
+
+    if not source:
+        print("  Wayne County Government source configuration not found.")
         return []
 
-    return []
+    if not source.get("enabled", False):
+        print("  Wayne County Government source is disabled.")
+        return []
+
+    source_url = source.get("url", "")
+    if not source_url:
+        print("  Wayne County Government source URL is missing.")
+        return []
+
+    print("  Downloading Wayne County Events Directory...")
+    html = download_page(source_url)
+    soup = BeautifulSoup(html, "html.parser")
+    events = []
+
+    # --------------------------------------------------------
+    # First preference: structured Event JSON-LD, if supplied
+    # by the county website.
+    # --------------------------------------------------------
+    json_ld_records = []
+
+    for script in soup.find_all("script", type="application/ld+json"):
+        raw = script.string or script.get_text()
+        if not raw:
+            continue
+
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+
+        stack = data if isinstance(data, list) else [data]
+
+        while stack:
+            item = stack.pop()
+
+            if isinstance(item, list):
+                stack.extend(item)
+                continue
+
+            if not isinstance(item, dict):
+                continue
+
+            graph = item.get("@graph")
+            if isinstance(graph, list):
+                stack.extend(graph)
+
+            item_type = item.get("@type", "")
+            if (
+                item_type == "Event"
+                or (
+                    isinstance(item_type, list)
+                    and "Event" in item_type
+                )
+            ):
+                json_ld_records.append(item)
+
+    print(
+        f"  Found {len(json_ld_records)} Wayne structured event records."
+    )
+
+    for item in json_ld_records:
+        try:
+            title = clean_text(item.get("name", ""))
+            start_value = clean_text(item.get("startDate", ""))
+
+            if not title or not start_value:
+                continue
+
+            event_date = ""
+            start_time = ""
+            end_time = ""
+
+            try:
+                parsed_start = datetime.fromisoformat(
+                    start_value.replace("Z", "+00:00")
+                )
+                event_date = parsed_start.strftime("%Y-%m-%d")
+                if "T" in start_value:
+                    start_time = parsed_start.strftime("%I:%M %p").lstrip("0")
+            except ValueError:
+                event_date = parse_event_date(start_value)
+
+            end_value = clean_text(item.get("endDate", ""))
+            if end_value and "T" in end_value:
+                try:
+                    parsed_end = datetime.fromisoformat(
+                        end_value.replace("Z", "+00:00")
+                    )
+                    end_time = parsed_end.strftime("%I:%M %p").lstrip("0")
+                except ValueError:
+                    pass
+
+            location = ""
+            city = ""
+
+            location_data = item.get("location", {})
+            if isinstance(location_data, dict):
+                location_name = clean_text(location_data.get("name", ""))
+                address_data = location_data.get("address", {})
+
+                address_parts = []
+                if isinstance(address_data, dict):
+                    for key in [
+                        "streetAddress",
+                        "addressLocality",
+                        "addressRegion",
+                        "postalCode"
+                    ]:
+                        value = clean_text(address_data.get(key, ""))
+                        if value:
+                            address_parts.append(value)
+
+                    city = clean_text(
+                        address_data.get("addressLocality", "")
+                    )
+
+                location = clean_text(
+                    " | ".join(
+                        part for part in [
+                            location_name,
+                            ", ".join(address_parts)
+                        ]
+                        if part
+                    )
+                )
+
+            description = clean_text(item.get("description", ""))
+            event_url = clean_text(item.get("url", "")) or source_url
+
+            event_type, category = classify_event(title, description)
+
+            events.append(
+                create_event(
+                    title=title,
+                    county="Wayne",
+                    date=event_date,
+                    time=start_time,
+                    end_time=end_time,
+                    location=location,
+                    city=city,
+                    host="Wayne County, Michigan",
+                    event_type=event_type,
+                    category=category,
+                    source_name=source.get("name", ""),
+                    source_url=source_url,
+                    event_url=urljoin(source_url, event_url),
+                    description=description
+                )
+            )
+
+            print(f"  Collected Wayne: {event_date} | {title}")
+
+        except Exception as error:
+            print(f"  Wayne structured event parse error: {error}")
+
+    if events:
+        print(f"  Wayne parser produced {len(events)} events.")
+        return events
+
+    # --------------------------------------------------------
+    # Fallback: Wayne County's OpenCities-style listing cards.
+    # Several selectors are tried so a minor template change
+    # does not immediately break collection.
+    # --------------------------------------------------------
+    selectors = [
+        ".content-list-item",
+        ".list-item",
+        ".event-list-item",
+        ".events-listing .item",
+        "[class*='event-list'] article",
+        "[class*='event-list'] li",
+        "article"
+    ]
+
+    event_nodes = []
+    working_selector = ""
+
+    for selector in selectors:
+        candidates = soup.select(selector)
+        filtered = []
+
+        for node in candidates:
+            node_text = clean_text(node.get_text(" ", strip=True))
+            if (
+                parse_event_date(node_text)
+                and node.find("a", href=True)
+            ):
+                filtered.append(node)
+
+        if filtered:
+            event_nodes = filtered
+            working_selector = selector
+            break
+
+    if working_selector:
+        print(f"  Working Wayne selector: {working_selector}")
+
+    print(f"  Found {len(event_nodes)} Wayne event records.")
+
+    for node in event_nodes:
+        try:
+            full_text = clean_text(node.get_text(" ", strip=True))
+            event_date = parse_event_date(full_text)
+
+            if not event_date:
+                continue
+
+            link = node.find("a", href=True)
+            if not link:
+                continue
+
+            title = clean_text(link.get_text(" ", strip=True))
+            if not title:
+                heading = node.find(["h2", "h3", "h4"])
+                title = clean_text(
+                    heading.get_text(" ", strip=True)
+                ) if heading else ""
+
+            if not title:
+                continue
+
+            event_url = urljoin(source_url, link.get("href", ""))
+            start_time, end_time = parse_event_times(full_text)
+
+            # Keep the complete card text as the description on
+            # the first live pass. Individual event pages can be
+            # used later for richer location/time extraction.
+            description = full_text
+            event_type, category = classify_event(title, description)
+
+            event = create_event(
+                title=title,
+                county="Wayne",
+                date=event_date,
+                time=start_time,
+                end_time=end_time,
+                location="",
+                city="",
+                host="Wayne County, Michigan",
+                event_type=event_type,
+                category=category,
+                source_name=source.get("name", ""),
+                source_url=source_url,
+                event_url=event_url,
+                description=description
+            )
+
+            events.append(event)
+            print(f"  Collected Wayne: {event_date} | {title}")
+
+        except Exception as error:
+            print(f"  Wayne event parse error: {error}")
+
+    if not events:
+        print(
+            "  Wayne diagnostics: no event cards were parsed. "
+            "The page downloaded successfully, but its HTML "
+            "structure needs another selector pass."
+        )
+
+        event_like_links = []
+        for link in soup.find_all("a", href=True):
+            text = clean_text(link.get_text(" ", strip=True))
+            href = clean_text(link.get("href", ""))
+            if text and (
+                "event" in href.lower()
+                or parse_event_date(text)
+            ):
+                event_like_links.append((text, href))
+
+        print(
+            f"  Wayne diagnostic event-like links: "
+            f"{len(event_like_links)}"
+        )
+
+        for text, href in event_like_links[:15]:
+            print(f"  Wayne diagnostic link: {text} | {href}")
+
+    print(f"  Wayne parser produced {len(events)} events.")
+    return events
 
 
 def collect_wayne_precinct_delegate_events():
