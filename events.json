@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-18T20:55:22.613334-04:00",
+  "last_updated": "2026-09-18T20:59:29.965264-04:00",
   "timezone": "America/Detroit",
-  "event_count": 8,
+  "event_count": 5,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,13 +14,12 @@
     "Ingham": 1,
     "Wayne": 0,
     "Oakland": 4,
-    "Washtenaw": 3
+    "Washtenaw": 0
   },
   "category_counts": {
-    "demonstration": 2,
-    "volunteer": 2,
     "government-meeting": 1,
     "party-meeting": 2,
+    "volunteer": 1,
     "fundraising": 1
   },
   "sources": [
@@ -58,7 +57,7 @@
       "source_type": "government",
       "enabled": true,
       "configured": true,
-      "url": "https://www.waynecountymi.gov/"
+      "url": "https://www.waynecountymi.gov/Events-directory"
     },
     {
       "id": "wayne-democratic-precinct-delegates",
@@ -89,57 +88,6 @@
     }
   ],
   "events": [
-    {
-      "id": "e92a246276d01459",
-      "title": "Dexter Friday Protest – Dexter",
-      "county": "Washtenaw",
-      "date": "2026-09-18",
-      "time": "16:00",
-      "end_time": "17:00",
-      "location": "Dexter 8077 Main St, Dexer, MI, United States",
-      "city": "Dexter",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Demonstration",
-      "category": "demonstration",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/turn-i-into-we-protest-dexter-2-2/2026-09-18/",
-      "description": "“Turn ‘I’ into ‘We’” Protest - Dexter Organizer: Dexter Strong, Dexter Cares. Weekly protest in Dexter called “Turn ‘I’ into ‘We’” every Friday, 4:00 - 5:00. Location: Monument Park (where Baker Road […]"
-    },
-    {
-      "id": "9c5588b13ed8c132",
-      "title": "A2Resist2025—Ann Arbor MI Weekly Stone School Bridge Protest",
-      "county": "Washtenaw",
-      "date": "2026-09-18",
-      "time": "16:30",
-      "end_time": "17:30",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/a2resist2025-ann-arbor-mi-weekly-stone-school-bridge-protest/2026-09-18/",
-      "description": "Visibility Event · Volunteer organized for Visibility Brigade Time Fridays 4:30pm EDT Location Stone School Rd Pedestrian Bridge Over I-94 Stone School Road & Birch Hollow Drive Ann Arbor, MI 48108 About […]"
-    },
-    {
-      "id": "9a4a46a269fc1633",
-      "title": "Friday Protest – Ann Arbor",
-      "county": "Washtenaw",
-      "date": "2026-09-18",
-      "time": "17:30",
-      "end_time": "20:30",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Demonstration",
-      "category": "demonstration",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-09-18/",
-      "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
-    },
     {
       "id": "766dcbbe841c1dad",
       "title": "Ingham County Democratic Caucus Meeting",
