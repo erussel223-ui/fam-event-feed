@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-18T20:30:36.924309-04:00",
+  "last_updated": "2026-09-18T20:55:22.613334-04:00",
   "timezone": "America/Detroit",
-  "event_count": 7,
+  "event_count": 8,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -11,7 +11,7 @@
     "Washtenaw"
   ],
   "county_counts": {
-    "Ingham": 0,
+    "Ingham": 1,
     "Wayne": 0,
     "Oakland": 4,
     "Washtenaw": 3
@@ -19,6 +19,7 @@
   "category_counts": {
     "demonstration": 2,
     "volunteer": 2,
+    "government-meeting": 1,
     "party-meeting": 2,
     "fundraising": 1
   },
@@ -138,6 +139,23 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-09-18/",
       "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
+    },
+    {
+      "id": "766dcbbe841c1dad",
+      "title": "Ingham County Democratic Caucus Meeting",
+      "county": "Ingham",
+      "date": "2026-09-22",
+      "time": "",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Ingham County Democratic Caucus",
+      "type": "Government Meeting",
+      "category": "government-meeting",
+      "source_name": "Ingham County Democratic Caucus",
+      "source_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
+      "event_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
+      "description": "Upcoming Democratic Caucus meeting date published by Ingham County."
     },
     {
       "id": "096f44a445070c86",
