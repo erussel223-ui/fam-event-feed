@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-19T08:28:18.444998-04:00",
+  "last_updated": "2026-09-19T14:25:25.674906-04:00",
   "timezone": "America/Detroit",
-  "event_count": 14,
+  "event_count": 13,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,13 +13,13 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 2,
-    "Oakland": 11,
+    "Oakland": 10,
     "Washtenaw": 0
   },
   "category_counts": {
-    "canvassing": 2,
     "government-meeting": 1,
     "party-meeting": 6,
+    "canvassing": 1,
     "civic": 1,
     "volunteer": 2,
     "fundraising": 1,
@@ -100,23 +100,6 @@
     }
   ],
   "events": [
-    {
-      "id": "dc6dcf402896d8f7",
-      "title": "Novi Dems Canvass Kickoff & Club Photo",
-      "county": "Oakland",
-      "date": "2026-09-19",
-      "time": "10:00 AM",
-      "end_time": "10:30 AM",
-      "location": "Novi Civic Center | 45175 W 10 Mile Rd, Novi, MI 48375, USA | Novi | MI | 48375",
-      "city": "Novi",
-      "host": "Michigan Democratic Party",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/kickoff",
-      "description": "Join us in a HUGE Canvass Kickoff and Club Photo on Saturday, September 19 at 10:00 on the south side of the parking lot behind the Novi Civic Center, 45175 W 10 Mile Rd, Novi, MI 48375. MEET INSIDE CIVIC CENTER IF IT IS RAINING. PHOTO WILL BE TAKEN PROMPTLY AT 10:15!!! Please wear your Novi Dems shirt, or dress in club colors of white & blues. Candidates, please bring campaign signs and literature. CANVASSERS: PLEASE ARRIVE AT 9:30 to pickup a turf and get canvassing instructions. If you are able, join us immediately afterwards to canvass for ALL of our endorsed candidates! Training provided; new canvassers will be paired with someone experienced for on-the-job training. You may also pickup a turf to walk sometime during the week."
-    },
     {
       "id": "766dcbbe841c1dad",
       "title": "Ingham County Democratic Caucus Meeting",
