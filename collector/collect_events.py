@@ -79,7 +79,7 @@ SOURCES = [
         "county": "Wayne",
         "name": "Wayne County, Michigan",
         "url": "https://www.waynecountymi.gov/Events-directory",
-        "enabled": True,
+        "enabled": False,
         "source_type": "government"
     },
 
@@ -88,6 +88,16 @@ SOURCES = [
         "county": "Wayne",
         "name": "Wayne County Democratic Precinct Delegates",
         "url": "https://miwcpd.com/",
+        "enabled": True,
+        "source_type": "political"
+    },
+
+    # MICHIGAN DEMOCRATIC PARTY — STATEWIDE CONTROLShift FEED
+    {
+        "id": "mdp-controlshift",
+        "county": "Statewide",
+        "name": "Michigan Democratic Party",
+        "url": "https://midems.controlshift.app/api/local.json",
         "enabled": True,
         "source_type": "political"
     },
@@ -1111,6 +1121,311 @@ def collect_wayne_events():
                 f"({collector.__name__}): "
                 f"{error}"
             )
+
+    return events
+
+
+# ============================================================
+# MICHIGAN DEMOCRATIC PARTY — CONTROLSHIFT STATEWIDE FEED
+# ============================================================
+
+WAYNE_CITIES = {
+    "allen park", "belleville", "dearborn", "dearborn heights",
+    "detroit", "ecorse", "flat rock", "garden city", "gibraltar",
+    "grosse pointe", "grosse pointe farms", "grosse pointe park",
+    "grosse pointe shores", "grosse pointe woods", "hamtramck",
+    "harper woods", "highland park", "inkster", "lincoln park",
+    "livonia", "melvindale", "northville", "plymouth", "river rouge",
+    "riverview", "rockwood", "romulus", "southgate", "taylor",
+    "trenton", "wayne", "westland", "woodhaven", "wyandotte"
+}
+
+INGHAM_CITIES = {
+    "east lansing", "lansing", "leslie", "mason", "williamston"
+}
+
+OAKLAND_CITIES = {
+    "auburn hills", "berkley", "birmingham", "bloomfield hills",
+    "clawson", "farmington", "farmington hills", "ferndale",
+    "hazel park", "huntington woods", "keego harbor", "lake angelus",
+    "lathrup village", "madison heights", "novi", "oak park",
+    "orchard lake village", "pleasant ridge", "pontiac", "rochester",
+    "rochester hills", "royal oak", "south lyon", "southfield",
+    "sylvan lake", "troy", "walled lake", "wixom"
+}
+
+WASHTENAW_CITIES = {
+    "ann arbor", "chelsea", "dexter", "manchester", "milan",
+    "saline", "ypsilanti"
+}
+
+
+def county_from_mdp_location(locality="", location_text=""):
+
+    locality_key = clean_text(locality).lower()
+    haystack = clean_text(location_text).lower()
+
+    city_sets = [
+        ("Wayne", WAYNE_CITIES),
+        ("Ingham", INGHAM_CITIES),
+        ("Oakland", OAKLAND_CITIES),
+        ("Washtenaw", WASHTENAW_CITIES)
+    ]
+
+    for county, cities in city_sets:
+        if locality_key in cities:
+            return county
+
+    for county, cities in city_sets:
+        for city in cities:
+            if re.search(r"\b" + re.escape(city) + r"\b", haystack):
+                return county
+
+    return ""
+
+
+def collect_mdp_controlshift_events():
+
+    source = get_source("mdp-controlshift")
+
+    if not source or not source.get("enabled", False):
+        print("MDP ControlShift source is disabled.")
+        return []
+
+    source_url = source.get("url", "")
+    calendar_slug = "mi-statewide"
+
+    print("Checking Michigan Democratic Party statewide event feed...")
+
+    params = {
+        "filter[calendars]": calendar_slug,
+        "per_page": 100,
+        "page": 1
+    }
+
+    response = requests.get(
+        source_url,
+        params=params,
+        headers={
+            **HEADERS,
+            "Accept": "application/json"
+        },
+        timeout=REQUEST_TIMEOUT
+    )
+
+    print(f"  Requesting: {response.url}")
+    print(f"  HTTP status: {response.status_code}")
+
+    response.raise_for_status()
+    payload = response.json()
+
+    if isinstance(payload, dict):
+        print(
+            "  MDP response keys: "
+            + ", ".join(sorted(payload.keys()))
+        )
+
+    records = []
+
+    if isinstance(payload, dict):
+        for key in ("data", "events", "results"):
+            value = payload.get(key)
+            if isinstance(value, list):
+                records = value
+                break
+    elif isinstance(payload, list):
+        records = payload
+
+    print(f"  Found {len(records)} MDP feed records.")
+
+    if records:
+        sample = records[0]
+        if isinstance(sample, dict):
+            print(
+                "  MDP sample record keys: "
+                + ", ".join(sorted(sample.keys()))
+            )
+
+    events = []
+
+    for record in records:
+
+        if not isinstance(record, dict):
+            continue
+
+        attributes = record.get("attributes", {})
+        if not isinstance(attributes, dict):
+            attributes = {}
+
+        def value(*keys):
+            for key in keys:
+                candidate = record.get(key)
+                if candidate not in (None, "", []):
+                    return candidate
+                candidate = attributes.get(key)
+                if candidate not in (None, "", []):
+                    return candidate
+            return ""
+
+        record_type = clean_text(value("type"))
+        if record_type and record_type.lower() not in {
+            "event", "externalevent", "external_event"
+        }:
+            continue
+
+        title = clean_text(value("title", "name"))
+        description = clean_text(value("description"))
+        start_value = clean_text(value("start_at", "startAt", "start_date"))
+        end_value = clean_text(value("end_at", "endAt", "end_date"))
+
+        if not title or not start_value:
+            continue
+
+        event_date = ""
+        start_time = ""
+        end_time = ""
+
+        try:
+            parsed_start = datetime.fromisoformat(
+                start_value.replace("Z", "+00:00")
+            ).astimezone(TIMEZONE)
+            event_date = parsed_start.strftime("%Y-%m-%d")
+            start_time = parsed_start.strftime("%I:%M %p").lstrip("0")
+        except Exception:
+            event_date = parse_event_date(start_value)
+
+        if end_value:
+            try:
+                parsed_end = datetime.fromisoformat(
+                    end_value.replace("Z", "+00:00")
+                ).astimezone(TIMEZONE)
+                end_time = parsed_end.strftime("%I:%M %p").lstrip("0")
+            except Exception:
+                pass
+
+        location_data = value("location")
+        if not isinstance(location_data, dict):
+            location_data = {}
+
+        locality = clean_text(
+            location_data.get("locality", "")
+            or value("locality", "city")
+        )
+
+        region = clean_text(
+            location_data.get("region", "")
+            or value("region", "state")
+        )
+
+        postal_code = clean_text(
+            location_data.get("postal_code", "")
+            or value("postal_code", "zip")
+        )
+
+        venue = clean_text(
+            value("location_venue", "venue")
+        )
+
+        query = clean_text(
+            location_data.get("query", "")
+            or value("address", "location_name")
+        )
+
+        location_parts = [
+            part for part in [
+                venue,
+                query,
+                locality,
+                region,
+                postal_code
+            ]
+            if part
+        ]
+
+        # Preserve order while removing repeated location pieces.
+        location_parts = list(dict.fromkeys(location_parts))
+        location_text = " | ".join(location_parts)
+
+        county = county_from_mdp_location(
+            locality,
+            " ".join([
+                location_text,
+                title,
+                description
+            ])
+        )
+
+        if not county:
+            print(
+                "  Skipping MDP event outside/unresolved "
+                f"tracked counties: {title}"
+            )
+            continue
+
+        event_id_or_slug = clean_text(
+            value("slug", "id")
+        )
+
+        event_url = clean_text(
+            value("url", "event_url")
+        )
+
+        if not event_url and event_id_or_slug:
+            if event_id_or_slug.startswith("http"):
+                event_url = event_id_or_slug
+            else:
+                event_url = (
+                    "https://midems.controlshift.app/events/"
+                    + event_id_or_slug
+                )
+
+        event_type, category = classify_event(
+            title,
+            description
+        )
+
+        host = clean_text(
+            value("host_name", "host", "organizer")
+        )
+        if isinstance(value("host"), dict):
+            host = clean_text(
+                value("host").get("full_name", "")
+            )
+
+        if not host:
+            host = "Michigan Democratic Party"
+
+        event = create_event(
+            title=title,
+            county=county,
+            date=event_date,
+            time=start_time,
+            end_time=end_time,
+            location=location_text,
+            city=locality,
+            host=host,
+            event_type=event_type,
+            category=category,
+            source_name=source.get("name", ""),
+            source_url=(
+                "https://midems.controlshift.app/"
+                "calendars/mi-statewide"
+            ),
+            event_url=event_url,
+            description=description
+        )
+
+        events.append(event)
+
+        print(
+            f"  Collected MDP → {county}: "
+            f"{event_date} | {title}"
+        )
+
+    print(
+        f"MDP ControlShift: {len(events)} "
+        "tracked-county events collected."
+    )
 
     return events
 
@@ -2584,6 +2899,13 @@ def main():
         run_collector(
             "Wayne",
             collect_wayne_events
+        )
+    )
+
+    all_events.extend(
+        run_collector(
+            "MDP statewide",
+            collect_mdp_controlshift_events
         )
     )
 
