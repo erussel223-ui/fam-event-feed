@@ -1346,6 +1346,10 @@ def collect_mdp_controlshift_events():
         location_parts = list(dict.fromkeys(location_parts))
         location_text = " | ".join(location_parts)
 
+        # Keep every Michigan MDP event. Primary counties still resolve
+        # through the existing city maps. For other locations, use an
+        # explicit county supplied by ControlShift when available; otherwise
+        # retain the event under "Other Michigan" rather than discarding it.
         county = county_from_mdp_location(
             locality,
             " ".join([
@@ -1355,12 +1359,35 @@ def collect_mdp_controlshift_events():
             ])
         )
 
+        explicit_county = clean_text(
+            location_data.get("county", "")
+            or location_data.get("county_name", "")
+            or value("county", "county_name")
+        )
+
+        if not county and explicit_county:
+            county = re.sub(
+                r"\s+County\s*$",
+                "",
+                explicit_county,
+                flags=re.IGNORECASE
+            ).strip()
+
         if not county:
+            county = "Other Michigan"
+
+        primary_county = county in {
+            "Ingham",
+            "Wayne",
+            "Oakland",
+            "Washtenaw"
+        }
+
+        if not primary_county:
             print(
-                "  Skipping MDP event outside/unresolved "
-                f"tracked counties: {title}"
+                f"  Collected statewide MDP event → {county}: "
+                f"{title}"
             )
-            continue
 
         event_id_or_slug = clean_text(
             value("slug", "id")
@@ -1422,9 +1449,20 @@ def collect_mdp_controlshift_events():
             f"{event_date} | {title}"
         )
 
+    primary_total = sum(
+        1 for event in events
+        if event.get("county") in {
+            "Ingham",
+            "Wayne",
+            "Oakland",
+            "Washtenaw"
+        }
+    )
+    statewide_total = len(events) - primary_total
+
     print(
-        f"MDP ControlShift: {len(events)} "
-        "tracked-county events collected."
+        f"MDP ControlShift: {len(events)} total Michigan events collected "
+        f"({primary_total} primary-county, {statewide_total} other Michigan)."
     )
 
     return events
