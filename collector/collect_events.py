@@ -667,13 +667,94 @@ def collect_ingham_government_events():
 
 def collect_ingham_democratic_caucus_events():
 
-    if not source_is_enabled(
-        "ingham-democratic-caucus"
-    ):
+    source = get_source("ingham-democratic-caucus")
+
+    if not source:
+        print("  Ingham Democratic Caucus source configuration not found.")
         return []
 
-    return []
+    if not source.get("enabled", False):
+        print("  Ingham Democratic Caucus source is disabled.")
+        return []
 
+    source_url = source.get("url", "")
+    if not source_url:
+        print("  Ingham Democratic Caucus source URL is missing.")
+        return []
+
+    print("  Downloading Ingham Democratic Caucus meeting page...")
+    html = download_page(source_url)
+    soup = BeautifulSoup(html, "html.parser")
+    page_text = clean_text(soup.get_text(" ", strip=True))
+
+    # Read only the official "Upcoming Meeting Dates" section so
+    # archived minutes are not accidentally published as events.
+    section = re.search(
+        r"Upcoming\s+Meeting\s+Dates\s*:\s*(.*?)(?:Archived\s+Minutes|Contacts|$)",
+        page_text,
+        re.IGNORECASE | re.DOTALL
+    )
+
+    if not section:
+        print("  Could not locate the 'Upcoming Meeting Dates' section.")
+        return []
+
+    upcoming_text = clean_text(section.group(1))
+
+    date_pattern = re.compile(
+        r"\b(" + "|".join(month.title() for month in MONTHS.keys()) + r")\s+"
+        r"(\d{1,2})(?:st|nd|rd|th)?,?\s+(20\d{2})\b",
+        re.IGNORECASE
+    )
+
+    date_matches = list(date_pattern.finditer(upcoming_text))
+
+    print(
+        f"  Found {len(date_matches)} Ingham Democratic Caucus "
+        "upcoming meeting dates."
+    )
+
+    events = []
+
+    for date_match in date_matches:
+        raw_date = clean_text(date_match.group(0))
+        event_date = parse_event_date(raw_date)
+
+        if not event_date:
+            print(f"  Ingham Caucus date skipped: {raw_date}")
+            continue
+
+        title = "Ingham County Democratic Caucus Meeting"
+
+        event = create_event(
+            title=title,
+            county="Ingham",
+            date=event_date,
+            time="",
+            end_time="",
+            location="",
+            city="",
+            host="Ingham County Democratic Caucus",
+            event_type="Government Meeting",
+            category="government-meeting",
+            source_name=source.get("name", ""),
+            source_url=source_url,
+            event_url=source_url,
+            description=(
+                "Upcoming Democratic Caucus meeting date "
+                "published by Ingham County."
+            )
+        )
+
+        events.append(event)
+        print(f"  Collected Ingham Caucus: {event_date} | {title}")
+
+    print(
+        f"  Ingham Democratic Caucus parser produced "
+        f"{len(events)} events."
+    )
+
+    return events
 
 def collect_ingham_events():
 
