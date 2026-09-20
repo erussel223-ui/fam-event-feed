@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-19T14:25:25.674906-04:00",
+  "last_updated": "2026-09-19T20:32:21.712127-04:00",
   "timezone": "America/Detroit",
-  "event_count": 13,
+  "event_count": 12,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,12 +13,12 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 2,
-    "Oakland": 10,
+    "Oakland": 9,
     "Washtenaw": 0
   },
   "category_counts": {
     "government-meeting": 1,
-    "party-meeting": 6,
+    "party-meeting": 5,
     "canvassing": 1,
     "civic": 1,
     "volunteer": 2,
@@ -167,23 +167,6 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/meet-and-greet-5",
       "description": "The Southwestern Wayne [County] Democratic Club is hosting a candidate Meet and Greet on Thursday, September 24th at the Van Buren Township Hall, Sheldon/Otisville Room at 6 pm. Light refreshments will be served."
-    },
-    {
-      "id": "096f44a445070c86",
-      "title": "OCDP Commissioner Member Roundtable",
-      "county": "Oakland",
-      "date": "2026-09-25",
-      "time": "13:00",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Oakland County Democratic Party",
-      "type": "Party Meeting",
-      "category": "party-meeting",
-      "source_name": "Oakland County Democratic Party",
-      "source_url": "https://www.oaklandcountydemocrats.org/events",
-      "event_url": "https://www.oaklandcountydemocrats.org/events/ocdp-commissioner-member-roundtable",
-      "description": ""
     },
     {
       "id": "1caa7644cdd646ab",
