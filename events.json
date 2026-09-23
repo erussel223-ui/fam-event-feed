@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-22T14:28:34.809445-04:00",
+  "last_updated": "2026-09-22T20:29:35.003541-04:00",
   "timezone": "America/Detroit",
-  "event_count": 13,
+  "event_count": 18,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,16 +14,17 @@
     "Ingham": 1,
     "Wayne": 2,
     "Oakland": 10,
-    "Washtenaw": 0
+    "Washtenaw": 5
   },
   "category_counts": {
+    "civic": 2,
     "government-meeting": 1,
+    "voter-outreach": 2,
+    "volunteer": 3,
     "party-meeting": 5,
+    "training": 2,
     "canvassing": 2,
-    "civic": 1,
-    "volunteer": 2,
-    "fundraising": 1,
-    "training": 1
+    "fundraising": 1
   },
   "sources": [
     {
@@ -101,6 +102,23 @@
   ],
   "events": [
     {
+      "id": "66400e6c49215b87",
+      "title": "There Will Be an Election on November 3, 2026",
+      "county": "Washtenaw",
+      "date": "2026-09-22",
+      "time": "20:00",
+      "end_time": "21:00",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/there-will-be-an-election-on-november-3-2026/",
+      "description": "Concerned about the 2026 midterms? The Democratic National Committee (DNC), in partnership with the DNC Midwest Regional Caucus, invites you to a special briefing on how our party is confronting […]"
+    },
+    {
       "id": "766dcbbe841c1dad",
       "title": "Ingham County Democratic Caucus Meeting",
       "county": "Ingham",
@@ -118,6 +136,40 @@
       "description": "Upcoming Democratic Caucus meeting date published by Ingham County."
     },
     {
+      "id": "3ccadb2aff368bb1",
+      "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
+      "county": "Washtenaw",
+      "date": "2026-09-23",
+      "time": "11:00",
+      "end_time": "13:30",
+      "location": "Eastern Michigan University - Student Center 900 Oakwood St, Ypsilanti, MI, United States",
+      "city": "Ypsilanti",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Voter Outreach",
+      "category": "voter-outreach",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/washtenaw-democratic-party-emu-voter-outreach-fall-2026/2026-09-23/",
+      "description": "WCDP Spend a couple of hours walking up to EMU students and talking with each of them about voting and our Democratic slate of candidates. Ask questions to learn where […]"
+    },
+    {
+      "id": "a7dff1ecabb916a5",
+      "title": "Postcards for Patriots",
+      "county": "Washtenaw",
+      "date": "2026-09-23",
+      "time": "13:00",
+      "end_time": "15:00",
+      "location": "York 1928 Packard St, Ann Arbor, MI",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots/2026-09-23/",
+      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
+    },
+    {
       "id": "9b5924c0873665e0",
       "title": "September Membership Meeting",
       "county": "Oakland",
@@ -133,6 +185,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/september-membership-meeting-1",
       "description": "Join us for our General Membership Meeting. Social hour is at 6:30 and the meeting starts at 7:00. We will have a guest speaker and a current elected official provide a legislative update. Come meet fellow Democrats and find a way to get involved! We will meet in the Meeting Room on the 3rd Floor of The Hawk Community Center located at 29995 W 12 Mile Road, Farmington Hills MI 48334. The 3rd floor is accessible by the Upper Parking Lot on the back side of the building, or via elevator from the main entrance."
+    },
+    {
+      "id": "72fa85f73570f2e2",
+      "title": "Hands Off MI Vote Presenters Training",
+      "county": "Washtenaw",
+      "date": "2026-09-24",
+      "time": "18:00",
+      "end_time": "19:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Training / Workshop",
+      "category": "training",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/hands-off-mi-vote-presenters-training/2026-09-24/",
+      "description": "Americans for Citizens Voting seeks to limit up to 700,000 Michiganders from using their right to vote by requiring all state residents to prove their citizenship by presenting expensive and […]"
     },
     {
       "id": "e1a25e5a59dfe4d9",
@@ -167,6 +236,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/meet-and-greet-5",
       "description": "The Southwestern Wayne [County] Democratic Club is hosting a candidate Meet and Greet on Thursday, September 24th at the Van Buren Township Hall, Sheldon/Otisville Room at 6 pm. Light refreshments will be served."
+    },
+    {
+      "id": "a54e273b0bc89c25",
+      "title": "Rock the Vote voter registration at the International women’s show",
+      "county": "Washtenaw",
+      "date": "2026-09-25",
+      "time": "10:00",
+      "end_time": "20:00",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Voter Outreach",
+      "category": "voter-outreach",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/rock-the-vote-voter-registration-at-the-international-womens-show/2026-09-25/",
+      "description": "Voter Registration Time Friday, September 25 – Sunday, September 27 10am EDT + 2 more times Location international women's show 46100 Grand River Ave Novi, MI 48374 About this event […]"
     },
     {
       "id": "1caa7644cdd646ab",
