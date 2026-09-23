@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-22T20:29:35.003541-04:00",
+  "last_updated": "2026-09-23T02:30:56.726803-04:00",
   "timezone": "America/Detroit",
-  "event_count": 18,
+  "event_count": 17,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,16 +14,16 @@
     "Ingham": 1,
     "Wayne": 2,
     "Oakland": 10,
-    "Washtenaw": 5
+    "Washtenaw": 4
   },
   "category_counts": {
-    "civic": 2,
-    "government-meeting": 1,
     "voter-outreach": 2,
     "volunteer": 3,
     "party-meeting": 5,
     "training": 2,
     "canvassing": 2,
+    "civic": 1,
+    "government-meeting": 1,
     "fundraising": 1
   },
   "sources": [
@@ -101,40 +101,6 @@
     }
   ],
   "events": [
-    {
-      "id": "66400e6c49215b87",
-      "title": "There Will Be an Election on November 3, 2026",
-      "county": "Washtenaw",
-      "date": "2026-09-22",
-      "time": "20:00",
-      "end_time": "21:00",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/there-will-be-an-election-on-november-3-2026/",
-      "description": "Concerned about the 2026 midterms? The Democratic National Committee (DNC), in partnership with the DNC Midwest Regional Caucus, invites you to a special briefing on how our party is confronting […]"
-    },
-    {
-      "id": "766dcbbe841c1dad",
-      "title": "Ingham County Democratic Caucus Meeting",
-      "county": "Ingham",
-      "date": "2026-09-22",
-      "time": "",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Ingham County Democratic Caucus",
-      "type": "Government Meeting",
-      "category": "government-meeting",
-      "source_name": "Ingham County Democratic Caucus",
-      "source_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
-      "event_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
-      "description": "Upcoming Democratic Caucus meeting date published by Ingham County."
-    },
     {
       "id": "3ccadb2aff368bb1",
       "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
@@ -321,6 +287,23 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/ocdp-executive-committee-meeting-1",
       "description": ""
+    },
+    {
+      "id": "ebdb7721f55559f7",
+      "title": "Ingham County Democratic Caucus Meeting",
+      "county": "Ingham",
+      "date": "2026-10-13",
+      "time": "",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Ingham County Democratic Caucus",
+      "type": "Government Meeting",
+      "category": "government-meeting",
+      "source_name": "Ingham County Democratic Caucus",
+      "source_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
+      "event_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
+      "description": "Upcoming Democratic Caucus meeting date published by Ingham County."
     },
     {
       "id": "4955a35e6acf990b",
