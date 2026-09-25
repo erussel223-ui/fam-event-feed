@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-24T20:32:57.492527-04:00",
+  "last_updated": "2026-09-25T02:30:45.681555-04:00",
   "timezone": "America/Detroit",
-  "event_count": 15,
+  "event_count": 14,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,17 +14,17 @@
     "Ingham": 1,
     "Wayne": 1,
     "Oakland": 8,
-    "Washtenaw": 5
+    "Washtenaw": 4
   },
   "category_counts": {
-    "training": 2,
     "voter-outreach": 1,
     "volunteer": 3,
     "demonstration": 2,
     "canvassing": 1,
     "party-meeting": 4,
     "government-meeting": 1,
-    "fundraising": 1
+    "fundraising": 1,
+    "training": 1
   },
   "sources": [
     {
@@ -101,23 +101,6 @@
     }
   ],
   "events": [
-    {
-      "id": "72fa85f73570f2e2",
-      "title": "Hands Off MI Vote Presenters Training",
-      "county": "Washtenaw",
-      "date": "2026-09-24",
-      "time": "18:00",
-      "end_time": "19:30",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Training / Workshop",
-      "category": "training",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/hands-off-mi-vote-presenters-training/2026-09-24/",
-      "description": "Americans for Citizens Voting seeks to limit up to 700,000 Michiganders from using their right to vote by requiring all state residents to prove their citizenship by presenting expensive and […]"
-    },
     {
       "id": "a54e273b0bc89c25",
       "title": "Rock the Vote voter registration at the International women’s show",
