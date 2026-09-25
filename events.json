@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-24T14:28:25.615187-04:00",
+  "last_updated": "2026-09-24T20:32:57.492527-04:00",
   "timezone": "America/Detroit",
-  "event_count": 17,
+  "event_count": 15,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -12,17 +12,16 @@
   ],
   "county_counts": {
     "Ingham": 1,
-    "Wayne": 2,
-    "Oakland": 9,
+    "Wayne": 1,
+    "Oakland": 8,
     "Washtenaw": 5
   },
   "category_counts": {
     "training": 2,
-    "canvassing": 2,
-    "civic": 1,
     "voter-outreach": 1,
     "volunteer": 3,
     "demonstration": 2,
+    "canvassing": 1,
     "party-meeting": 4,
     "government-meeting": 1,
     "fundraising": 1
@@ -118,40 +117,6 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/hands-off-mi-vote-presenters-training/2026-09-24/",
       "description": "Americans for Citizens Voting seeks to limit up to 700,000 Michiganders from using their right to vote by requiring all state residents to prove their citizenship by presenting expensive and […]"
-    },
-    {
-      "id": "e1a25e5a59dfe4d9",
-      "title": "Knock Oakland: South Oakland Canvass",
-      "county": "Oakland",
-      "date": "2026-09-24",
-      "time": "4:00 PM",
-      "end_time": "7:00 PM",
-      "location": "Southfield | MI | 48076",
-      "city": "Southfield",
-      "host": "Michigan Democratic Party",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/knock-oakland-south-oakland-canvass",
-      "description": "Join the Oakland County Democratic Party for an afternoon of action as we hit the doors and connect with voters across South Oakland County! 📅 Thursday, September 24 ⏰ 4:00–7:00 PM 📍 Launch Location: OCDP Headquarters We’ll meet at OCDP Headquarters for a quick kickoff before volunteers head out to knock doors in targeted neighborhoods throughout Southfield, Royal Oak/Royal Oak Township, Ferndale, and Hazel Park. Whether you’re an experienced canvasser or knocking doors for the first time, we want you with us! Training, turf, and canvassing materials will be provided. Come ready to talk with voters, build connections, and help us organize across Oakland County. 👟 Wear comfortable shoes 📱 Bring a fully charged smartphone 👥 Bring a friend — canvassing is always better with a partner! Every door. Every conversation. Every community. Let’s Knock Oakland!"
-    },
-    {
-      "id": "6b3ce1694f1fa5eb",
-      "title": "Meet and Greet",
-      "county": "Wayne",
-      "date": "2026-09-24",
-      "time": "6:00 PM",
-      "end_time": "8:00 PM",
-      "location": "Van Buren Township Hall - Sheldon/Otisville Room | 46425 Tyler Rd, Van Buren Township, MI 48111, USA | Van Buren Township | MI | 48111",
-      "city": "Van Buren Township",
-      "host": "Michigan Democratic Party",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/meet-and-greet-5",
-      "description": "The Southwestern Wayne [County] Democratic Club is hosting a candidate Meet and Greet on Thursday, September 24th at the Van Buren Township Hall, Sheldon/Otisville Room at 6 pm. Light refreshments will be served."
     },
     {
       "id": "a54e273b0bc89c25",
