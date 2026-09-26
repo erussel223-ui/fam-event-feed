@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-25T14:26:39.687249-04:00",
+  "last_updated": "2026-09-25T20:30:53.334511-04:00",
   "timezone": "America/Detroit",
-  "event_count": 14,
+  "event_count": 13,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,12 +13,12 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 1,
-    "Oakland": 8,
+    "Oakland": 7,
     "Washtenaw": 4
   },
   "category_counts": {
     "voter-outreach": 1,
-    "volunteer": 3,
+    "volunteer": 2,
     "demonstration": 2,
     "canvassing": 1,
     "party-meeting": 4,
@@ -185,23 +185,6 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-09-25/",
       "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
-    },
-    {
-      "id": "a346655b74642fde",
-      "title": "OCDP Post Card Writing Party",
-      "county": "Oakland",
-      "date": "2026-09-25",
-      "time": "1:00 PM",
-      "end_time": "4:00 PM",
-      "location": "Southfield | MI | 48076",
-      "city": "Southfield",
-      "host": "Michigan Democratic Party",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/ocdp-post-card-writing-party",
-      "description": "Join the Oakland County Democratic Party for Postcard Fridays! We’ll come together to write postcards to Michigan voters, help get out the vote, and have some fun while we do it. Food, games, postcard supplies, and good company will be provided. Come for the entire afternoon or stop by when you can!"
     },
     {
       "id": "ef989c87f1fc4e85",
