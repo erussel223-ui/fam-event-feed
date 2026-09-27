@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-26T20:33:36.646987-04:00",
+  "last_updated": "2026-09-27T02:29:50.422256-04:00",
   "timezone": "America/Detroit",
-  "event_count": 8,
+  "event_count": 7,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,11 +13,10 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 1,
-    "Oakland": 6,
+    "Oakland": 5,
     "Washtenaw": 0
   },
   "category_counts": {
-    "canvassing": 1,
     "party-meeting": 4,
     "government-meeting": 1,
     "fundraising": 1,
@@ -98,23 +97,6 @@
     }
   ],
   "events": [
-    {
-      "id": "ef989c87f1fc4e85",
-      "title": "Novi Canvass",
-      "county": "Oakland",
-      "date": "2026-09-26",
-      "time": "9:30 AM",
-      "end_time": "11:30 AM",
-      "location": "Novi Civic Center | 45175 W 10 Mile Rd, Novi, MI 48375, USA | Novi | MI | 48375",
-      "city": "Novi",
-      "host": "Michigan Democratic Party",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/novi-canvass",
-      "description": "Join us on Saturday mornings at 9:30 am to help get Democrats elected up and down the entire ballot! Meet in the south-west corner of the Novi Civic Center parking lot. Look for campaign signs! Training provided; experienced canvassers will be available to go out with you as needed. We will meet afterwards for lunch; location decided the morning of the event. Wear comfortable shoes and dress for the weather. Make sure your phone is fully charged. It can be helpful to bring a friend who can assist by driving. Contact info@novidems.org with any questions and for information about weekday canvassing opportunities (M-Th, 4-6pm)."
-    },
     {
       "id": "e7bc1098a746a034",
       "title": "OCDP Executive Committee Meeting",
