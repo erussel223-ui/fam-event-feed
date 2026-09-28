@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-28T08:33:20.488501-04:00",
+  "last_updated": "2026-09-28T14:30:18.193845-04:00",
   "timezone": "America/Detroit",
-  "event_count": 7,
+  "event_count": 12,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,10 +13,11 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 1,
-    "Oakland": 5,
+    "Oakland": 10,
     "Washtenaw": 0
   },
   "category_counts": {
+    "volunteer": 5,
     "party-meeting": 4,
     "government-meeting": 1,
     "fundraising": 1,
@@ -98,6 +99,57 @@
   ],
   "events": [
     {
+      "id": "e74c687ffa22ef74",
+      "title": "Post Card Friday",
+      "county": "Oakland",
+      "date": "2026-10-02",
+      "time": "13:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday",
+      "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 2, 9, 23 & 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
+    },
+    {
+      "id": "cccc7176b3458398",
+      "title": "OCDP Post Card Writing Party",
+      "county": "Oakland",
+      "date": "2026-10-02",
+      "time": "1:00 PM",
+      "end_time": "4:00 PM",
+      "location": "Southfield | MI | 48076",
+      "city": "Southfield",
+      "host": "Michigan Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/ocdp-post-card-writing-party-1",
+      "description": "Join the Oakland County Democratic Party for Postcard Fridays! We’ll come together to write postcards to Michigan voters, help get out the vote, and have some fun while we do it. Food, games, postcard supplies, and good company will be provided. Come for the entire afternoon or stop by when you can!"
+    },
+    {
+      "id": "85648adb343c4713",
+      "title": "Post Card Friday",
+      "county": "Oakland",
+      "date": "2026-10-09",
+      "time": "13:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday-1",
+      "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 9, 23 & 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
+    },
+    {
       "id": "e7bc1098a746a034",
       "title": "OCDP Executive Committee Meeting",
       "county": "Oakland",
@@ -166,6 +218,23 @@
       "description": "Join us for our General Membership Meeting. Social hour is at 6:30 and the meeting starts at 7:00. We will have a guest speaker and a current elected official provide a legislative update. Come meet fellow Democrats and find a way to get involved! We will meet in the Meeting Room on the 3rd Floor of The Hawk Community Center located at 29995 W 12 Mile Road, Farmington Hills MI 48334. The 3rd floor is accessible by the Upper Parking Lot on the back side of the building, or via elevator from the main entrance."
     },
     {
+      "id": "5d708326a6112b0b",
+      "title": "Post Card Friday",
+      "county": "Oakland",
+      "date": "2026-10-23",
+      "time": "13:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday-2",
+      "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 23 & 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
+    },
+    {
       "id": "e90ca2257991cb2b",
       "title": "Power in The Precinct; The MI Precinct Delegate & Grassroots Assembly!!",
       "county": "Wayne",
@@ -181,6 +250,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/power-in-the-precinct-the-mi-precinct-delegate-grassroots-assembly",
       "description": "POWER IN THE PRECINCT The Michigan Precinct Delegates & Grassroots Assembly Get ready for a high-energy, action-packed statewide gathering bringing together Precinct Delegates and Grassroots Leaders from across Michigan! This Assembly is designed to train, connect, educate, and prepare you to organize in your precinct and community. 🔥 WHAT TO EXPECT: 🎤 SUPERSTAR GUEST SPEAKERS Hear from special guests and movement leaders who are doing the work and shaping the future of Michigan. 🗳️ INTENSIVE PRECINCT DELEGATE TRAINING Learn what it means to be a Precinct Delegate, what is expected of you, how to organize your precinct, build relationships with voters, and turn your position into grassroots power. 📣 PROP 1 & MOP BALLOT INITIATIVES Hear directly from special guests about Proposal 1 and MOP ballot initiatives, what they mean, and how grassroots leaders can educate and engage their communities. 🤝 GRASSROOTS CONNECTION & NETWORKING Connect with Precinct Delegates, organizers, activists, and grassroots leaders from across Michigan. 💪 STRATEGY + ACTION This isn't just a gathering to listen. We're coming together to learn, strategize, organize, and leave ready to take action. ALL PRECINCT DELEGATES & GRASSROOTS LEADERS ARE INVITED TO CONVENE. 📅 Saturday, October 24th 🕛 12 PM – 5 PM 📍 Westside Detroit Area"
+    },
+    {
+      "id": "60464fba169d55ef",
+      "title": "Post Card Friday",
+      "county": "Oakland",
+      "date": "2026-10-30",
+      "time": "13:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday-3",
+      "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
     },
     {
       "id": "6654fc0960004062",
