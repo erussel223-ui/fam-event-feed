@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-29T20:35:13.290801-04:00",
+  "last_updated": "2026-09-30T02:32:50.401863-04:00",
   "timezone": "America/Detroit",
-  "event_count": 17,
+  "event_count": 18,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -12,14 +12,14 @@
   ],
   "county_counts": {
     "Ingham": 1,
-    "Wayne": 1,
+    "Wayne": 2,
     "Oakland": 10,
     "Washtenaw": 5
   },
   "category_counts": {
     "voter-outreach": 1,
     "volunteer": 7,
-    "demonstration": 2,
+    "demonstration": 3,
     "party-meeting": 4,
     "government-meeting": 1,
     "fundraising": 1,
@@ -337,6 +337,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/power-in-the-precinct-the-mi-precinct-delegate-grassroots-assembly",
       "description": "POWER IN THE PRECINCT The Michigan Precinct Delegates & Grassroots Assembly Get ready for a high-energy, action-packed statewide gathering bringing together Precinct Delegates and Grassroots Leaders from across Michigan! This Assembly is designed to train, connect, educate, and prepare you to organize in your precinct and community. 🔥 WHAT TO EXPECT: 🎤 SUPERSTAR GUEST SPEAKERS Hear from special guests and movement leaders who are doing the work and shaping the future of Michigan. 🗳️ INTENSIVE PRECINCT DELEGATE TRAINING Learn what it means to be a Precinct Delegate, what is expected of you, how to organize your precinct, build relationships with voters, and turn your position into grassroots power. 📣 PROP 1 & MOP BALLOT INITIATIVES Hear directly from special guests about Proposal 1 and MOP ballot initiatives, what they mean, and how grassroots leaders can educate and engage their communities. 🤝 GRASSROOTS CONNECTION & NETWORKING Connect with Precinct Delegates, organizers, activists, and grassroots leaders from across Michigan. 💪 STRATEGY + ACTION This isn't just a gathering to listen. We're coming together to learn, strategize, organize, and leave ready to take action. ALL PRECINCT DELEGATES & GRASSROOTS LEADERS ARE INVITED TO CONVENE. 📅 Saturday, October 24th 🕛 12 PM – 5 PM 📍 Westside Detroit Area"
+    },
+    {
+      "id": "93add889c1149659",
+      "title": "MDP Coalition Rally",
+      "county": "Wayne",
+      "date": "2026-10-25",
+      "time": "6:30 PM",
+      "end_time": "9:30 PM",
+      "location": "Hamtramck | MI | 48212",
+      "city": "Hamtramck",
+      "host": "Michigan Democratic Party",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/mdp-coalition-rally",
+      "description": "The goal of this election rally is to bring together a strong coalition of communities and organizations to celebrate our strength, unity, and shared commitment as we move toward the November election. We will build momentum at the rally and carry that momentum all the way to the victory celebration in November. Invited guests include: the Governor, candidates for Governor, Lieutenant Governor, Secretary of State, Attorney General, U.S. Senate and Congressional candidates, candidates for the Michigan Supreme Court, State House and State Senate candidates, candidates for the Michigan State Board of Education and University Boards, as well as Michigan Democratic Party, Democratic Club, Caucus, and community leaders. For information, contact: Dr. Naz Hassan 2nd Vice Chair, MDP 734-262-1323"
     },
     {
       "id": "60464fba169d55ef",
