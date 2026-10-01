@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-09-30T14:29:59.203627-04:00",
+  "last_updated": "2026-09-30T20:36:39.761647-04:00",
   "timezone": "America/Detroit",
   "event_count": 18,
   "counties_tracked": [
@@ -17,9 +17,10 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "voter-outreach": 1,
-    "volunteer": 7,
+    "volunteer": 6,
     "demonstration": 3,
+    "community": 1,
+    "civic": 1,
     "party-meeting": 4,
     "government-meeting": 1,
     "fundraising": 1,
@@ -100,40 +101,6 @@
     }
   ],
   "events": [
-    {
-      "id": "4b87d0b0f3c9e340",
-      "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
-      "county": "Washtenaw",
-      "date": "2026-09-30",
-      "time": "11:00",
-      "end_time": "13:30",
-      "location": "Eastern Michigan University - Student Center 900 Oakwood St, Ypsilanti, MI, United States",
-      "city": "Ypsilanti",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Voter Outreach",
-      "category": "voter-outreach",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/washtenaw-democratic-party-emu-voter-outreach-fall-2026/2026-09-30/",
-      "description": "WCDP Spend a couple of hours walking up to EMU students and talking with each of them about voting and our Democratic slate of candidates. Ask questions to learn where […]"
-    },
-    {
-      "id": "4b6cef42baf6bcc9",
-      "title": "Postcards for Patriots",
-      "county": "Washtenaw",
-      "date": "2026-09-30",
-      "time": "13:00",
-      "end_time": "15:00",
-      "location": "York 1928 Packard St, Ann Arbor, MI",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots/2026-09-30/",
-      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
-    },
     {
       "id": "e74c687ffa22ef74",
       "title": "Post Card Friday",
@@ -218,6 +185,40 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/ocdp-post-card-writing-party-1",
       "description": "Join the Oakland County Democratic Party for Postcard Fridays! We’ll come together to write postcards to Michigan voters, help get out the vote, and have some fun while we do it. Food, games, postcard supplies, and good company will be provided. Come for the entire afternoon or stop by when you can!"
+    },
+    {
+      "id": "d3f2e14e5cbd416c",
+      "title": "WCDP at the Ann Arbor Farmer’s Market 2026",
+      "county": "Washtenaw",
+      "date": "2026-10-03",
+      "time": "09:00",
+      "end_time": "12:00",
+      "location": "Ann Arbor Farmers Market ​ 315 Detroit Street, Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Community Event",
+      "category": "community",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-03/",
+      "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
+    },
+    {
+      "id": "6d8757b6caba6639",
+      "title": "A2 Corner Solidarity Saturdays",
+      "county": "Washtenaw",
+      "date": "2026-10-03",
+      "time": "11:00",
+      "end_time": "12:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/a2-plymouth-green-resistance-ann-arbor/2026-10-03/",
+      "description": "Time Saturdays 11am – 12:30pm EDT Location Westgate Shopping Center corner Jackson Ave and Maple intersection Ann Arbor, MI 48103 About this event We show up at the Westgate corner […]"
     },
     {
       "id": "85648adb343c4713",
