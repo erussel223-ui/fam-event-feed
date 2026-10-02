@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-01T20:34:33.746627-04:00",
+  "last_updated": "2026-10-02T02:32:45.464294-04:00",
   "timezone": "America/Detroit",
-  "event_count": 18,
+  "event_count": 19,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -12,13 +12,13 @@
   ],
   "county_counts": {
     "Ingham": 1,
-    "Wayne": 2,
+    "Wayne": 3,
     "Oakland": 10,
     "Washtenaw": 5
   },
   "category_counts": {
     "volunteer": 6,
-    "demonstration": 3,
+    "demonstration": 4,
     "community": 1,
     "civic": 1,
     "party-meeting": 4,
@@ -236,6 +236,23 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday-1",
       "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 9, 23 & 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
+    },
+    {
+      "id": "e811953e4f17c2c4",
+      "title": "Michigan Democratic Women's Caucus Wayne Co. GOTV Rally",
+      "county": "Wayne",
+      "date": "2026-10-11",
+      "time": "3:30 PM",
+      "end_time": "6:30 PM",
+      "location": "Considine Little Rock Family Life Center | 8904 Woodward Ave, Detroit, MI 48202, USA | Detroit | MI | 48202",
+      "city": "Detroit",
+      "host": "Michigan Democratic Party",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/michigan-democratic-women-s-caucus-wayne-co-gotv-rally",
+      "description": "Join us for the MDWC's Wayne County Get Out the Vote Rally - bringing together special guests, music, and community leaders to motivate & inspire. Special guests U.S. Senator Mark Kelly and former Congresswoman Gabby Giffords will be part of the program, alongside music and other activities throughout the afternoon. Come connect with fellow community members, hear from our special guests, and get energized for the final stretch of election season. Light food and refreshments will be provided. Contact midemwomenscaucus@gmail.com with any questions."
     },
     {
       "id": "e7bc1098a746a034",
