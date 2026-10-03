@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-02T20:32:31.550575-04:00",
+  "last_updated": "2026-10-03T02:33:46.303047-04:00",
   "timezone": "America/Detroit",
-  "event_count": 19,
+  "event_count": 17,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,14 +13,14 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 3,
-    "Oakland": 10,
-    "Washtenaw": 5
+    "Oakland": 9,
+    "Washtenaw": 4
   },
   "category_counts": {
-    "volunteer": 5,
-    "demonstration": 4,
     "community": 1,
     "civic": 2,
+    "demonstration": 3,
+    "volunteer": 4,
     "party-meeting": 4,
     "government-meeting": 1,
     "fundraising": 1,
@@ -101,40 +101,6 @@
     }
   ],
   "events": [
-    {
-      "id": "e74c687ffa22ef74",
-      "title": "Post Card Friday",
-      "county": "Oakland",
-      "date": "2026-10-02",
-      "time": "13:00",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Oakland County Democratic Party",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Oakland County Democratic Party",
-      "source_url": "https://www.oaklandcountydemocrats.org/events",
-      "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday",
-      "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 2, 9, 23 & 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
-    },
-    {
-      "id": "0fc0c5c7dd95bb49",
-      "title": "Friday Protest – Ann Arbor",
-      "county": "Washtenaw",
-      "date": "2026-10-02",
-      "time": "17:30",
-      "end_time": "20:30",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Demonstration",
-      "category": "demonstration",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-10-02/",
-      "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
-    },
     {
       "id": "d3f2e14e5cbd416c",
       "title": "WCDP at the Ann Arbor Farmer’s Market 2026",
