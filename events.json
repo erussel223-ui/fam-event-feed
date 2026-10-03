@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-03T11:03:28.700167-04:00",
+  "last_updated": "2026-10-03T18:23:03.924020-04:00",
   "timezone": "America/Detroit",
-  "event_count": 18,
+  "event_count": 19,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,13 +13,13 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 3,
-    "Oakland": 9,
+    "Oakland": 10,
     "Washtenaw": 5
   },
   "category_counts": {
     "community": 1,
     "civic": 3,
-    "demonstration": 3,
+    "demonstration": 4,
     "volunteer": 4,
     "party-meeting": 4,
     "government-meeting": 1,
@@ -227,7 +227,7 @@
       "date": "2026-10-11",
       "time": "3:30 PM",
       "end_time": "6:30 PM",
-      "location": "Considine Little Rock Family Life Center | 8904 Woodward Ave, Detroit, MI 48202, USA | Detroit | MI | 48202",
+      "location": "Detroit | MI | 48202",
       "city": "Detroit",
       "host": "Michigan Democratic Party",
       "type": "Public Demonstration",
@@ -304,6 +304,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/october-membership-meeting",
       "description": "Join us for our General Membership Meeting. Social hour is at 6:30 and the meeting starts at 7:00. We will have a guest speaker and a current elected official provide a legislative update. Come meet fellow Democrats and find a way to get involved! We will meet in the Meeting Room on the 3rd Floor of The Hawk Community Center located at 29995 W 12 Mile Road, Farmington Hills MI 48334. The 3rd floor is accessible by the Upper Parking Lot on the back side of the building, or via elevator from the main entrance."
+    },
+    {
+      "id": "2454dd940078181e",
+      "title": "Michigan Democratic Women's Caucus Oakland Co. Rally",
+      "county": "Oakland",
+      "date": "2026-10-22",
+      "time": "8:00 AM",
+      "end_time": "",
+      "location": "Welcome Missionary Baptist Church | 143 Oneida St, Pontiac, MI 48341, USA | Pontiac | MI | 48341",
+      "city": "Pontiac",
+      "host": "Michigan Democratic Party",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/michigan-democratic-women-s-caucus-oakland-co-rally",
+      "description": "Join us for the MDWC's Oakland County Get Out the Vote Rally - bringing together guest speakers and community leaders to motivate & inspire. Come connect with fellow community members, hear from our special guests, and get energized for the final stretch of election season. Contact midemwomenscaucus@gmail.com with any questions."
     },
     {
       "id": "5d708326a6112b0b",
