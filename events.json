@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-03T02:33:46.303047-04:00",
+  "last_updated": "2026-10-03T11:03:28.700167-04:00",
   "timezone": "America/Detroit",
-  "event_count": 17,
+  "event_count": 18,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,11 +14,11 @@
     "Ingham": 1,
     "Wayne": 3,
     "Oakland": 9,
-    "Washtenaw": 4
+    "Washtenaw": 5
   },
   "category_counts": {
     "community": 1,
-    "civic": 2,
+    "civic": 3,
     "demonstration": 3,
     "volunteer": 4,
     "party-meeting": 4,
@@ -167,6 +167,23 @@
       "source_name": "Washtenaw County Democratic Party",
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/knocking-on-doors-in-ann-arbor-3/2026-10-03/",
+      "description": "Join One Team Michigan to talk to voters in your community about the issues that matter! We'll be talking about our values as the Democratic Party, creating momentum across the […]"
+    },
+    {
+      "id": "3f5203c58b639587",
+      "title": "Knocking on Doors in Ann Arbor!",
+      "county": "Washtenaw",
+      "date": "2026-10-03",
+      "time": "16:00",
+      "end_time": "19:00",
+      "location": "Michigan Union 530 S. State St., Ann Arbor, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/knocking-on-doors-in-ann-arbor-2/2026-10-03/",
       "description": "Join One Team Michigan to talk to voters in your community about the issues that matter! We'll be talking about our values as the Democratic Party, creating momentum across the […]"
     },
     {
