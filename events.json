@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-04T17:14:16.022927-04:00",
+  "last_updated": "2026-10-04T20:37:12.874458-04:00",
   "timezone": "America/Detroit",
   "event_count": 19,
   "counties_tracked": [
@@ -17,10 +17,9 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "volunteer": 6,
-    "civic": 1,
     "voter-outreach": 2,
-    "demonstration": 3,
+    "volunteer": 6,
+    "demonstration": 4,
     "party-meeting": 4,
     "government-meeting": 1,
     "fundraising": 1,
@@ -102,40 +101,6 @@
   ],
   "events": [
     {
-      "id": "92c18a220623d260",
-      "title": "Postcards for Patriots",
-      "county": "Washtenaw",
-      "date": "2026-10-04",
-      "time": "10:30",
-      "end_time": "12:00",
-      "location": "Ann Arbor District Library - Pittsfield Branch 2359 Oak Valley Dr., Ann Arbor, MI, United States",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots-2/2026-10-04/",
-      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
-    },
-    {
-      "id": "1bc254eea12fb81d",
-      "title": "Knocking on Doors in Ann Arbor!",
-      "county": "Washtenaw",
-      "date": "2026-10-04",
-      "time": "16:00",
-      "end_time": "19:00",
-      "location": "Michigan Union 530 S. State St., Ann Arbor, United States",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/knocking-on-doors-in-ann-arbor-5/2026-10-04/",
-      "description": "Join One Team Michigan to talk to voters in your community about the issues that matter! We'll be talking about our values as the Democratic Party, creating momentum across the […]"
-    },
-    {
       "id": "caccdaae5c987cfc",
       "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
       "county": "Washtenaw",
@@ -202,6 +167,40 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday-1",
       "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 9, 23 & 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
+    },
+    {
+      "id": "01a49350f55f7ad1",
+      "title": "Dexter Friday Protest – Dexter",
+      "county": "Washtenaw",
+      "date": "2026-10-09",
+      "time": "16:00",
+      "end_time": "17:00",
+      "location": "Dexter 8077 Main St, Dexer, MI, United States",
+      "city": "Dexter",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/turn-i-into-we-protest-dexter-2-2/2026-10-09/",
+      "description": "“Turn ‘I’ into ‘We’” Protest - Dexter Organizer: Dexter Strong, Dexter Cares. Weekly protest in Dexter called “Turn ‘I’ into ‘We’” every Friday, 4:00 - 5:00. Location: Monument Park (where Baker Road […]"
+    },
+    {
+      "id": "7ed60c6d5df30416",
+      "title": "A2Resist2025—Ann Arbor MI Weekly Stone School Bridge Protest",
+      "county": "Washtenaw",
+      "date": "2026-10-09",
+      "time": "16:30",
+      "end_time": "17:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/a2resist2025-ann-arbor-mi-weekly-stone-school-bridge-protest/2026-10-09/",
+      "description": "Visibility Event · Volunteer organized for Visibility Brigade Time Fridays 4:30pm EDT Location Stone School Rd Pedestrian Bridge Over I-94 Stone School Road & Birch Hollow Drive Ann Arbor, MI 48108 About […]"
     },
     {
       "id": "058f562f7f9de44f",
