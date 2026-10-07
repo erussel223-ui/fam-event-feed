@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-07T08:35:44.548883-04:00",
+  "last_updated": "2026-10-07T14:32:34.340047-04:00",
   "timezone": "America/Detroit",
   "event_count": 20,
   "counties_tracked": [
@@ -17,9 +17,8 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "voter-outreach": 1,
     "volunteer": 7,
-    "demonstration": 4,
+    "demonstration": 5,
     "party-meeting": 4,
     "government-meeting": 1,
     "civic": 1,
@@ -101,23 +100,6 @@
     }
   ],
   "events": [
-    {
-      "id": "2d6242b2bd9828e4",
-      "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
-      "county": "Washtenaw",
-      "date": "2026-10-07",
-      "time": "11:00",
-      "end_time": "13:30",
-      "location": "Eastern Michigan University - Student Center 900 Oakwood St, Ypsilanti, MI, United States",
-      "city": "Ypsilanti",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Voter Outreach",
-      "category": "voter-outreach",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/washtenaw-democratic-party-emu-voter-outreach-fall-2026/2026-10-07/",
-      "description": "WCDP Spend a couple of hours walking up to EMU students and talking with each of them about voting and our Democratic slate of candidates. Ask questions to learn where […]"
-    },
     {
       "id": "f92d54044bb45e18",
       "title": "Postcards for Patriots",
@@ -202,6 +184,23 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/a2resist2025-ann-arbor-mi-weekly-stone-school-bridge-protest/2026-10-09/",
       "description": "Visibility Event · Volunteer organized for Visibility Brigade Time Fridays 4:30pm EDT Location Stone School Rd Pedestrian Bridge Over I-94 Stone School Road & Birch Hollow Drive Ann Arbor, MI 48108 About […]"
+    },
+    {
+      "id": "f9897e922bdfd16f",
+      "title": "Friday Protest – Ann Arbor",
+      "county": "Washtenaw",
+      "date": "2026-10-09",
+      "time": "17:30",
+      "end_time": "20:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-10-09/",
+      "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
     },
     {
       "id": "058f562f7f9de44f",
