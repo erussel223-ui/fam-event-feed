@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-06T14:30:23.880192-04:00",
+  "last_updated": "2026-10-06T20:38:37.932725-04:00",
   "timezone": "America/Detroit",
   "event_count": 19,
   "counties_tracked": [
@@ -17,8 +17,8 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "volunteer": 7,
     "voter-outreach": 1,
+    "volunteer": 7,
     "demonstration": 4,
     "party-meeting": 4,
     "government-meeting": 1,
@@ -100,23 +100,6 @@
     }
   ],
   "events": [
-    {
-      "id": "5881f0f741f1c6db",
-      "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
-      "county": "Washtenaw",
-      "date": "2026-10-06",
-      "time": "18:00",
-      "end_time": "20:30",
-      "location": "Virtual Event",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/volunteer-activation-phone-bank-mi-dems-voter-protection-team/2026-10-06/",
-      "description": "Virtual Phone Bank Time Tuesdays, Thursdays and Saturdays 6pm EDT + 1 more time Location Virtual event Join from anywhere About this event The fight to protect democracy is on, […]"
-    },
     {
       "id": "2d6242b2bd9828e4",
       "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
@@ -201,6 +184,23 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/turn-i-into-we-protest-dexter-2-2/2026-10-09/",
       "description": "“Turn ‘I’ into ‘We’” Protest - Dexter Organizer: Dexter Strong, Dexter Cares. Weekly protest in Dexter called “Turn ‘I’ into ‘We’” every Friday, 4:00 - 5:00. Location: Monument Park (where Baker Road […]"
+    },
+    {
+      "id": "7ed60c6d5df30416",
+      "title": "A2Resist2025—Ann Arbor MI Weekly Stone School Bridge Protest",
+      "county": "Washtenaw",
+      "date": "2026-10-09",
+      "time": "16:30",
+      "end_time": "17:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/a2resist2025-ann-arbor-mi-weekly-stone-school-bridge-protest/2026-10-09/",
+      "description": "Visibility Event · Volunteer organized for Visibility Brigade Time Fridays 4:30pm EDT Location Stone School Rd Pedestrian Bridge Over I-94 Stone School Road & Birch Hollow Drive Ann Arbor, MI 48108 About […]"
     },
     {
       "id": "058f562f7f9de44f",
