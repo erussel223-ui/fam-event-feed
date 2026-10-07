@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-06T20:38:37.932725-04:00",
+  "last_updated": "2026-10-07T02:32:54.119194-04:00",
   "timezone": "America/Detroit",
-  "event_count": 19,
+  "event_count": 20,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,7 +13,7 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 3,
-    "Oakland": 10,
+    "Oakland": 11,
     "Washtenaw": 5
   },
   "category_counts": {
@@ -22,6 +22,7 @@
     "demonstration": 4,
     "party-meeting": 4,
     "government-meeting": 1,
+    "civic": 1,
     "fundraising": 1,
     "training": 1
   },
@@ -269,6 +270,23 @@
       "source_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
       "event_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
       "description": "Upcoming Democratic Caucus meeting date published by Ingham County."
+    },
+    {
+      "id": "659d6b9f0c1d826c",
+      "title": "October Meeting",
+      "county": "Oakland",
+      "date": "2026-10-15",
+      "time": "6:30 PM",
+      "end_time": "8:00 PM",
+      "location": "Huntington Woods Library and Cultural Center | 26415 Scotia Rd, Huntington Woods, MI 48070, USA | Huntington Woods | MI | 48070",
+      "city": "Huntington Woods",
+      "host": "Michigan Democratic Party",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/october-meeting-6",
+      "description": "Join us for our October Meeting!"
     },
     {
       "id": "4955a35e6acf990b",
