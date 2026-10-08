@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-07T14:32:34.340047-04:00",
+  "last_updated": "2026-10-07T20:37:25.102695-04:00",
   "timezone": "America/Detroit",
   "event_count": 20,
   "counties_tracked": [
@@ -17,8 +17,9 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "volunteer": 7,
+    "volunteer": 6,
     "demonstration": 5,
+    "community": 1,
     "party-meeting": 4,
     "government-meeting": 1,
     "civic": 1,
@@ -100,23 +101,6 @@
     }
   ],
   "events": [
-    {
-      "id": "f92d54044bb45e18",
-      "title": "Postcards for Patriots",
-      "county": "Washtenaw",
-      "date": "2026-10-07",
-      "time": "13:00",
-      "end_time": "15:00",
-      "location": "York 1928 Packard St, Ann Arbor, MI",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots/2026-10-07/",
-      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
-    },
     {
       "id": "167a070a51d6a828",
       "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
@@ -218,6 +202,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/ocdp-post-card-writing-party-2",
       "description": "Join the Oakland County Democratic Party for Postcard Fridays! We’ll come together to write postcards to Michigan voters, help get out the vote, and have some fun while we do it. Food, games, postcard supplies, and good company will be provided. Come for the entire afternoon or stop by when you can!"
+    },
+    {
+      "id": "dbeda24059cdfa80",
+      "title": "WCDP at the Ann Arbor Farmer’s Market 2026",
+      "county": "Washtenaw",
+      "date": "2026-10-10",
+      "time": "09:00",
+      "end_time": "12:00",
+      "location": "Ann Arbor Farmers Market ​ 315 Detroit Street, Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Community Event",
+      "category": "community",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-10/",
+      "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
     },
     {
       "id": "e811953e4f17c2c4",
