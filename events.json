@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-08T08:36:01.953220-04:00",
+  "last_updated": "2026-10-08T14:32:00.669474-04:00",
   "timezone": "America/Detroit",
-  "event_count": 20,
+  "event_count": 21,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -12,7 +12,7 @@
   ],
   "county_counts": {
     "Ingham": 1,
-    "Wayne": 3,
+    "Wayne": 4,
     "Oakland": 11,
     "Washtenaw": 5
   },
@@ -24,7 +24,8 @@
     "government-meeting": 1,
     "civic": 1,
     "fundraising": 1,
-    "training": 1
+    "voter-outreach": 1,
+    "canvassing": 1
   },
   "sources": [
     {
@@ -357,21 +358,38 @@
       "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 23 & 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
     },
     {
-      "id": "e90ca2257991cb2b",
+      "id": "d6962481ead77aa1",
       "title": "Power in The Precinct; The MI Precinct Delegate & Grassroots Assembly!!",
       "county": "Wayne",
       "date": "2026-10-24",
-      "time": "12:00 PM",
-      "end_time": "5:00 PM",
+      "time": "10:00 AM",
+      "end_time": "2:00 PM",
       "location": "Detroit | Detroit, MI, USA | MI",
       "city": "Detroit",
       "host": "Michigan Democratic Party",
-      "type": "Training / Workshop",
-      "category": "training",
+      "type": "Voter Outreach",
+      "category": "voter-outreach",
       "source_name": "Michigan Democratic Party",
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/power-in-the-precinct-the-mi-precinct-delegate-grassroots-assembly",
-      "description": "POWER IN THE PRECINCT The Michigan Precinct Delegates & Grassroots Assembly Get ready for a high-energy, action-packed statewide gathering bringing together Precinct Delegates and Grassroots Leaders from across Michigan! This Assembly is designed to train, connect, educate, and prepare you to organize in your precinct and community. 🔥 WHAT TO EXPECT: 🎤 SUPERSTAR GUEST SPEAKERS Hear from special guests and movement leaders who are doing the work and shaping the future of Michigan. 🗳️ INTENSIVE PRECINCT DELEGATE TRAINING Learn what it means to be a Precinct Delegate, what is expected of you, how to organize your precinct, build relationships with voters, and turn your position into grassroots power. 📣 PROP 1 & MOP BALLOT INITIATIVES Hear directly from special guests about Proposal 1 and MOP ballot initiatives, what they mean, and how grassroots leaders can educate and engage their communities. 🤝 GRASSROOTS CONNECTION & NETWORKING Connect with Precinct Delegates, organizers, activists, and grassroots leaders from across Michigan. 💪 STRATEGY + ACTION This isn't just a gathering to listen. We're coming together to learn, strategize, organize, and leave ready to take action. ALL PRECINCT DELEGATES & GRASSROOTS LEADERS ARE INVITED TO CONVENE. 📅 Saturday, October 24th 🕛 12 PM – 5 PM 📍 Westside Detroit Area"
+      "description": "POWER IN THE PRECINCT! The Michigan Precinct Delegates & Grassroots Assembly Featuring: YES WE CAN!! MEGA DETROIT CANVASS!! MORE TRAINED LEADERS • STRONGER PRECINCTS • A GREATER MICHIGAN! We are bringing together precinct delegates, grassroots organizers, elected officials, community leaders, and organizations from across Michigan for a powerful day of training, organizing, networking, civic engagement, and ACTION! This year, we are taking grassroots power to another level with the YES WE CAN!! MEGA DETROIT CANVASS! Inspired by President Barack Obama's beginnings as a grassroots community organizer, we are reminding everyone that REAL POWER STARTS WITH THE PEOPLE! Participants will have the opportunity to strengthen their organizing skills, connect with grassroots leaders from across Michigan, hear from special guests, and participate in a major Detroit canvassing effort focused on voter education, civic engagement, and increasing voter participation. SPECIAL GUESTS INCLUDE: • Abdul El-Sayed • Adam Brody, actor from Nobody Wants This and The O.C. • Statewide candidates • MORE SURPRISE GUESTS TO BE ANNOUNCED! Whether you are a newly elected precinct delegate, a seasoned organizer, or someone ready to get involved, THIS EVENT IS FOR YOU! Saturday, October 24, 2026 10:00 AM – 2:00 PM Westside Detroit – WCCCD Northwest Campus Area Exact location provided upon RSVP. RSVP REQUIRED: https://forms.gle/5Eiz5FhxgzGJmN397 ALL 83 MICHIGAN COUNTIES ARE INVITED! Come ready to learn. Come ready to organize. Come ready to take action. WE HAVE NO OFF SEASON! YES WE CAN!!"
+    },
+    {
+      "id": "9c42a1ff4356ba86",
+      "title": "YES, WE CAN! MEGA DETROIT CANVASS!",
+      "county": "Wayne",
+      "date": "2026-10-24",
+      "time": "10:00 AM",
+      "end_time": "2:00 PM",
+      "location": "Detroit | MI | 48219",
+      "city": "Detroit",
+      "host": "Michigan Democratic Party",
+      "type": "Canvassing",
+      "category": "canvassing",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/yes-we-can-mega-detroit-canvass",
+      "description": "Before Barack Obama became President of the United States, he was a grassroots community organizer! Think about that for a moment. Before the White House, before the national stage, before making history, HE WAS AN ORGANIZER! He understood something that we as precinct delegates and grassroots leaders must never forget: REAL POWER STARTS WITH THE PEOPLE! AND THAT IS WHY WE ARE CALLING ALL MICHIGAN PRECINCT DELEGATES & GRASSROOTS LEADERS TO DETROIT! POWER IN THE PRECINCT! The Michigan Precinct Delegates & Grassroots Assembly On Saturday, October 24, 2026, we are bringing precinct delegates, grassroots organizers, community leaders, and organizations from across the ENTIRE STATE OF MICHIGAN together! We are excited to announce that Abdul El-Sayed and actor Adam Brody, known for the hit shows Nobody Wants This and The O.C., are scheduled to join us! REGISTER TODAY: https://forms.gle/5Eiz5FhxgzGJmN397 Whether you are a newly elected precinct delegate or have been organizing for decades, THIS IS YOUR ASSEMBLY! And this year, we are taking our organizing directly into the streets of Detroit! YES WE CAN!! MEGA CANVASS!! As part of our statewide assembly, we will host a MEGA DETROIT CANVASS, bringing together grassroots leaders and volunteers to increase voter participation and connect with voters in important areas across Detroit. We will also welcome statewide candidates and additional surprise guests who will be announced soon! EVENT DETAILS Saturday, October 24, 2026 10:00 AM – 2:00 PM Westside Detroit –RSVP REQUIRED TO RECEIVE LOCATION DETAILS! REGISTER TODAY: https://forms.gle/5Eiz5FhxgzGJmN397 Whether you can bring 5 volunteers, 25 volunteers, or an entire organization, YOUR PARTICIPATION MATTERS! You do not have to live in Detroit to help strengthen grassroots organizing in Detroit. We want precinct delegates to meet one another, build relationships across county lines, share strategies, and demonstrate what organizing together can accomplish. ORGANIZATIONS COMING TOGETHER! We are excited to have organizations and grassroots partners joining this effort, including: • Rank MI Vote — Primary Sponsor • Michigan United • Reproductive Freedom for All • MDP LGBT & Allies Caucus • Black Women for Abdul • Our Own Backbone • African American Leadership Institute • Metropolitan National Black Congress of Black Women • NW West Detroit Democratic Club • MDP Grassroots Caucus • Swing Left • United Precinct Delegates • AND MORE! CALLING ALL GRASSROOTS ORGANIZATIONS!"
     },
     {
       "id": "93add889c1149659",
