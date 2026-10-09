@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-08T14:32:00.669474-04:00",
+  "last_updated": "2026-10-08T20:40:49.620196-04:00",
   "timezone": "America/Detroit",
   "event_count": 21,
   "counties_tracked": [
@@ -17,12 +17,12 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "volunteer": 6,
+    "volunteer": 5,
     "demonstration": 5,
     "community": 1,
+    "civic": 2,
     "party-meeting": 4,
     "government-meeting": 1,
-    "civic": 1,
     "fundraising": 1,
     "voter-outreach": 1,
     "canvassing": 1
@@ -102,23 +102,6 @@
     }
   ],
   "events": [
-    {
-      "id": "167a070a51d6a828",
-      "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
-      "county": "Washtenaw",
-      "date": "2026-10-08",
-      "time": "18:00",
-      "end_time": "20:30",
-      "location": "Virtual Event",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/volunteer-activation-phone-bank-mi-dems-voter-protection-team/2026-10-08/",
-      "description": "Virtual Phone Bank Time Tuesdays, Thursdays and Saturdays 6pm EDT + 1 more time Location Virtual event Join from anywhere About this event The fight to protect democracy is on, […]"
-    },
     {
       "id": "85648adb343c4713",
       "title": "Post Card Friday",
@@ -220,6 +203,23 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-10/",
       "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
+    },
+    {
+      "id": "afbf5bfe0c16776d",
+      "title": "A2 Corner Solidarity Saturdays",
+      "county": "Washtenaw",
+      "date": "2026-10-10",
+      "time": "11:00",
+      "end_time": "12:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/a2-plymouth-green-resistance-ann-arbor/2026-10-10/",
+      "description": "Time Saturdays 11am – 12:30pm EDT Location Westgate Shopping Center corner Jackson Ave and Maple intersection Ann Arbor, MI 48103 About this event We show up at the Westgate corner […]"
     },
     {
       "id": "e811953e4f17c2c4",
