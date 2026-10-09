@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-08T20:40:49.620196-04:00",
+  "last_updated": "2026-10-09T02:35:03.753592-04:00",
   "timezone": "America/Detroit",
   "event_count": 21,
   "counties_tracked": [
@@ -19,13 +19,13 @@
   "category_counts": {
     "volunteer": 5,
     "demonstration": 5,
+    "canvassing": 2,
     "community": 1,
-    "civic": 2,
     "party-meeting": 4,
     "government-meeting": 1,
+    "civic": 1,
     "fundraising": 1,
-    "voter-outreach": 1,
-    "canvassing": 1
+    "voter-outreach": 1
   },
   "sources": [
     {
@@ -188,6 +188,23 @@
       "description": "Join the Oakland County Democratic Party for Postcard Fridays! We’ll come together to write postcards to Michigan voters, help get out the vote, and have some fun while we do it. Food, games, postcard supplies, and good company will be provided. Come for the entire afternoon or stop by when you can!"
     },
     {
+      "id": "a71f74787272ee34",
+      "title": "TEAM BERNIE: Canvass for Abdul at Ann Arbor Farmers Market",
+      "county": "Washtenaw",
+      "date": "2026-10-10",
+      "time": "09:00",
+      "end_time": "12:00",
+      "location": "Ann Arbor Farmers Market ​ 315 Detroit Street, Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Canvassing",
+      "category": "canvassing",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/team-bernie-canvass-for-abdul-at-ann-arbor-farmers-market/2026-10-10/",
+      "description": "Community Event · Hosted by Organizing to Fight Oligarchy / We The Fighters Time Wednesdays and Saturdays 9am – 12pm EDT Location Ann Arbor Farmers Market 315 Detroit St Ann […]"
+    },
+    {
       "id": "dbeda24059cdfa80",
       "title": "WCDP at the Ann Arbor Farmer’s Market 2026",
       "county": "Washtenaw",
@@ -203,23 +220,6 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-10/",
       "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
-    },
-    {
-      "id": "afbf5bfe0c16776d",
-      "title": "A2 Corner Solidarity Saturdays",
-      "county": "Washtenaw",
-      "date": "2026-10-10",
-      "time": "11:00",
-      "end_time": "12:30",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/a2-plymouth-green-resistance-ann-arbor/2026-10-10/",
-      "description": "Time Saturdays 11am – 12:30pm EDT Location Westgate Shopping Center corner Jackson Ave and Maple intersection Ann Arbor, MI 48103 About this event We show up at the Westgate corner […]"
     },
     {
       "id": "e811953e4f17c2c4",
