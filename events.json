@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-09T14:30:20.905616-04:00",
+  "last_updated": "2026-10-09T20:38:57.927732-04:00",
   "timezone": "America/Detroit",
-  "event_count": 21,
+  "event_count": 20,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,11 +13,11 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 4,
-    "Oakland": 11,
+    "Oakland": 10,
     "Washtenaw": 5
   },
   "category_counts": {
-    "volunteer": 5,
+    "volunteer": 4,
     "demonstration": 5,
     "canvassing": 2,
     "community": 1,
@@ -169,23 +169,6 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-10-09/",
       "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
-    },
-    {
-      "id": "058f562f7f9de44f",
-      "title": "OCDP Post Card Writing Party",
-      "county": "Oakland",
-      "date": "2026-10-09",
-      "time": "1:00 PM",
-      "end_time": "4:00 PM",
-      "location": "Southfield | MI | 48076",
-      "city": "Southfield",
-      "host": "Michigan Democratic Party",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/ocdp-post-card-writing-party-2",
-      "description": "Join the Oakland County Democratic Party for Postcard Fridays! We’ll come together to write postcards to Michigan voters, help get out the vote, and have some fun while we do it. Food, games, postcard supplies, and good company will be provided. Come for the entire afternoon or stop by when you can!"
     },
     {
       "id": "a71f74787272ee34",
