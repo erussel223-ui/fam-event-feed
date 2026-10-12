@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-11T20:40:31.749789-04:00",
+  "last_updated": "2026-10-12T02:38:58.640444-04:00",
   "timezone": "America/Detroit",
-  "event_count": 15,
+  "event_count": 13,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,17 +14,17 @@
     "Ingham": 1,
     "Wayne": 3,
     "Oakland": 9,
-    "Washtenaw": 2
+    "Washtenaw": 0
   },
   "category_counts": {
-    "canvassing": 2,
-    "volunteer": 3,
     "party-meeting": 4,
     "government-meeting": 1,
     "civic": 1,
     "fundraising": 1,
     "demonstration": 2,
-    "voter-outreach": 1
+    "volunteer": 2,
+    "voter-outreach": 1,
+    "canvassing": 1
   },
   "sources": [
     {
@@ -101,40 +101,6 @@
     }
   ],
   "events": [
-    {
-      "id": "e3de1245138d6a61",
-      "title": "Get Out the Vote for Abdul, Jocelyn & Michigan Democrats in Ypsilanti",
-      "county": "Washtenaw",
-      "date": "2026-10-11",
-      "time": "09:00",
-      "end_time": "21:00",
-      "location": "300 West Michigan Ave 300 West Michigan Ave, Ypsilanti",
-      "city": "Ypsilanti",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/get-out-the-vote-for-abdul-jocelyn-michigan-democrats-in-ypsilanti/2026-10-11/",
-      "description": "Canvass · Hosted by Team Michigan Time Sundays, Mondays, Tuesdays and Saturdays Multiple times available Location Ypsilanti 300 W Michigan Ave Ypsilanti, MI 48197 About this event Join One Team […]"
-    },
-    {
-      "id": "eef04184ebd50872",
-      "title": "Postcards for Patriots",
-      "county": "Washtenaw",
-      "date": "2026-10-11",
-      "time": "10:30",
-      "end_time": "12:00",
-      "location": "Ann Arbor District Library - Pittsfield Branch 2359 Oak Valley Dr., Ann Arbor, MI, United States",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots-2/2026-10-11/",
-      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
-    },
     {
       "id": "e7bc1098a746a034",
       "title": "OCDP Executive Committee Meeting",
