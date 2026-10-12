@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-11T14:30:13.380732-04:00",
+  "last_updated": "2026-10-11T20:40:31.749789-04:00",
   "timezone": "America/Detroit",
-  "event_count": 16,
+  "event_count": 15,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -12,18 +12,18 @@
   ],
   "county_counts": {
     "Ingham": 1,
-    "Wayne": 4,
+    "Wayne": 3,
     "Oakland": 9,
     "Washtenaw": 2
   },
   "category_counts": {
     "canvassing": 2,
     "volunteer": 3,
-    "demonstration": 3,
     "party-meeting": 4,
     "government-meeting": 1,
     "civic": 1,
     "fundraising": 1,
+    "demonstration": 2,
     "voter-outreach": 1
   },
   "sources": [
@@ -134,23 +134,6 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots-2/2026-10-11/",
       "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
-    },
-    {
-      "id": "e811953e4f17c2c4",
-      "title": "Michigan Democratic Women's Caucus Wayne Co. GOTV Rally",
-      "county": "Wayne",
-      "date": "2026-10-11",
-      "time": "3:30 PM",
-      "end_time": "6:30 PM",
-      "location": "Detroit | MI | 48202",
-      "city": "Detroit",
-      "host": "Michigan Democratic Party",
-      "type": "Public Demonstration",
-      "category": "demonstration",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/michigan-democratic-women-s-caucus-wayne-co-gotv-rally",
-      "description": "Join us for the MDWC's Wayne County Get Out the Vote Rally - bringing together special guests, music, and community leaders to motivate & inspire. Special guests U.S. Senator Mark Kelly and former Congresswoman Gabby Giffords will be part of the program, alongside music and other activities throughout the afternoon. Come connect with fellow community members, hear from our special guests, and get energized for the final stretch of election season. Light food and refreshments will be provided. Contact midemwomenscaucus@gmail.com with any questions."
     },
     {
       "id": "e7bc1098a746a034",
