@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-16T07:18:48.673775-04:00",
+  "last_updated": "2026-10-16T12:35:50.096018-04:00",
   "timezone": "America/Detroit",
-  "event_count": 14,
+  "event_count": 16,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,11 +14,12 @@
     "Ingham": 1,
     "Wayne": 3,
     "Oakland": 7,
-    "Washtenaw": 3
+    "Washtenaw": 5
   },
   "category_counts": {
     "demonstration": 4,
-    "volunteer": 3,
+    "volunteer": 4,
+    "community": 1,
     "fundraising": 1,
     "party-meeting": 3,
     "voter-outreach": 1,
@@ -150,6 +151,40 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-10-16/",
       "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
+    },
+    {
+      "id": "db2ca2ff9da28a87",
+      "title": "Flyering for Yes on 2! Money out of Politics @ University of Michigan- Ann Arbor",
+      "county": "Washtenaw",
+      "date": "2026-10-16",
+      "time": "18:45",
+      "end_time": "20:00",
+      "location": "University of Michigan Diag 913 S. University Ave, Ann Arbor, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/flyering-for-yes-on-2-money-out-of-politics-university-of-michigan-ann-arbor/2026-10-16/",
+      "description": "Come volunteer to get the word out about voting YES on Proposal 2 to get corporate cash out of Michigan politics. We have an amazing opportunity to ban monopoly utilities […]"
+    },
+    {
+      "id": "77aad875deead8b1",
+      "title": "WCDP at the Ann Arbor Farmer’s Market 2026",
+      "county": "Washtenaw",
+      "date": "2026-10-17",
+      "time": "09:00",
+      "end_time": "12:00",
+      "location": "Ann Arbor Farmers Market ​ 315 Detroit Street, Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Community Event",
+      "category": "community",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-17/",
+      "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
     },
     {
       "id": "4955a35e6acf990b",
