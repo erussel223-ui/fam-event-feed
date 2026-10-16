@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-15T17:20:16.252445-04:00",
+  "last_updated": "2026-10-16T00:27:55.121191-04:00",
   "timezone": "America/Detroit",
-  "event_count": 17,
+  "event_count": 14,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,13 +13,12 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 3,
-    "Oakland": 8,
-    "Washtenaw": 5
+    "Oakland": 7,
+    "Washtenaw": 3
   },
   "category_counts": {
-    "demonstration": 5,
-    "volunteer": 4,
-    "civic": 1,
+    "demonstration": 4,
+    "volunteer": 3,
     "fundraising": 1,
     "party-meeting": 3,
     "voter-outreach": 1,
@@ -101,57 +100,6 @@
     }
   ],
   "events": [
-    {
-      "id": "87cf2481f301f369",
-      "title": "Honk for Democracy Street Corner Protest – Ypsilanti",
-      "county": "Washtenaw",
-      "date": "2026-10-15",
-      "time": "16:30",
-      "end_time": "17:30",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Demonstration",
-      "category": "demonstration",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/honk-for-democracy-street-corner-protest-ypsilanti/",
-      "description": "Thu Oct 15th 4:30pm - 5:30pm honk for democracythursdaysstreet cornerprotestYpsilantiWashtenaw County West Cross Street & North Huron Street, W Cross St & N Huron St, Ypsilanti, MI 48197, USA Our small […]"
-    },
-    {
-      "id": "5d63f9e69974f8c3",
-      "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
-      "county": "Washtenaw",
-      "date": "2026-10-15",
-      "time": "18:00",
-      "end_time": "20:30",
-      "location": "Virtual Event",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/volunteer-activation-phone-bank-mi-dems-voter-protection-team/2026-10-15/",
-      "description": "Virtual Phone Bank Time Tuesdays, Thursdays and Saturdays 6pm EDT + 1 more time Location Virtual event Join from anywhere About this event The fight to protect democracy is on, […]"
-    },
-    {
-      "id": "659d6b9f0c1d826c",
-      "title": "October Meeting",
-      "county": "Oakland",
-      "date": "2026-10-15",
-      "time": "6:30 PM",
-      "end_time": "8:00 PM",
-      "location": "Huntington Woods Library and Cultural Center | 26415 Scotia Rd, Huntington Woods, MI 48070, USA | Huntington Woods | MI | 48070",
-      "city": "Huntington Woods",
-      "host": "Michigan Democratic Party",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/october-meeting-6",
-      "description": "Join us for our October Meeting!"
-    },
     {
       "id": "54563ffb38c4338d",
       "title": "Dexter Friday Protest – Dexter",
