@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-17T11:30:40.485718-04:00",
+  "last_updated": "2026-10-17T16:34:01.263129-04:00",
   "timezone": "America/Detroit",
-  "event_count": 16,
+  "event_count": 17,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,7 +13,7 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 3,
-    "Oakland": 7,
+    "Oakland": 8,
     "Washtenaw": 5
   },
   "category_counts": {
@@ -21,7 +21,7 @@
     "community": 1,
     "volunteer": 3,
     "fundraising": 1,
-    "party-meeting": 3,
+    "party-meeting": 4,
     "demonstration": 2,
     "voter-outreach": 1,
     "government-meeting": 1
@@ -202,6 +202,23 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/65th-annual-phil-hart-dinner",
       "description": ""
+    },
+    {
+      "id": "314f751ee3a1b1cb",
+      "title": "Oct 20",
+      "county": "Oakland",
+      "date": "2026-10-20",
+      "time": "6:30 PM",
+      "end_time": "8:00 PM",
+      "location": "Ironworkers Local 25 | 25150 Trans X Rd, Novi, MI 48375, USA | Novi | MI | 48375",
+      "city": "Novi",
+      "host": "Michigan Democratic Party",
+      "type": "Party Meeting",
+      "category": "party-meeting",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/oct-20",
+      "description": "Join us for our monthly membership meeting on Tuesday, October 20 at 6:30 pm – doors open at 6 pm. Presentation topic is Flock cameras. The Endorsement Committee will present their recommendations for endorsing Jacqueline Kelly for Oakland County Community College. We meet at Ironworkers Local 25 (25150 Trans X Rd, Novi, MI 48375). We will be serving cider & donuts."
     },
     {
       "id": "b63b7b025110a33a",
