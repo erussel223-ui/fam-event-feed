@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-19T09:08:00.784543-04:00",
+  "last_updated": "2026-10-19T18:19:36.215570-04:00",
   "timezone": "America/Detroit",
-  "event_count": 11,
+  "event_count": 10,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,15 +13,15 @@
   "county_counts": {
     "Ingham": 1,
     "Wayne": 3,
-    "Oakland": 7,
+    "Oakland": 6,
     "Washtenaw": 0
   },
   "category_counts": {
     "party-meeting": 4,
     "demonstration": 2,
-    "volunteer": 2,
     "voter-outreach": 1,
     "canvassing": 1,
+    "civic": 1,
     "government-meeting": 1
   },
   "sources": [
@@ -151,23 +151,6 @@
       "description": "Join us for the MDWC's Oakland County Get Out the Vote Rally - bringing together guest speakers and community leaders to motivate & inspire. Come connect with fellow community members, hear from our special guests, and get energized for the final stretch of election season. Contact midemwomenscaucus@gmail.com with any questions."
     },
     {
-      "id": "5d708326a6112b0b",
-      "title": "Post Card Friday",
-      "county": "Oakland",
-      "date": "2026-10-23",
-      "time": "13:00",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Oakland County Democratic Party",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Oakland County Democratic Party",
-      "source_url": "https://www.oaklandcountydemocrats.org/events",
-      "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday-2",
-      "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 23 & 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
-    },
-    {
       "id": "d6962481ead77aa1",
       "title": "Power in The Precinct; The MI Precinct Delegate & Grassroots Assembly!!",
       "county": "Wayne",
@@ -202,6 +185,23 @@
       "description": "Before Barack Obama became President of the United States, he was a grassroots community organizer! Think about that for a moment. Before the White House, before the national stage, before making history, HE WAS AN ORGANIZER! He understood something that we as precinct delegates and grassroots leaders must never forget: REAL POWER STARTS WITH THE PEOPLE! AND THAT IS WHY WE ARE CALLING ALL MICHIGAN PRECINCT DELEGATES & GRASSROOTS LEADERS TO DETROIT! POWER IN THE PRECINCT! The Michigan Precinct Delegates & Grassroots Assembly On Saturday, October 24, 2026, we are bringing precinct delegates, grassroots organizers, community leaders, and organizations from across the ENTIRE STATE OF MICHIGAN together! We are excited to announce that Abdul El-Sayed and actor Adam Brody, known for the hit shows Nobody Wants This and The O.C., are scheduled to join us! REGISTER TODAY: https://forms.gle/5Eiz5FhxgzGJmN397 Whether you are a newly elected precinct delegate or have been organizing for decades, THIS IS YOUR ASSEMBLY! And this year, we are taking our organizing directly into the streets of Detroit! YES WE CAN!! MEGA CANVASS!! As part of our statewide assembly, we will host a MEGA DETROIT CANVASS, bringing together grassroots leaders and volunteers to increase voter participation and connect with voters in important areas across Detroit. We will also welcome statewide candidates and additional surprise guests who will be announced soon! EVENT DETAILS Saturday, October 24, 2026 10:00 AM – 2:00 PM Westside Detroit –RSVP REQUIRED TO RECEIVE LOCATION DETAILS! REGISTER TODAY: https://forms.gle/5Eiz5FhxgzGJmN397 Whether you can bring 5 volunteers, 25 volunteers, or an entire organization, YOUR PARTICIPATION MATTERS! You do not have to live in Detroit to help strengthen grassroots organizing in Detroit. We want precinct delegates to meet one another, build relationships across county lines, share strategies, and demonstrate what organizing together can accomplish. ORGANIZATIONS COMING TOGETHER! We are excited to have organizations and grassroots partners joining this effort, including: • Rank MI Vote — Primary Sponsor • Michigan United • Reproductive Freedom for All • MDP LGBT & Allies Caucus • Black Women for Abdul • Our Own Backbone • African American Leadership Institute • Metropolitan National Black Congress of Black Women • NW West Detroit Democratic Club • MDP Grassroots Caucus • Swing Left • United Precinct Delegates • AND MORE! CALLING ALL GRASSROOTS ORGANIZATIONS!"
     },
     {
+      "id": "38c2c33dc27a0073",
+      "title": "Membership Day at the Orchard",
+      "county": "Oakland",
+      "date": "2026-10-25",
+      "time": "13:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/membership-day-at-the-orchard",
+      "description": "Let’s spend a fall afternoon together! Join the Oakland County Democratic Party this Sunday, October 25, for Membership Day at the Orchard . Bring your family, invite a friend, and enjoy an afternoon with fellow Democrats at Diehl’s Orchard & Cider Mill. Sunday, October 25, 2026 | 1–3 PM Diehl’s Orchard & Cider Mill 1479 Ranch Rd., Holly, MI 48442 Enjoy a corn maze, hay rides, and pumpkin decorating while connecting with the OCDP community. Whether you’re a longtime member or interested in getting involved, we’d love to see you! Every ticket includes lunch, donuts, cider, and a hay-ride voucher. OCDP member adults: $25 Nonmember adults: $30 Children 12 and younger: $10 Pumpkins are sold separately: $3 for small pumpkins or $10 for u-pick. Decorating tools will be provided. GET YOUR TICKETS Want to help support the afternoon? Become a Donut Sponsor for $50 or a Cider Sponsor for $100 through the ticket link. Questions? Contact membership@ocdp.org or call (248) 972-6400."
+    },
+    {
       "id": "93add889c1149659",
       "title": "MDP Coalition Rally",
       "county": "Wayne",
@@ -234,23 +234,6 @@
       "source_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
       "event_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
       "description": "Upcoming Democratic Caucus meeting date published by Ingham County."
-    },
-    {
-      "id": "60464fba169d55ef",
-      "title": "Post Card Friday",
-      "county": "Oakland",
-      "date": "2026-10-30",
-      "time": "13:00",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Oakland County Democratic Party",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Oakland County Democratic Party",
-      "source_url": "https://www.oaklandcountydemocrats.org/events",
-      "event_url": "https://www.oaklandcountydemocrats.org/events/post-card-friday-3",
-      "description": "POSTCARDS ARE BACK THIS OCTOBER! 💌 We’re keeping the momentum going! Join the Oakland County Democratic Party at HQ for our October Postcard Writing Parties as we write, connect, and reach Michigan voters ahead of Election Day. 📅 October 30 ⏰ 1:00–4:00 PM 📍 OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Come for an hour or stay for the afternoon! We’ll have postcards, games, food, music, and good company while we get to work. No experience necessary — just bring yourself and a friend. 💙 🗳️ Every postcard is another opportunity to connect with a Michigan voter. Let’s write. Let’s connect. Let’s get out the vote!"
     },
     {
       "id": "6654fc0960004062",
