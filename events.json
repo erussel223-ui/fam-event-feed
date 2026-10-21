@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-21T07:44:46.992410-04:00",
+  "last_updated": "2026-10-21T13:09:25.222942-04:00",
   "timezone": "America/Detroit",
-  "event_count": 14,
+  "event_count": 13,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -11,19 +11,18 @@
     "Washtenaw"
   ],
   "county_counts": {
-    "Ingham": 1,
+    "Ingham": 0,
     "Wayne": 3,
     "Oakland": 5,
     "Washtenaw": 5
   },
   "category_counts": {
-    "canvassing": 2,
     "voter-outreach": 2,
-    "volunteer": 1,
+    "volunteer": 2,
     "civic": 3,
     "party-meeting": 3,
     "demonstration": 2,
-    "government-meeting": 1
+    "canvassing": 1
   },
   "sources": [
     {
@@ -100,23 +99,6 @@
     }
   ],
   "events": [
-    {
-      "id": "bb3c9c61cd8779ed",
-      "title": "TEAM BERNIE: Canvass for Abdul at Ann Arbor Farmers Market",
-      "county": "Washtenaw",
-      "date": "2026-10-21",
-      "time": "09:00",
-      "end_time": "12:00",
-      "location": "Ann Arbor Farmers Market ​ 315 Detroit Street, Ann Arbor, MI, United States",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/team-bernie-canvass-for-abdul-at-ann-arbor-farmers-market/2026-10-21/",
-      "description": "Community Event · Hosted by Organizing to Fight Oligarchy / We The Fighters Time Wednesdays and Saturdays 9am – 12pm EDT Location Ann Arbor Farmers Market 315 Detroit St Ann […]"
-    },
     {
       "id": "09eece7dd2ae6a1b",
       "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
@@ -203,6 +185,23 @@
       "description": "Join Michigan LCV for a phonebank in support of our climate champions running for State Legislature! We are working to support our environmental champion candidates by making calls into the […]"
     },
     {
+      "id": "fde5e6377f05bbcd",
+      "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
+      "county": "Washtenaw",
+      "date": "2026-10-22",
+      "time": "18:00",
+      "end_time": "20:30",
+      "location": "Virtual Event",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/volunteer-activation-phone-bank-mi-dems-voter-protection-team/2026-10-22/",
+      "description": "Virtual Phone Bank Time Tuesdays, Thursdays and Saturdays 6pm EDT + 1 more time Location Virtual event Join from anywhere About this event The fight to protect democracy is on, […]"
+    },
+    {
       "id": "2454dd940078181e",
       "title": "Michigan Democratic Women's Caucus Oakland Co. Rally",
       "county": "Oakland",
@@ -286,23 +285,6 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/mdp-coalition-rally",
       "description": "The goal of this election rally is to bring together a strong coalition of communities and organizations to celebrate our strength, unity, and shared commitment as we move toward the November election. We will build momentum at the rally and carry that momentum all the way to the victory celebration in November. Invited guests include: the Governor, candidates for Governor, Lieutenant Governor, Secretary of State, Attorney General, U.S. Senate and Congressional candidates, candidates for the Michigan Supreme Court, State House and State Senate candidates, candidates for the Michigan State Board of Education and University Boards, as well as Michigan Democratic Party, Democratic Club, Caucus, and community leaders. For information, contact: Dr. Naz Hassan 2nd Vice Chair, MDP 734-262-1323"
-    },
-    {
-      "id": "501567b42652b654",
-      "title": "Ingham County Democratic Caucus Meeting",
-      "county": "Ingham",
-      "date": "2026-10-27",
-      "time": "",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Ingham County Democratic Caucus",
-      "type": "Government Meeting",
-      "category": "government-meeting",
-      "source_name": "Ingham County Democratic Caucus",
-      "source_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
-      "event_url": "https://docs.ingham.org/departments_and_officials/county_clerk/democratic_caucus.php",
-      "description": "Upcoming Democratic Caucus meeting date published by Ingham County."
     },
     {
       "id": "6654fc0960004062",
