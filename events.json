@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-22T07:47:26.952159-04:00",
+  "last_updated": "2026-10-22T13:07:50.410473-04:00",
   "timezone": "America/Detroit",
-  "event_count": 7,
+  "event_count": 11,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,14 +13,15 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 3,
-    "Oakland": 4,
-    "Washtenaw": 0
+    "Oakland": 3,
+    "Washtenaw": 5
   },
   "category_counts": {
-    "demonstration": 2,
+    "civic": 2,
+    "volunteer": 2,
+    "demonstration": 3,
     "voter-outreach": 1,
     "canvassing": 1,
-    "civic": 1,
     "party-meeting": 2
   },
   "sources": [
@@ -99,21 +100,89 @@
   ],
   "events": [
     {
-      "id": "2454dd940078181e",
-      "title": "Michigan Democratic Women's Caucus Oakland Co. Rally",
-      "county": "Oakland",
+      "id": "d537fec16d288a16",
+      "title": "Take Back The House! Fightback Phonebank – In Person AND Virtual",
+      "county": "Washtenaw",
       "date": "2026-10-22",
-      "time": "8:00 AM",
-      "end_time": "",
-      "location": "Welcome Missionary Baptist Church | 143 Oneida St, Pontiac, MI 48341, USA | Pontiac | MI | 48341",
-      "city": "Pontiac",
-      "host": "Michigan Democratic Party",
+      "time": "18:00",
+      "end_time": "20:00",
+      "location": "2725 Packard Ave. 2725 Packard Ave., Ann Arbor, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/take-back-the-house-fightback-phonebank-in-person-and-virtual/",
+      "description": "Join Michigan LCV for a phonebank in support of our climate champions running for State Legislature! We are working to support our environmental champion candidates by making calls into the […]"
+    },
+    {
+      "id": "fde5e6377f05bbcd",
+      "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
+      "county": "Washtenaw",
+      "date": "2026-10-22",
+      "time": "18:00",
+      "end_time": "20:30",
+      "location": "Virtual Event",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/volunteer-activation-phone-bank-mi-dems-voter-protection-team/2026-10-22/",
+      "description": "Virtual Phone Bank Time Tuesdays, Thursdays and Saturdays 6pm EDT + 1 more time Location Virtual event Join from anywhere About this event The fight to protect democracy is on, […]"
+    },
+    {
+      "id": "74a75bff71c535a3",
+      "title": "Dexter Friday Protest – Dexter",
+      "county": "Washtenaw",
+      "date": "2026-10-23",
+      "time": "16:00",
+      "end_time": "17:00",
+      "location": "Dexter 8077 Main St, Dexer, MI, United States",
+      "city": "Dexter",
+      "host": "Washtenaw County Democratic Party Calendar",
       "type": "Public Demonstration",
       "category": "demonstration",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/michigan-democratic-women-s-caucus-oakland-co-rally",
-      "description": "Join us for the MDWC's Oakland County Get Out the Vote Rally - bringing together guest speakers and community leaders to motivate & inspire. Come connect with fellow community members, hear from our special guests, and get energized for the final stretch of election season. Contact midemwomenscaucus@gmail.com with any questions."
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/turn-i-into-we-protest-dexter-2-2/2026-10-23/",
+      "description": "“Turn ‘I’ into ‘We’” Protest - Dexter Organizer: Dexter Strong, Dexter Cares. Weekly protest in Dexter called “Turn ‘I’ into ‘We’” every Friday, 4:00 - 5:00. Location: Monument Park (where Baker Road […]"
+    },
+    {
+      "id": "59c50c9c1186f404",
+      "title": "A2Resist2025—Ann Arbor MI Weekly Stone School Bridge Protest",
+      "county": "Washtenaw",
+      "date": "2026-10-23",
+      "time": "16:30",
+      "end_time": "17:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/a2resist2025-ann-arbor-mi-weekly-stone-school-bridge-protest/2026-10-23/",
+      "description": "Visibility Event · Volunteer organized for Visibility Brigade Time Fridays 4:30pm EDT Location Stone School Rd Pedestrian Bridge Over I-94 Stone School Road & Birch Hollow Drive Ann Arbor, MI 48108 About […]"
+    },
+    {
+      "id": "a49a4dc00cac4c62",
+      "title": "Friday Protest – Ann Arbor",
+      "county": "Washtenaw",
+      "date": "2026-10-23",
+      "time": "17:30",
+      "end_time": "20:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-10-23/",
+      "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
     },
     {
       "id": "d6962481ead77aa1",
@@ -164,7 +233,7 @@
       "source_name": "Oakland County Democratic Party",
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/membership-day-at-the-orchard",
-      "description": "Let’s spend a fall afternoon together! Join the Oakland County Democratic Party this Sunday, October 25, for Membership Day at the Orchard . Bring your family, invite a friend, and enjoy an afternoon with fellow Democrats at Diehl’s Orchard & Cider Mill. Sunday, October 25, 2026 | 1–3 PM Diehl’s Orchard & Cider Mill 1479 Ranch Rd., Holly, MI 48442 Enjoy a corn maze, hay rides, and pumpkin decorating while connecting with the OCDP community. Whether you’re a longtime member or interested in getting involved, we’d love to see you! Every ticket includes lunch, donuts, cider, and a hay-ride voucher. OCDP member adults: $25 Nonmember adults: $30 Children 12 and younger: $10 Pumpkins are sold separately: $3 for small pumpkins or $10 for u-pick. Decorating tools will be provided. GET YOUR TICKETS Want to help support the afternoon? Become a Donut Sponsor for $50 or a Cider Sponsor for $100 through the ticket link. Questions? Contact membership@ocdp.org or call (248) 972-6400."
+      "description": ""
     },
     {
       "id": "93add889c1149659",
