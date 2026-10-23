@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-22T17:33:03.717687-04:00",
+  "last_updated": "2026-10-23T00:45:17.940367-04:00",
   "timezone": "America/Detroit",
   "event_count": 11,
   "counties_tracked": [
@@ -17,11 +17,12 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "civic": 2,
-    "volunteer": 2,
     "demonstration": 3,
+    "volunteer": 1,
+    "canvassing": 2,
+    "community": 1,
     "voter-outreach": 1,
-    "canvassing": 1,
+    "civic": 1,
     "party-meeting": 2
   },
   "sources": [
@@ -100,40 +101,6 @@
   ],
   "events": [
     {
-      "id": "d537fec16d288a16",
-      "title": "Take Back The House! Fightback Phonebank – In Person AND Virtual",
-      "county": "Washtenaw",
-      "date": "2026-10-22",
-      "time": "18:00",
-      "end_time": "20:00",
-      "location": "2725 Packard Ave. 2725 Packard Ave., Ann Arbor, United States",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/take-back-the-house-fightback-phonebank-in-person-and-virtual/",
-      "description": "Join Michigan LCV for a phonebank in support of our climate champions running for State Legislature! We are working to support our environmental champion candidates by making calls into the […]"
-    },
-    {
-      "id": "fde5e6377f05bbcd",
-      "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
-      "county": "Washtenaw",
-      "date": "2026-10-22",
-      "time": "18:00",
-      "end_time": "20:30",
-      "location": "Virtual Event",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/volunteer-activation-phone-bank-mi-dems-voter-protection-team/2026-10-22/",
-      "description": "Virtual Phone Bank Time Tuesdays, Thursdays and Saturdays 6pm EDT + 1 more time Location Virtual event Join from anywhere About this event The fight to protect democracy is on, […]"
-    },
-    {
       "id": "74a75bff71c535a3",
       "title": "Dexter Friday Protest – Dexter",
       "county": "Washtenaw",
@@ -183,6 +150,40 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-10-23/",
       "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
+    },
+    {
+      "id": "996a0c961057cd64",
+      "title": "Knock Doors for Abdul, Jocelyn & Michigan Democrats in North West Ann Arbor",
+      "county": "Washtenaw",
+      "date": "2026-10-24",
+      "time": "09:00",
+      "end_time": "21:00",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Canvassing",
+      "category": "canvassing",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/get-out-the-vote-for-abdul-jocelyn-michigan-democrats-in-north-west-ann-arbor-2/2026-10-24/",
+      "description": "Canvass · Hosted by Team Michigan Time Sundays, Mondays, Tuesdays and Saturdays Multiple times available Location North West Ann Arbor Ann Arbor, MI 48103 About this event Join One Team […]"
+    },
+    {
+      "id": "4f6c92d5c99d9e2e",
+      "title": "WCDP at the Ann Arbor Farmer’s Market 2026",
+      "county": "Washtenaw",
+      "date": "2026-10-24",
+      "time": "09:00",
+      "end_time": "12:00",
+      "location": "Ann Arbor Farmers Market ​ 315 Detroit Street, Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Community Event",
+      "category": "community",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-24/",
+      "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
     },
     {
       "id": "d6962481ead77aa1",
