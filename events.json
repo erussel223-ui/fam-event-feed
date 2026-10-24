@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-24T11:54:22.245558-04:00",
+  "last_updated": "2026-10-24T16:45:44.334527-04:00",
   "timezone": "America/Detroit",
-  "event_count": 8,
+  "event_count": 6,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -12,14 +12,13 @@
   ],
   "county_counts": {
     "Ingham": 0,
-    "Wayne": 3,
+    "Wayne": 1,
     "Oakland": 3,
     "Washtenaw": 2
   },
   "category_counts": {
-    "canvassing": 2,
+    "canvassing": 1,
     "community": 1,
-    "voter-outreach": 1,
     "civic": 1,
     "demonstration": 1,
     "party-meeting": 2
@@ -132,40 +131,6 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-24/",
       "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
-    },
-    {
-      "id": "d6962481ead77aa1",
-      "title": "Power in The Precinct; The MI Precinct Delegate & Grassroots Assembly!!",
-      "county": "Wayne",
-      "date": "2026-10-24",
-      "time": "10:00 AM",
-      "end_time": "2:00 PM",
-      "location": "Detroit | Detroit, MI, USA | MI",
-      "city": "Detroit",
-      "host": "Michigan Democratic Party",
-      "type": "Voter Outreach",
-      "category": "voter-outreach",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/power-in-the-precinct-the-mi-precinct-delegate-grassroots-assembly",
-      "description": "POWER IN THE PRECINCT! The Michigan Precinct Delegates & Grassroots Assembly Featuring: YES WE CAN!! MEGA DETROIT CANVASS!! MORE TRAINED LEADERS • STRONGER PRECINCTS • A GREATER MICHIGAN! We are bringing together precinct delegates, grassroots organizers, elected officials, community leaders, and organizations from across Michigan for a powerful day of training, organizing, networking, civic engagement, and ACTION! This year, we are taking grassroots power to another level with the YES WE CAN!! MEGA DETROIT CANVASS! Inspired by President Barack Obama's beginnings as a grassroots community organizer, we are reminding everyone that REAL POWER STARTS WITH THE PEOPLE! Participants will have the opportunity to strengthen their organizing skills, connect with grassroots leaders from across Michigan, hear from special guests, and participate in a major Detroit canvassing effort focused on voter education, civic engagement, and increasing voter participation. SPECIAL GUESTS INCLUDE: • Abdul El-Sayed • Adam Brody, actor from Nobody Wants This and The O.C. • Statewide candidates • MORE SURPRISE GUESTS TO BE ANNOUNCED! Whether you are a newly elected precinct delegate, a seasoned organizer, or someone ready to get involved, THIS EVENT IS FOR YOU! Saturday, October 24, 2026 10:00 AM – 2:00 PM Westside Detroit – WCCCD Northwest Campus Area Exact location provided upon RSVP. RSVP REQUIRED: https://forms.gle/5Eiz5FhxgzGJmN397 ALL 83 MICHIGAN COUNTIES ARE INVITED! Come ready to learn. Come ready to organize. Come ready to take action. WE HAVE NO OFF SEASON! YES WE CAN!!"
-    },
-    {
-      "id": "9c42a1ff4356ba86",
-      "title": "YES, WE CAN! MEGA DETROIT CANVASS!",
-      "county": "Wayne",
-      "date": "2026-10-24",
-      "time": "10:00 AM",
-      "end_time": "2:00 PM",
-      "location": "Detroit | MI | 48219",
-      "city": "Detroit",
-      "host": "Michigan Democratic Party",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/yes-we-can-mega-detroit-canvass",
-      "description": "Before Barack Obama became President of the United States, he was a grassroots community organizer! Think about that for a moment. Before the White House, before the national stage, before making history, HE WAS AN ORGANIZER! He understood something that we as precinct delegates and grassroots leaders must never forget: REAL POWER STARTS WITH THE PEOPLE! AND THAT IS WHY WE ARE CALLING ALL MICHIGAN PRECINCT DELEGATES & GRASSROOTS LEADERS TO DETROIT! POWER IN THE PRECINCT! The Michigan Precinct Delegates & Grassroots Assembly On Saturday, October 24, 2026, we are bringing precinct delegates, grassroots organizers, community leaders, and organizations from across the ENTIRE STATE OF MICHIGAN together! We are excited to announce that Abdul El-Sayed and actor Adam Brody, known for the hit shows Nobody Wants This and The O.C., are scheduled to join us! REGISTER TODAY: https://forms.gle/5Eiz5FhxgzGJmN397 Whether you are a newly elected precinct delegate or have been organizing for decades, THIS IS YOUR ASSEMBLY! And this year, we are taking our organizing directly into the streets of Detroit! YES WE CAN!! MEGA CANVASS!! As part of our statewide assembly, we will host a MEGA DETROIT CANVASS, bringing together grassroots leaders and volunteers to increase voter participation and connect with voters in important areas across Detroit. We will also welcome statewide candidates and additional surprise guests who will be announced soon! EVENT DETAILS Saturday, October 24, 2026 10:00 AM – 2:00 PM Westside Detroit –RSVP REQUIRED TO RECEIVE LOCATION DETAILS! REGISTER TODAY: https://forms.gle/5Eiz5FhxgzGJmN397 Whether you can bring 5 volunteers, 25 volunteers, or an entire organization, YOUR PARTICIPATION MATTERS! You do not have to live in Detroit to help strengthen grassroots organizing in Detroit. We want precinct delegates to meet one another, build relationships across county lines, share strategies, and demonstrate what organizing together can accomplish. ORGANIZATIONS COMING TOGETHER! We are excited to have organizations and grassroots partners joining this effort, including: • Rank MI Vote — Primary Sponsor • Michigan United • Reproductive Freedom for All • MDP LGBT & Allies Caucus • Black Women for Abdul • Our Own Backbone • African American Leadership Institute • Metropolitan National Black Congress of Black Women • NW West Detroit Democratic Club • MDP Grassroots Caucus • Swing Left • United Precinct Delegates • AND MORE! CALLING ALL GRASSROOTS ORGANIZATIONS!"
     },
     {
       "id": "38c2c33dc27a0073",
