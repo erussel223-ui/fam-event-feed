@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-24T16:45:44.334527-04:00",
+  "last_updated": "2026-10-25T00:37:04.447007-04:00",
   "timezone": "America/Detroit",
-  "event_count": 6,
+  "event_count": 4,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,11 +14,9 @@
     "Ingham": 0,
     "Wayne": 1,
     "Oakland": 3,
-    "Washtenaw": 2
+    "Washtenaw": 0
   },
   "category_counts": {
-    "canvassing": 1,
-    "community": 1,
     "civic": 1,
     "demonstration": 1,
     "party-meeting": 2
@@ -98,40 +96,6 @@
     }
   ],
   "events": [
-    {
-      "id": "996a0c961057cd64",
-      "title": "Knock Doors for Abdul, Jocelyn & Michigan Democrats in North West Ann Arbor",
-      "county": "Washtenaw",
-      "date": "2026-10-24",
-      "time": "09:00",
-      "end_time": "21:00",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/get-out-the-vote-for-abdul-jocelyn-michigan-democrats-in-north-west-ann-arbor-2/2026-10-24/",
-      "description": "Canvass · Hosted by Team Michigan Time Sundays, Mondays, Tuesdays and Saturdays Multiple times available Location North West Ann Arbor Ann Arbor, MI 48103 About this event Join One Team […]"
-    },
-    {
-      "id": "4f6c92d5c99d9e2e",
-      "title": "WCDP at the Ann Arbor Farmer’s Market 2026",
-      "county": "Washtenaw",
-      "date": "2026-10-24",
-      "time": "09:00",
-      "end_time": "12:00",
-      "location": "Ann Arbor Farmers Market ​ 315 Detroit Street, Ann Arbor, MI, United States",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Community Event",
-      "category": "community",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-24/",
-      "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
-    },
     {
       "id": "38c2c33dc27a0073",
       "title": "Membership Day at the Orchard",
