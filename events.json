@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-25T16:48:01.967378-04:00",
+  "last_updated": "2026-10-26T00:42:28.651803-04:00",
   "timezone": "America/Detroit",
-  "event_count": 4,
+  "event_count": 2,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -12,13 +12,11 @@
   ],
   "county_counts": {
     "Ingham": 0,
-    "Wayne": 1,
-    "Oakland": 3,
+    "Wayne": 0,
+    "Oakland": 2,
     "Washtenaw": 0
   },
   "category_counts": {
-    "civic": 1,
-    "demonstration": 1,
     "party-meeting": 2
   },
   "sources": [
@@ -96,40 +94,6 @@
     }
   ],
   "events": [
-    {
-      "id": "38c2c33dc27a0073",
-      "title": "Membership Day at the Orchard",
-      "county": "Oakland",
-      "date": "2026-10-25",
-      "time": "13:00",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Oakland County Democratic Party",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Oakland County Democratic Party",
-      "source_url": "https://www.oaklandcountydemocrats.org/events",
-      "event_url": "https://www.oaklandcountydemocrats.org/events/membership-day-at-the-orchard",
-      "description": ""
-    },
-    {
-      "id": "93add889c1149659",
-      "title": "MDP Coalition Rally",
-      "county": "Wayne",
-      "date": "2026-10-25",
-      "time": "6:30 PM",
-      "end_time": "9:30 PM",
-      "location": "Hamtramck | MI | 48212",
-      "city": "Hamtramck",
-      "host": "Michigan Democratic Party",
-      "type": "Public Demonstration",
-      "category": "demonstration",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/mdp-coalition-rally",
-      "description": "The goal of this election rally is to bring together a strong coalition of communities and organizations to celebrate our strength, unity, and shared commitment as we move toward the November election. We will build momentum at the rally and carry that momentum all the way to the victory celebration in November. Invited guests include: the Governor, candidates for Governor, Lieutenant Governor, Secretary of State, Attorney General, U.S. Senate and Congressional candidates, candidates for the Michigan Supreme Court, State House and State Senate candidates, candidates for the Michigan State Board of Education and University Boards, as well as Michigan Democratic Party, Democratic Club, Caucus, and community leaders. For information, contact: Dr. Naz Hassan 2nd Vice Chair, MDP 734-262-1323"
-    },
     {
       "id": "6654fc0960004062",
       "title": "November Membership Meeting",
