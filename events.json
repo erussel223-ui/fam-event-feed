@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-26T08:56:07.237011-04:00",
+  "last_updated": "2026-10-26T18:37:56.339680-04:00",
   "timezone": "America/Detroit",
-  "event_count": 2,
+  "event_count": 4,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,10 +13,12 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 2,
+    "Oakland": 4,
     "Washtenaw": 0
   },
   "category_counts": {
+    "civic": 1,
+    "volunteer": 1,
     "party-meeting": 2
   },
   "sources": [
@@ -94,6 +96,40 @@
     }
   ],
   "events": [
+    {
+      "id": "8da38bb731dda2a5",
+      "title": "Halloween GOTV with OCDP!",
+      "county": "Oakland",
+      "date": "2026-10-30",
+      "time": "12:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/halloween-gotv-with-ocdp",
+      "description": "🎃 GET OUT THE BOO! Halloween GOTV with OCDP! 👻 SIGN UP HERE: https://midems.controlshift.app/events/halloween-gotv-with-ocdp-1 No tricks, just treats, yard signs, and Election Day resources! Join the Oakland County Democratic Party on Friday, October 30, from 12 PM–4 PM for a Halloween-themed afternoon at the OCDP office! Here's what you can expect: 🍬 Halloween candy and treats 🪧 Yard signs available for pickup 🗳️ Election Day literature and voter resources ✅ Early voting information and assistance Costumes are welcome! Whether you're stopping by for a sweet treat, picking up a yard sign, or looking for voting information, we'd love to see you! 📅 Friday, October 30, 2026 ⏰ 12:00 PM–4:00 PM 📍 Oakland County Democratic Party Office 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Early voting continues through November 1, and Election Day is Tuesday, November 3. No tricks. Just treats! See you Friday! 🎃"
+    },
+    {
+      "id": "819145f2832607e7",
+      "title": "Halloween GOTV with OCDP!",
+      "county": "Oakland",
+      "date": "2026-10-30",
+      "time": "1:00 PM",
+      "end_time": "4:00 PM",
+      "location": "17100 W 12 Mile Rd | 17100 W 12 Mile Rd, Southfield, MI 48076, USA | Southfield | MI | 48076",
+      "city": "Southfield",
+      "host": "Michigan Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/halloween-gotv-with-ocdp-1",
+      "description": "🎃 GET OUT THE BOO! Halloween GOTV with OCDP! 👻 No tricks, just treats, yard signs, phone banking, and Election Day resources! Join the Oakland County Democratic Party on Friday, October 30, from 12 PM–4 PM for a Halloween-themed afternoon at the OCDP office! Here's what you can expect: 🍬 Halloween candy and treats 🪧 Yard signs available for pickup 🗳️ Election Day literature and voter resources ✅ Early voting information, Phone Banking, and assistance Costumes are welcome! Whether you're stopping by for a sweet treat, picking up a yard sign, or looking for voting information, we'd love to see you! 📅 Friday, October 30, 2026 ⏰ 12:00 PM–4:00 PM 📍 Oakland County Democratic Party Office 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Early voting continues through November 1, and Election Day is Tuesday, November 3. No tricks. Just treats! See you Friday! 🎃"
+    },
     {
       "id": "6654fc0960004062",
       "title": "November Membership Meeting",
