@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-26T18:37:56.339680-04:00",
+  "last_updated": "2026-10-27T00:59:28.440379-04:00",
   "timezone": "America/Detroit",
-  "event_count": 4,
+  "event_count": 9,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,11 +14,12 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 4,
-    "Washtenaw": 0
+    "Washtenaw": 5
   },
   "category_counts": {
+    "voter-outreach": 2,
+    "volunteer": 4,
     "civic": 1,
-    "volunteer": 1,
     "party-meeting": 2
   },
   "sources": [
@@ -96,6 +97,91 @@
     }
   ],
   "events": [
+    {
+      "id": "a7441eee69477e7d",
+      "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
+      "county": "Washtenaw",
+      "date": "2026-10-27",
+      "time": "11:00",
+      "end_time": "13:30",
+      "location": "Eastern Michigan University - Student Center 900 Oakwood St, Ypsilanti, MI, United States",
+      "city": "Ypsilanti",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Voter Outreach",
+      "category": "voter-outreach",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/washtenaw-democratic-party-emu-voter-outreach-fall-2026/2026-10-27/",
+      "description": "WCDP Spend a couple of hours walking up to EMU students and talking with each of them about voting and our Democratic slate of candidates. Ask questions to learn where […]"
+    },
+    {
+      "id": "2384d5f5627e96cd",
+      "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
+      "county": "Washtenaw",
+      "date": "2026-10-27",
+      "time": "18:00",
+      "end_time": "20:30",
+      "location": "Virtual Event",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/volunteer-activation-phone-bank-mi-dems-voter-protection-team/2026-10-27/",
+      "description": "Virtual Phone Bank Time Tuesdays, Thursdays and Saturdays 6pm EDT + 1 more time Location Virtual event Join from anywhere About this event The fight to protect democracy is on, […]"
+    },
+    {
+      "id": "191b6552f8932cbb",
+      "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
+      "county": "Washtenaw",
+      "date": "2026-10-28",
+      "time": "11:00",
+      "end_time": "13:30",
+      "location": "Eastern Michigan University - Student Center 900 Oakwood St, Ypsilanti, MI, United States",
+      "city": "Ypsilanti",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Voter Outreach",
+      "category": "voter-outreach",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/washtenaw-democratic-party-emu-voter-outreach-fall-2026/2026-10-28/",
+      "description": "WCDP Spend a couple of hours walking up to EMU students and talking with each of them about voting and our Democratic slate of candidates. Ask questions to learn where […]"
+    },
+    {
+      "id": "17cd7fd61d9562c7",
+      "title": "Postcards for Patriots",
+      "county": "Washtenaw",
+      "date": "2026-10-28",
+      "time": "13:00",
+      "end_time": "15:00",
+      "location": "York 1928 Packard St, Ann Arbor, MI",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots/2026-10-28/",
+      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
+    },
+    {
+      "id": "e8a9e0cbd86d4b2e",
+      "title": "Flyering for Yes on 2! Money out of Politics @ University of Michigan- Ann Arbor",
+      "county": "Washtenaw",
+      "date": "2026-10-29",
+      "time": "11:30",
+      "end_time": "13:00",
+      "location": "University of Michigan Diag 913 S. University Ave, Ann Arbor, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/flyering-for-yes-on-2-money-out-of-politics-university-of-michigan-ann-arbor/2026-10-29/",
+      "description": "Come volunteer to get the word out about voting YES on Proposal 2 to get corporate cash out of Michigan politics. We have an amazing opportunity to ban monopoly utilities […]"
+    },
     {
       "id": "8da38bb731dda2a5",
       "title": "Halloween GOTV with OCDP!",
