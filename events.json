@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-28T08:48:44.276316-04:00",
+  "last_updated": "2026-10-28T18:32:00.344921-04:00",
   "timezone": "America/Detroit",
   "event_count": 9,
   "counties_tracked": [
@@ -17,10 +17,10 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "voter-outreach": 1,
-    "volunteer": 4,
+    "volunteer": 3,
     "civic": 1,
-    "demonstration": 1,
+    "demonstration": 2,
+    "community": 1,
     "party-meeting": 2
   },
   "sources": [
@@ -99,40 +99,6 @@
   ],
   "events": [
     {
-      "id": "191b6552f8932cbb",
-      "title": "Washtenaw Democratic Party EMU Voter Outreach Fall 2026",
-      "county": "Washtenaw",
-      "date": "2026-10-28",
-      "time": "11:00",
-      "end_time": "13:30",
-      "location": "Eastern Michigan University - Student Center 900 Oakwood St, Ypsilanti, MI, United States",
-      "city": "Ypsilanti",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Voter Outreach",
-      "category": "voter-outreach",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/washtenaw-democratic-party-emu-voter-outreach-fall-2026/2026-10-28/",
-      "description": "WCDP Spend a couple of hours walking up to EMU students and talking with each of them about voting and our Democratic slate of candidates. Ask questions to learn where […]"
-    },
-    {
-      "id": "17cd7fd61d9562c7",
-      "title": "Postcards for Patriots",
-      "county": "Washtenaw",
-      "date": "2026-10-28",
-      "time": "13:00",
-      "end_time": "15:00",
-      "location": "York 1928 Packard St, Ann Arbor, MI",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots/2026-10-28/",
-      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
-    },
-    {
       "id": "e8a9e0cbd86d4b2e",
       "title": "Flyering for Yes on 2! Money out of Politics @ University of Michigan- Ann Arbor",
       "county": "Washtenaw",
@@ -148,23 +114,6 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/flyering-for-yes-on-2-money-out-of-politics-university-of-michigan-ann-arbor/2026-10-29/",
       "description": "Come volunteer to get the word out about voting YES on Proposal 2 to get corporate cash out of Michigan politics. We have an amazing opportunity to ban monopoly utilities […]"
-    },
-    {
-      "id": "f6c4b46261e65e8b",
-      "title": "Volunteer Activation Phone Bank: MI Dems Voter Protection Team",
-      "county": "Washtenaw",
-      "date": "2026-10-29",
-      "time": "18:00",
-      "end_time": "20:30",
-      "location": "Virtual Event",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/volunteer-activation-phone-bank-mi-dems-voter-protection-team/2026-10-29/",
-      "description": "Virtual Phone Bank Time Tuesdays, Thursdays and Saturdays 6pm EDT + 1 more time Location Virtual event Join from anywhere About this event The fight to protect democracy is on, […]"
     },
     {
       "id": "8da38bb731dda2a5",
@@ -201,6 +150,40 @@
       "description": "“Turn ‘I’ into ‘We’” Protest - Dexter Organizer: Dexter Strong, Dexter Cares. Weekly protest in Dexter called “Turn ‘I’ into ‘We’” every Friday, 4:00 - 5:00. Location: Monument Park (where Baker Road […]"
     },
     {
+      "id": "380c11fc15060aa4",
+      "title": "A2Resist2025—Ann Arbor MI Weekly Stone School Bridge Protest",
+      "county": "Washtenaw",
+      "date": "2026-10-30",
+      "time": "16:30",
+      "end_time": "17:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/a2resist2025-ann-arbor-mi-weekly-stone-school-bridge-protest/2026-10-30/",
+      "description": "Visibility Event · Volunteer organized for Visibility Brigade Time Fridays 4:30pm EDT Location Stone School Rd Pedestrian Bridge Over I-94 Stone School Road & Birch Hollow Drive Ann Arbor, MI 48108 About […]"
+    },
+    {
+      "id": "1c2cf1afbde1231a",
+      "title": "Friday Protest – Ann Arbor",
+      "county": "Washtenaw",
+      "date": "2026-10-30",
+      "time": "17:30",
+      "end_time": "20:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-10-30/",
+      "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
+    },
+    {
       "id": "819145f2832607e7",
       "title": "Halloween GOTV with OCDP!",
       "county": "Oakland",
@@ -216,6 +199,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/halloween-gotv-with-ocdp-1",
       "description": "🎃 GET OUT THE BOO! Halloween GOTV with OCDP! 👻 No tricks, just treats, yard signs, phone banking, and Election Day resources! Join the Oakland County Democratic Party on Friday, October 30, from 12 PM–4 PM for a Halloween-themed afternoon at the OCDP office! Here's what you can expect: 🍬 Halloween candy and treats 🪧 Yard signs available for pickup 🗳️ Election Day literature and voter resources ✅ Early voting information, Phone Banking, and assistance Costumes are welcome! Whether you're stopping by for a sweet treat, picking up a yard sign, or looking for voting information, we'd love to see you! 📅 Friday, October 30, 2026 ⏰ 12:00 PM–4:00 PM 📍 Oakland County Democratic Party Office 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Early voting continues through November 1, and Election Day is Tuesday, November 3. No tricks. Just treats! See you Friday! 🎃"
+    },
+    {
+      "id": "2507c1b2f8cce31f",
+      "title": "WCDP at the Ann Arbor Farmer’s Market 2026",
+      "county": "Washtenaw",
+      "date": "2026-10-31",
+      "time": "09:00",
+      "end_time": "12:00",
+      "location": "Ann Arbor Farmers Market ​ 315 Detroit Street, Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Community Event",
+      "category": "community",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/wcdp-at-the-ann-arbor-farmers-market-2026/2026-10-31/",
+      "description": "Ann Arbor Farmer's Market 2026 - Tabling Please review the available slots below and click on the button to sign up. Note: Do not sign up the morning of; we […]"
     },
     {
       "id": "6654fc0960004062",
