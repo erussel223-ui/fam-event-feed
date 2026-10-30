@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-29T18:43:00.087434-04:00",
+  "last_updated": "2026-10-30T01:42:42.651365-04:00",
   "timezone": "America/Detroit",
   "event_count": 9,
   "counties_tracked": [
@@ -17,9 +17,10 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "volunteer": 3,
     "civic": 1,
     "demonstration": 2,
+    "volunteer": 2,
+    "canvassing": 1,
     "community": 1,
     "party-meeting": 2
   },
@@ -98,23 +99,6 @@
     }
   ],
   "events": [
-    {
-      "id": "e8a9e0cbd86d4b2e",
-      "title": "Flyering for Yes on 2! Money out of Politics @ University of Michigan- Ann Arbor",
-      "county": "Washtenaw",
-      "date": "2026-10-29",
-      "time": "11:30",
-      "end_time": "13:00",
-      "location": "University of Michigan Diag 913 S. University Ave, Ann Arbor, United States",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/flyering-for-yes-on-2-money-out-of-politics-university-of-michigan-ann-arbor/2026-10-29/",
-      "description": "Come volunteer to get the word out about voting YES on Proposal 2 to get corporate cash out of Michigan politics. We have an amazing opportunity to ban monopoly utilities […]"
-    },
     {
       "id": "8da38bb731dda2a5",
       "title": "Halloween GOTV with OCDP!",
@@ -199,6 +183,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/halloween-gotv-with-ocdp-1",
       "description": "🎃 GET OUT THE BOO! Halloween GOTV with OCDP! 👻 No tricks, just treats, yard signs, phone banking, and Election Day resources! Join the Oakland County Democratic Party on Friday, October 30, from 12 PM–4 PM for a Halloween-themed afternoon at the OCDP office! Here's what you can expect: 🍬 Halloween candy and treats 🪧 Yard signs available for pickup 🗳️ Election Day literature and voter resources ✅ Early voting information, Phone Banking, and assistance Costumes are welcome! Whether you're stopping by for a sweet treat, picking up a yard sign, or looking for voting information, we'd love to see you! 📅 Friday, October 30, 2026 ⏰ 12:00 PM–4:00 PM 📍 Oakland County Democratic Party Office 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Early voting continues through November 1, and Election Day is Tuesday, November 3. No tricks. Just treats! See you Friday! 🎃"
+    },
+    {
+      "id": "ef53f3ec2679fdee",
+      "title": "Knock Doors for Abdul, Jocelyn & Michigan Democrats in North West Ann Arbor",
+      "county": "Washtenaw",
+      "date": "2026-10-31",
+      "time": "09:00",
+      "end_time": "21:00",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Canvassing",
+      "category": "canvassing",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/get-out-the-vote-for-abdul-jocelyn-michigan-democrats-in-north-west-ann-arbor-2/2026-10-31/",
+      "description": "Canvass · Hosted by Team Michigan Time Sundays, Mondays, Tuesdays and Saturdays Multiple times available Location North West Ann Arbor Ann Arbor, MI 48103 About this event Join One Team […]"
     },
     {
       "id": "2507c1b2f8cce31f",
