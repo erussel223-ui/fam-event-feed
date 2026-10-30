@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-10-30T08:49:27.728466-04:00",
+  "last_updated": "2026-10-30T18:15:46.068873-04:00",
   "timezone": "America/Detroit",
-  "event_count": 9,
+  "event_count": 8,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,13 +13,13 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 4,
+    "Oakland": 3,
     "Washtenaw": 5
   },
   "category_counts": {
     "civic": 1,
     "demonstration": 2,
-    "volunteer": 2,
+    "volunteer": 1,
     "canvassing": 1,
     "community": 1,
     "party-meeting": 2
@@ -166,23 +166,6 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-10-30/",
       "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
-    },
-    {
-      "id": "819145f2832607e7",
-      "title": "Halloween GOTV with OCDP!",
-      "county": "Oakland",
-      "date": "2026-10-30",
-      "time": "1:00 PM",
-      "end_time": "4:00 PM",
-      "location": "17100 W 12 Mile Rd | 17100 W 12 Mile Rd, Southfield, MI 48076, USA | Southfield | MI | 48076",
-      "city": "Southfield",
-      "host": "Michigan Democratic Party",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/halloween-gotv-with-ocdp-1",
-      "description": "🎃 GET OUT THE BOO! Halloween GOTV with OCDP! 👻 No tricks, just treats, yard signs, phone banking, and Election Day resources! Join the Oakland County Democratic Party on Friday, October 30, from 12 PM–4 PM for a Halloween-themed afternoon at the OCDP office! Here's what you can expect: 🍬 Halloween candy and treats 🪧 Yard signs available for pickup 🗳️ Election Day literature and voter resources ✅ Early voting information, Phone Banking, and assistance Costumes are welcome! Whether you're stopping by for a sweet treat, picking up a yard sign, or looking for voting information, we'd love to see you! 📅 Friday, October 30, 2026 ⏰ 12:00 PM–4:00 PM 📍 Oakland County Democratic Party Office 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Early voting continues through November 1, and Election Day is Tuesday, November 3. No tricks. Just treats! See you Friday! 🎃"
     },
     {
       "id": "ef53f3ec2679fdee",
