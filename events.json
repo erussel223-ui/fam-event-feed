@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-02T19:56:02.559218-05:00",
+  "last_updated": "2026-11-03T09:07:55.125086-05:00",
   "timezone": "America/Detroit",
-  "event_count": 13,
+  "event_count": 10,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,11 +14,11 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 8,
-    "Washtenaw": 5
+    "Washtenaw": 2
   },
   "category_counts": {
-    "canvassing": 5,
     "civic": 5,
+    "canvassing": 2,
     "party-meeting": 3
   },
   "sources": [
@@ -96,57 +96,6 @@
     }
   ],
   "events": [
-    {
-      "id": "afaac968a8592865",
-      "title": "Knock Doors for Abdul, Jocelyn & Michigan Democrats in Dexter",
-      "county": "Washtenaw",
-      "date": "2026-11-02",
-      "time": "09:00",
-      "end_time": "21:00",
-      "location": "Dexter 8077 Main St, Dexer, MI, United States",
-      "city": "Dexter",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/get-out-the-vote-for-abdul-jocelyn-michigan-democrats-in-dexter-2/2026-11-02/",
-      "description": "Canvass · Hosted by Team Michigan Time Sundays, Mondays, Tuesdays and Saturdays Multiple times available Location Dexter 3761 Bristol Dr Dexter, MI 48130 About this event Join One Team Michigan […]"
-    },
-    {
-      "id": "967ffe1358319dad",
-      "title": "Knock Doors for Abdul, Jocelyn & Michigan Democrats in North West Ann Arbor",
-      "county": "Washtenaw",
-      "date": "2026-11-02",
-      "time": "09:00",
-      "end_time": "21:00",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/get-out-the-vote-for-abdul-jocelyn-michigan-democrats-in-north-west-ann-arbor-2/2026-11-02/",
-      "description": "Canvass · Hosted by Team Michigan Time Sundays, Mondays, Tuesdays and Saturdays Multiple times available Location North West Ann Arbor Ann Arbor, MI 48103 About this event Join One Team […]"
-    },
-    {
-      "id": "d93e5f7c5bed1faf",
-      "title": "Knock Doors for Abdul, Jocelyn & Michigan Democrats in Ypsilanti",
-      "county": "Washtenaw",
-      "date": "2026-11-02",
-      "time": "09:00",
-      "end_time": "21:00",
-      "location": "300 West Michigan Ave 300 West Michigan Ave, Ypsilanti",
-      "city": "Ypsilanti",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Canvassing",
-      "category": "canvassing",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/get-out-the-vote-for-abdul-jocelyn-michigan-democrats-in-ypsilanti-2/2026-11-02/",
-      "description": "Canvass · Hosted by Team Michigan Time Sundays, Mondays, Tuesdays and Saturdays Multiple times available Location Ypsilanti 300 W Michigan Ave Ypsilanti, MI 48197 About this event Join One Team […]"
-    },
     {
       "id": "2864343516208ffa",
       "title": "Election Day",
