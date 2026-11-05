@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-04T18:38:14.104607-05:00",
+  "last_updated": "2026-11-05T01:40:27.315551-05:00",
   "timezone": "America/Detroit",
-  "event_count": 12,
+  "event_count": 11,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,11 +14,11 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 7,
-    "Washtenaw": 5
+    "Washtenaw": 4
   },
   "category_counts": {
-    "volunteer": 2,
     "demonstration": 2,
+    "volunteer": 1,
     "party-meeting": 4,
     "civic": 4
   },
@@ -97,23 +97,6 @@
     }
   ],
   "events": [
-    {
-      "id": "42bb88ed5d7135d3",
-      "title": "Postcards for Patriots",
-      "county": "Washtenaw",
-      "date": "2026-11-04",
-      "time": "13:00",
-      "end_time": "15:00",
-      "location": "York 1928 Packard St, Ann Arbor, MI",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/postcards-for-patriots/2026-11-04/",
-      "description": "Postcards for Patriots, in conjunction with Postcards to Swing States, needs your help. We have a list of 35,000 Michigan voters (and can get more) who don’t always vote, but […]"
-    },
     {
       "id": "df6f1dbba3e3c9e4",
       "title": "Dexter Friday Protest – Dexter",
