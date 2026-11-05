@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-05T01:40:27.315551-05:00",
+  "last_updated": "2026-11-05T14:54:34.471268-05:00",
   "timezone": "America/Detroit",
-  "event_count": 11,
+  "event_count": 12,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,13 +14,13 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 7,
-    "Washtenaw": 4
+    "Washtenaw": 5
   },
   "category_counts": {
     "demonstration": 2,
     "volunteer": 1,
     "party-meeting": 4,
-    "civic": 4
+    "civic": 5
   },
   "sources": [
     {
@@ -164,6 +164,23 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/video-added-wcdp-monthly-meeting-january-3rd/",
       "description": "WCDP Monthly Meeting - November Saturday, November 7, 2026, 9:15am - 12:00pm 300 West Michigan Ave in Ypsi or via Zoom Sat 11/7, 9:15 - 12:00 pm; Huron Room, 300 […]"
+    },
+    {
+      "id": "1dbe14d3e1f5fec6",
+      "title": "A2 Corner Solidarity Saturdays",
+      "county": "Washtenaw",
+      "date": "2026-11-07",
+      "time": "11:00",
+      "end_time": "12:30",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/a2-plymouth-green-resistance-ann-arbor/2026-11-07/",
+      "description": "Time Saturdays 11am – 12:30pm EDT Location Westgate Shopping Center corner Jackson Ave and Maple intersection Ann Arbor, MI 48103 About this event We show up at the Westgate corner […]"
     },
     {
       "id": "9ed42c2b2842df06",
