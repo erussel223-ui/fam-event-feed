@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-06T01:37:18.402701-05:00",
+  "last_updated": "2026-11-06T14:21:29.542146-05:00",
   "timezone": "America/Detroit",
   "event_count": 12,
   "counties_tracked": [
@@ -17,10 +17,9 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "demonstration": 2,
-    "volunteer": 1,
-    "party-meeting": 4,
-    "civic": 5
+    "party-meeting": 5,
+    "civic": 6,
+    "fundraising": 1
   },
   "sources": [
     {
@@ -98,57 +97,6 @@
   ],
   "events": [
     {
-      "id": "df6f1dbba3e3c9e4",
-      "title": "Dexter Friday Protest – Dexter",
-      "county": "Washtenaw",
-      "date": "2026-11-06",
-      "time": "16:00",
-      "end_time": "17:00",
-      "location": "Dexter 8077 Main St, Dexer, MI, United States",
-      "city": "Dexter",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Demonstration",
-      "category": "demonstration",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/turn-i-into-we-protest-dexter-2-2/2026-11-06/",
-      "description": "“Turn ‘I’ into ‘We’” Protest - Dexter Organizer: Dexter Strong, Dexter Cares. Weekly protest in Dexter called “Turn ‘I’ into ‘We’” every Friday, 4:00 - 5:00. Location: Monument Park (where Baker Road […]"
-    },
-    {
-      "id": "61991a8c34ecd9d3",
-      "title": "A2Resist2025—Ann Arbor MI Weekly Stone School Bridge Protest",
-      "county": "Washtenaw",
-      "date": "2026-11-06",
-      "time": "16:30",
-      "end_time": "17:30",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Volunteer",
-      "category": "volunteer",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/a2resist2025-ann-arbor-mi-weekly-stone-school-bridge-protest/2026-11-06/",
-      "description": "Visibility Event · Volunteer organized for Visibility Brigade Time Fridays 4:30pm EDT Location Stone School Rd Pedestrian Bridge Over I-94 Stone School Road & Birch Hollow Drive Ann Arbor, MI 48108 About […]"
-    },
-    {
-      "id": "b8fd0c147f15ad5d",
-      "title": "Friday Protest – Ann Arbor",
-      "county": "Washtenaw",
-      "date": "2026-11-06",
-      "time": "17:30",
-      "end_time": "20:30",
-      "location": "",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Demonstration",
-      "category": "demonstration",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/friday-protest-ann-arbor-3/2026-11-06/",
-      "description": "MIchigan Resistance & Activism Events Every Friday: 5:30pm - 8:30pm Friday-Protest Ann-Arbor Every-Week Washtenaw-County Every Friday we gather at the Federal Post Office building on the corner of 5th and […]"
-    },
-    {
       "id": "9be96b25618a87bd",
       "title": "WCDP Monthly Meeting – November 7th",
       "county": "Washtenaw",
@@ -166,12 +114,12 @@
       "description": "WCDP Monthly Meeting - November Saturday, November 7, 2026, 9:15am - 12:00pm 300 West Michigan Ave in Ypsi or via Zoom Sat 11/7, 9:15 - 12:00 pm; Huron Room, 300 […]"
     },
     {
-      "id": "1dbe14d3e1f5fec6",
-      "title": "A2 Corner Solidarity Saturdays",
+      "id": "54e0bb6319eb28f8",
+      "title": "Celebrate the Power of the Vote!",
       "county": "Washtenaw",
       "date": "2026-11-07",
-      "time": "11:00",
-      "end_time": "12:30",
+      "time": "12:00",
+      "end_time": "14:00",
       "location": "",
       "city": "",
       "host": "Washtenaw County Democratic Party Calendar",
@@ -179,8 +127,8 @@
       "category": "civic",
       "source_name": "Washtenaw County Democratic Party",
       "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/a2-plymouth-green-resistance-ann-arbor/2026-11-07/",
-      "description": "Time Saturdays 11am – 12:30pm EDT Location Westgate Shopping Center corner Jackson Ave and Maple intersection Ann Arbor, MI 48103 About this event We show up at the Westgate corner […]"
+      "event_url": "https://www.washtenawdems.org/calendar/celebrate-early-voting-ann-arbor-indivisible-early-voting-kickoff-event/",
+      "description": "Dancing in the Streets- a celebration of the power of the vote!! Today we celebrate!! Tomorrow, we continue the full court press to ensure Schumer is removed, ICE is defunded, […]"
     },
     {
       "id": "9ed42c2b2842df06",
@@ -234,6 +182,23 @@
       "description": ""
     },
     {
+      "id": "f77e2304933220fd",
+      "title": "Call to Fall County Convention",
+      "county": "Washtenaw",
+      "date": "2026-11-15",
+      "time": "13:00",
+      "end_time": "16:00",
+      "location": "Zoom , United States",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/31044/",
+      "description": "Call to Fall County Convention Join or renew your membership today to qualify to vote! Sunday, November 15, 2026 1:00 - 4:00 pm Zoom only. Registration required. Please register as […]"
+    },
+    {
       "id": "6654fc0960004062",
       "title": "November Membership Meeting",
       "county": "Oakland",
@@ -283,6 +248,40 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/thanksgiving-day-hfrjx",
       "description": "OCDP Offices are closed."
+    },
+    {
+      "id": "696e5e6cf7cb87f4",
+      "title": "2nd Annual John D. Dingell Fundraising Dinner",
+      "county": "Washtenaw",
+      "date": "2026-12-06",
+      "time": "17:00",
+      "end_time": "20:00",
+      "location": "Provided with confirmation",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Fundraising Event",
+      "category": "fundraising",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/2nd-annual-john-d-dingell-fundraising-dinner/",
+      "description": "Save The Date! Sun, December 6, 5-8pm, 2nd Annual John D. Dingell Fundraising Dinner Do you like to plan parties? We have a big one coming up – the […]"
+    },
+    {
+      "id": "5d7e21ee6707d1ad",
+      "title": "WCDP County Committee Executive Board Election",
+      "county": "Washtenaw",
+      "date": "2026-12-13",
+      "time": "13:00",
+      "end_time": "16:00",
+      "location": "Washtenaw County Learning Resource Center (WCLRC) 4135 Washtenaw Ave, Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Party Meeting",
+      "category": "party-meeting",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/wcdp-county-committee-executive-board-election/",
+      "description": ""
     },
     {
       "id": "37a21a15c081a561",
