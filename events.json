@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-10T02:13:21.334825-05:00",
+  "last_updated": "2026-11-10T14:41:12.560710-05:00",
   "timezone": "America/Detroit",
   "event_count": 12,
   "counties_tracked": [
@@ -148,11 +148,11 @@
       "description": ""
     },
     {
-      "id": "f77e2304933220fd",
+      "id": "172fb029261cd1c2",
       "title": "Call to Fall County Convention",
       "county": "Washtenaw",
       "date": "2026-11-15",
-      "time": "13:00",
+      "time": "14:00",
       "end_time": "16:00",
       "location": "Zoom , United States",
       "city": "",
@@ -162,7 +162,7 @@
       "source_name": "Washtenaw County Democratic Party",
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/31044/",
-      "description": "Call to Fall County Convention Join or renew your membership today to qualify to vote! Sunday, November 15, 2026 1:00 - 4:00 pm Zoom only. Registration required. Please register as […]"
+      "description": "Call to Fall County Convention Join or renew your membership today to qualify to vote! Sunday, November 15, 2026 2:00 - 4:00 pm We will begin business promptly at 2 […]"
     },
     {
       "id": "27444c0fe89d4e0e",
