@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-11T09:15:39.995012-05:00",
+  "last_updated": "2026-11-11T19:38:51.440457-05:00",
   "timezone": "America/Detroit",
   "event_count": 12,
   "counties_tracked": [
@@ -17,9 +17,9 @@
     "Washtenaw": 5
   },
   "category_counts": {
-    "civic": 6,
-    "fundraising": 3,
-    "party-meeting": 3
+    "civic": 5,
+    "party-meeting": 4,
+    "fundraising": 3
   },
   "sources": [
     {
@@ -123,12 +123,12 @@
       "location": "",
       "city": "",
       "host": "Oakland County Democratic Party",
-      "type": "Public Event",
-      "category": "civic",
+      "type": "Party Meeting",
+      "category": "party-meeting",
       "source_name": "Oakland County Democratic Party",
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/ocdp-county-convention-1",
-      "description": ""
+      "description": "In accordance with Article 4 of the Rules of the Michigan Democratic Party (MDP), and Michigan Election Law (Sec. 168.599 of Act 116 of 1954), a post-election County Convention is to be held in every county within the state (except Wayne) within 20 days of the November 3 General Election. Convention Rules & Eligibility Delegates to this County Convention will be MDP members residing in Oakland County, Democratic elected officials, Democratic nominees to partisan office in the most recent primary for that office and Precinct Delegates who were elected at the August 2026 primary. Articles 3.2 and 3.3 of the Michigan Democratic Party Rules stipulate the following qualifications for candidacy and eligibility to vote: In order to hold party office or vote at any Convention, Caucus, or meeting at any unit of the Michigan Democratic Party at any level, a person must be a member of the Michigan Democratic Party for at least thirty (30) days prior to that Convention, Caucus, or meeting. A Party member must be a qualified and registered elector in order to vote. Precinct Delegates, Democratic elected officials, Democratic nominees to partisan offices, and individuals whose membership lapses inside the thirty-day window are exempt from the advance membership requirement. However, those individuals must be members in order to vote and may join or renew the same day as the Convention, Caucus, or meeting. In order to be eligible for election to the Executive Committee, a candidate must also comply with OCDP Standing Rule #9, which provides: RULE #9 (adopted 11/12/25) MEMBERSHIP QUALIFICATIONS FOR EXECUTIVE COMMITTEE MEMBERS To stand for election to the Executive Committee in even numbered years following the November election, pursuant to Bylaws Article V, Section. 3, the candidate must be a member of the MDP, and comply with MDP Rule 3.3. as set forth in OCDP Standing Rule #5, ¶ 1. To maintain their position as a delegate elected member of the Executive Committee, or to fill a vacancy on the Executive Committee, the member must complete an OCDP Membership Application Form and submit it to the Chair, or the Chair’s designee, within 30 days of their election. Failure to do so renders their position vacant. In order to be eligible to be elected or appointed an Officer of OCDP, a candidate must comply with OCDP Standing Rules #5 and #6, which provide: RULE #5 (Section 2 adopted 5/14/24, amended 11/12/25 to add Section 1) MEMBERSHIP QUALIFICATION FOR CANDIDACY FOR OFFICE Under MDP Rule 3.3.1 (Holding Party Office), a person must be an MDP member for at least thirty (30) days before being elected or appointed to any OCDP office and must maintain membership for the entire term. If MDP membership lapses while in office, all rights and privileges of that office are suspended until membership is renewed, at which time those rights and privileges are immediately restored. This MDP membership requirement is subject to the exception provided for in MDP Rule 3.3.2 regarding precinct delegates, democratic elected officials and democratic nominees to partisan offices. Candidates for OCDP Officer positions must also first complete an OCDP Membership Application form and submit it to the Chair, or the Chair’s designee, before they can be eligible to stand for election and/or appointment to become an Officer of the OCDP. RULE #6 (adopted 5/14/24) DECLARATION OF CANDIDACY FOR OFFICE When Officers for the OCDP are to be elected in accordance with the rules of the MDP and OCDP Bylaws, within 30 days of the Executive Committee’s election, all candidates for OCDP Officer positions, whether slates of one or multi-office slates, shall declare said candidacies in writing to the Chair, or the Chair’s designee, no less than seven (7) days before the date scheduled by the Chair for the election of Officers. The declaration of said candidacies shall then be promptly posted on the OCDP.org website. The date for the election of officers shall be announced by the Chair at the meeting when the Executive Committee is elected, and then promptly posted on the OCDP.org website with reference made to required candidate compliance with Standing Rules 5 and 6. Certification Immediately following the election of members of the County Executive Committee, the Convention Secretary shall certify the names and addresses of persons chosen to the County Clerk. The typed-out list including the names, address, email, and phone number of all County Executive Committee members shall be sent to the Michigan Democratic Party via email to info@michigandems.com . At the Convention on Nov. 14, the Chair will notify everyone that if they want to run for an Officer position, whether as a slate of one or as a multi-office slate, they must provide the Chair’s designee, the Director of Operations at staff@ocdp.org , with their written Declaration of Candidacy. OCDP Bylaw Art. IV,, Sec,.1 and Michigan Election Law call for the election of Officers within 30 days after the election of the Executive Committee. During the Convention, the Declaration of Candidacy due date of Dec.1 will be announced. Once the Declarations of Candidacy deadline passes, candidates will be promptly posted on the OCDP website. Lastly, per Michigan Election Law, the new Chair and other Officers take office on January 1, 2027."
     },
     {
       "id": "172fb029261cd1c2",
