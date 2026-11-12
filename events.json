@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-11T19:38:51.440457-05:00",
+  "last_updated": "2026-11-12T10:08:16.307726-05:00",
   "timezone": "America/Detroit",
-  "event_count": 12,
+  "event_count": 11,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,12 +13,12 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 7,
+    "Oakland": 6,
     "Washtenaw": 5
   },
   "category_counts": {
-    "civic": 5,
     "party-meeting": 4,
+    "civic": 4,
     "fundraising": 3
   },
   "sources": [
@@ -96,23 +96,6 @@
     }
   ],
   "events": [
-    {
-      "id": "a7bef84481456b18",
-      "title": "Veterans Day",
-      "county": "Oakland",
-      "date": "2026-11-11",
-      "time": "00:00",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Oakland County Democratic Party",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Oakland County Democratic Party",
-      "source_url": "https://www.oaklandcountydemocrats.org/events",
-      "event_url": "https://www.oaklandcountydemocrats.org/events/veterans-day",
-      "description": ""
-    },
     {
       "id": "d14ee1fd0e854042",
       "title": "OCDP County Convention",
