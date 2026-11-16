@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-16T01:21:59.012005-05:00",
+  "last_updated": "2026-11-16T16:58:32.182973-05:00",
   "timezone": "America/Detroit",
-  "event_count": 9,
+  "event_count": 10,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,12 +13,12 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 5,
+    "Oakland": 6,
     "Washtenaw": 4
   },
   "category_counts": {
     "fundraising": 3,
-    "party-meeting": 3,
+    "party-meeting": 4,
     "civic": 3
   },
   "sources": [
@@ -214,6 +214,23 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/2nd-annual-john-d-dingell-fundraising-dinner/",
       "description": "WCDP Annual Dinner! Sun, December 6, 5-8pm, 2nd Annual John D. Dingell Fundraising Dinner At this dangerous time in our nation’s history, we have never needed each other more. […]"
+    },
+    {
+      "id": "76eabdaf93d4feb4",
+      "title": "OCDP Executive Committee Meeting + Officer Elections",
+      "county": "Oakland",
+      "date": "2026-12-08",
+      "time": "19:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Party Meeting",
+      "category": "party-meeting",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/ocdp-executive-committee-meeting-officer-elections",
+      "description": "OFFICIAL NOTICE: OCDP OFFICER ELECTIONS The Oakland County Democratic Party hereby provides official notice that elections for OCDP Officers will take place during the regularly scheduled Executive Committee meeting. Date: Tuesday, December 8, 2026 Time: 7:00 PM Location: OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Pursuant to OCDP Bylaws and Standing Rules, individuals interested in seeking an officer position, whether individually or as part of a slate, must submit a written Declaration of Candidacy no later than Tuesday, December 1, 2026 . Declarations must be submitted to the OCDP Director of Operations at staff@ocdp.org . All candidates must satisfy the membership and eligibility requirements established under OCDP Standing Rules #5 and #6 and applicable Michigan Democratic Party rules. Candidates must submit an OCDP Membership Application before becoming eligible to stand for election or appointment. Officer elections will be conducted by the Oakland County Democratic Party Executive Committee in accordance with applicable party bylaws and election rules. Additional information regarding officer positions, eligibility, and election procedures is available through OCDP's governing documents at www.ocdp.org/bylaws. Newly elected officers will take office January 1, 2027."
     },
     {
       "id": "5d7e21ee6707d1ad",
