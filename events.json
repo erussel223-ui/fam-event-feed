@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-17T02:51:03.675342-05:00",
+  "last_updated": "2026-11-17T15:51:38.447448-05:00",
   "timezone": "America/Detroit",
-  "event_count": 10,
+  "event_count": 12,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,13 +13,14 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 6,
-    "Washtenaw": 4
+    "Oakland": 7,
+    "Washtenaw": 5
   },
   "category_counts": {
     "fundraising": 3,
     "party-meeting": 4,
-    "civic": 3
+    "civic": 4,
+    "volunteer": 1
   },
   "sources": [
     {
@@ -165,6 +166,23 @@
       "description": "Please join the Michigan Democratic Party Veterans Caucus for an evening of advocacy, community, and action on Saturday, November 21 at 6:00 PM. This special fundraiser will bring together veterans, […]"
     },
     {
+      "id": "a9d4e8c4e9a481e1",
+      "title": "MDP Veterans Day Celebration",
+      "county": "Washtenaw",
+      "date": "2026-11-21",
+      "time": "6:00 PM",
+      "end_time": "9:00 PM",
+      "location": "Morris Lawrence Building (ML) | 4800 E Huron River Dr, Ann Arbor, MI 48105, USA | Ann Arbor | MI | 48105",
+      "city": "Ann Arbor",
+      "host": "Michigan Democratic Party",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/mdp-veterans-day-celebration",
+      "description": "You are cordially invited to the annual Veterans Day Celebration — an evening of honor, camaraderie and post-election celebration. Food, Beer, Wine and Music. Saturday, November 21, 2026, 6:00 PM – 9:00 PM, Morris Lawrence Building, Washtenaw Community College, 4800 E Huron River Dr, Ann Arbor, MI 48105. Keynote speaker: We are honored to welcome Modesto “Mo” De La O of the Foxhole Veteran Charity Foundation as our keynote speaker. Mo’s dedication to serving veterans and strengthening veteran communities will make for an inspiring and meaningful presentation. You don't have to be a Veteran to attend — just care about Democratic and democratic ideals, and stand with Veterans of all stripes. Your contribution funds the Caucus's mission: educating and influencing the Party on Veterans' issues, encouraging and supporting Veterans who run for office, and showing the public that no one party owns national security. https://secure.actblue.com/donate/vetsday2026?fbclid=IwVERDUAVbiVtleHRuA2FlbQIxMABwZG9mBWZkaWQWURw8oKX4F4QMHFlJvljRzprIpNDWM3NydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR9BeNq34uMWQ3Jo33Ex3ISBtPJB8vJnEEAyiQc4lqjYv_h5Nxc4qeQtp7dmwQ_aem_rdRr4QVaYeieE_HYSjExIw"
+    },
+    {
       "id": "bca4a15eb1859e71",
       "title": "Thanksgiving Day",
       "county": "Oakland",
@@ -265,6 +283,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/december-membership-meeting-1",
       "description": "Join us for our General Membership Meeting. Social hour is at 6:30 and the meeting starts at 7:00. We will have a guest speaker and a current elected official provide a legislative update. Come meet fellow Democrats and find a way to get involved! We will meet in the Meeting Room on the 3rd Floor of The Hawk Community Center located at 29995 W 12 Mile Road, Farmington Hills MI 48334. You must enter through the main entrance and take the elevator to the third floor. The back parking lot door is closed."
+    },
+    {
+      "id": "0af7fa7f8e9c5a6e",
+      "title": "A Season of Gratitude Holiday Party",
+      "county": "Oakland",
+      "date": "2026-12-19",
+      "time": "13:00",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/a-season-of-gratitude-holiday-party",
+      "description": "As we close out an incredible 2026, it's time to come together to celebrate our victories, recognize the hard work of our members and volunteers, and enjoy some holiday cheer! A Season of Gratitude Saturday, December 19, 2026 1:00–4:00 PM Southfield, MI From the campaign trail to Election Day, our Democratic family has accomplished so much this year, and we couldn't have done it without YOU! Join us for an afternoon of fellowship, celebration, and appreciation as we reflect on all we've achieved together. This celebration is FREE and open to our OCDP community! Space will be limited, and advance registration will be required. Official invitation and RSVP details coming soon!"
     }
   ]
 }
