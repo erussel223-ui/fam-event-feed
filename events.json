@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-17T15:51:38.447448-05:00",
+  "last_updated": "2026-11-18T02:22:19.597708-05:00",
   "timezone": "America/Detroit",
-  "event_count": 12,
+  "event_count": 11,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,13 +13,13 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 7,
+    "Oakland": 6,
     "Washtenaw": 5
   },
   "category_counts": {
-    "fundraising": 3,
     "party-meeting": 4,
     "civic": 4,
+    "fundraising": 2,
     "volunteer": 1
   },
   "sources": [
@@ -97,23 +97,6 @@
     }
   ],
   "events": [
-    {
-      "id": "365688a729ed26a1",
-      "title": "Novi Dems November 17 Celebration!",
-      "county": "Oakland",
-      "date": "2026-11-17",
-      "time": "5:30 PM",
-      "end_time": "8:00 PM",
-      "location": "Ironworkers Local 25 | 25150 Trans X Rd, Novi, MI 48375, USA | Novi | MI | 48375",
-      "city": "Novi",
-      "host": "Michigan Democratic Party",
-      "type": "Fundraising Event",
-      "category": "fundraising",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/nov-17",
-      "description": "WINNER! WINNER! SHAWARMA DINNER! Tues, Nov 17 Meeting - Let's CELEBRATE! DOORS OPEN 5:30 pm We have a lot to celebrate at our next meeting! Election Day brought record-breaking success for Democrats including many firsts throughout the country. Our members were mobilized in many different ways and had a significant impact on our local successes! EVERY one of our endorsed candidates won the Novi vote! Please RSVP for the November 17th meeting food; we plan to celebrate with take-out Mediterranean and would appreciate an accurate headcount. We will be going over election results and acknowledging our club members’ efforts - please join us! Doors open at 5:30 pm for dinner; business meeting begins at 6:30 pm."
-    },
     {
       "id": "6654fc0960004062",
       "title": "November Membership Meeting",
