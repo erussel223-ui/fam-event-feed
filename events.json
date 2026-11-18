@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-18T02:22:19.597708-05:00",
+  "last_updated": "2026-11-18T15:27:46.109043-05:00",
   "timezone": "America/Detroit",
-  "event_count": 11,
+  "event_count": 14,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,14 +13,14 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 6,
+    "Oakland": 9,
     "Washtenaw": 5
   },
   "category_counts": {
     "party-meeting": 4,
-    "civic": 4,
+    "civic": 6,
     "fundraising": 2,
-    "volunteer": 1
+    "volunteer": 2
   },
   "sources": [
     {
@@ -200,6 +200,40 @@
       "description": "OCDP Offices are closed."
     },
     {
+      "id": "ac110b9867626aaf",
+      "title": "Membership Monday Happy Hour",
+      "county": "Oakland",
+      "date": "2026-11-30",
+      "time": "17:30",
+      "end_time": "",
+      "location": "",
+      "city": "",
+      "host": "Oakland County Democratic Party",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Oakland County Democratic Party",
+      "source_url": "https://www.oaklandcountydemocrats.org/events",
+      "event_url": "https://www.oaklandcountydemocrats.org/events/membership-monday-happy-hour",
+      "description": "We’ll have the coffee on! Stop by the Oakland County Democratic Party office after work for our first Membership Monday Happy Hour. Catch up with friends from election season or come meet us for the first time. Bring a friend or swing by on your own. We’d love to see you. November 30 is the last day for 2027 Early Bird membership. You can join or renew while you’re here. Everyone is welcome, whether you’re already a member or just curious about OCDP. Monday, November 30, 2026 · 5:30–7:30 p.m. OCDP Headquarters 17100 W. 12 Mile Rd., Suite 5, Southfield, MI 48075 RSVP HERE: https://midems.controlshift.app/events/membership-monday-happy-hour-1"
+    },
+    {
+      "id": "25a5538afc3cf1a8",
+      "title": "Membership Monday Happy Hour",
+      "county": "Oakland",
+      "date": "2026-11-30",
+      "time": "5:30 PM",
+      "end_time": "7:30 PM",
+      "location": "17100 W 12 Mile Rd | 17100 W 12 Mile Rd, Southfield, MI 48076, USA | Southfield | MI | 48076",
+      "city": "Southfield",
+      "host": "Michigan Democratic Party",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/membership-monday-happy-hour-1",
+      "description": "We’ll have the coffee on! Stop by the Oakland County Democratic Party office after work for our first Membership Monday Happy Hour. Catch up with friends from election season or come meet us for the first time. Bring a friend or swing by on your own. We’d love to see you. November 30 is the last day for 2027 Early Bird membership. You can join or renew while you’re here. Everyone is welcome, whether you’re already a member or just curious about OCDP. Monday, November 30, 2026 · 5:30–7:30 p.m. OCDP Headquarters 17100 W. 12 Mile Rd., Suite 5, Southfield, MI 48075"
+    },
+    {
       "id": "696e5e6cf7cb87f4",
       "title": "2nd Annual John D. Dingell Fundraising Dinner",
       "county": "Washtenaw",
@@ -283,6 +317,23 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/a-season-of-gratitude-holiday-party",
       "description": "As we close out an incredible 2026, it's time to come together to celebrate our victories, recognize the hard work of our members and volunteers, and enjoy some holiday cheer! A Season of Gratitude Saturday, December 19, 2026 1:00–4:00 PM Southfield, MI From the campaign trail to Election Day, our Democratic family has accomplished so much this year, and we couldn't have done it without YOU! Join us for an afternoon of fellowship, celebration, and appreciation as we reflect on all we've achieved together. This celebration is FREE and open to our OCDP community! Space will be limited, and advance registration will be required. Official invitation and RSVP details coming soon!"
+    },
+    {
+      "id": "612ec9804ea6a36b",
+      "title": "A Season of Gratitude | OCDP’s 2026 Holiday Party",
+      "county": "Oakland",
+      "date": "2026-12-19",
+      "time": "1:00 PM",
+      "end_time": "4:00 PM",
+      "location": "Southfield | MI | 48075",
+      "city": "Southfield",
+      "host": "Michigan Democratic Party",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/a-season-of-gratitude-ocdp-s-2026-holiday-party",
+      "description": "Join the Oakland County Democratic Party for A Season of Gratitude, our 2026 holiday party, on Saturday, December 19, at 1:00 p.m. in Southfield. We’re getting together to thank the volunteers who knocked doors, the club leaders who brought neighbors together, and everyone who gave their time this year. We’ll also raise a glass to former Congresswoman Brenda L. Lawrence in appreciation of her leadership as OCDP Chair. The celebration is free and open to everyone. Whether you spent election season with us or you’re joining us for the first time, we’d love to see you. Bring a friend and RSVP below so we can plan for you!"
     }
   ]
 }
