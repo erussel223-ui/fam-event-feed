@@ -1,7 +1,7 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-18T15:27:46.109043-05:00",
+  "last_updated": "2026-11-19T02:19:38.616521-05:00",
   "timezone": "America/Detroit",
   "event_count": 14,
   "counties_tracked": [
@@ -13,12 +13,12 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 9,
-    "Washtenaw": 5
+    "Oakland": 8,
+    "Washtenaw": 6
   },
   "category_counts": {
-    "party-meeting": 4,
-    "civic": 6,
+    "party-meeting": 3,
+    "civic": 7,
     "fundraising": 2,
     "volunteer": 2
   },
@@ -98,21 +98,21 @@
   ],
   "events": [
     {
-      "id": "6654fc0960004062",
-      "title": "November Membership Meeting",
-      "county": "Oakland",
-      "date": "2026-11-18",
-      "time": "6:30 PM",
-      "end_time": "8:30 PM",
-      "location": "The Hawk Community Center | 29995 W 12 Mile Rd, Farmington Hills, MI 48334, USA | Farmington Hills | MI | 48334",
-      "city": "Farmington Hills",
-      "host": "Michigan Democratic Party",
+      "id": "04347432f2186d90",
+      "title": "WCDP Black Caucus – General Membership Meetings resume!",
+      "county": "Washtenaw",
+      "date": "2026-11-21",
+      "time": "10:00",
+      "end_time": "12:00",
+      "location": "Learning Resource Center 4135 Washtenaw Ave, Ann Arbor, MI",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
       "type": "Party Meeting",
       "category": "party-meeting",
-      "source_name": "Michigan Democratic Party",
-      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
-      "event_url": "https://midems.controlshift.app/events/november-membership-meeting-2",
-      "description": "Join us for our General Membership Meeting. Social hour is at 6:30 and the meeting starts at 7:00. We will have a guest speaker and a current elected official provide a legislative update. Come meet fellow Democrats and find a way to get involved! We will meet in the Meeting Room on the 3rd Floor of The Hawk Community Center located at 29995 W 12 Mile Road, Farmington Hills MI 48334. You must enter through the main entrance and take the elevator to the third floor. The back parking lot door is closed."
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/wcdp-black-caucus-general-membership-meetings-resume/",
+      "description": "Saturday, November 21, 10:00am - 12:00pm Washtenaw Learning Resource Center, 4135 Washtenaw Ave., Ann Arbor 48108 or on Zoom Whether you’ve been with us from the start or are thinking […]"
     },
     {
       "id": "be12c016ee3b50ff",
@@ -268,21 +268,21 @@
       "description": "OFFICIAL NOTICE: OCDP OFFICER ELECTIONS The Oakland County Democratic Party hereby provides official notice that elections for OCDP Officers will take place during the regularly scheduled Executive Committee meeting. Date: Tuesday, December 8, 2026 Time: 7:00 PM Location: OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Pursuant to OCDP Bylaws and Standing Rules, individuals interested in seeking an officer position, whether individually or as part of a slate, must submit a written Declaration of Candidacy no later than Tuesday, December 1, 2026 . Declarations must be submitted to the OCDP Director of Operations at staff@ocdp.org . All candidates must satisfy the membership and eligibility requirements established under OCDP Standing Rules #5 and #6 and applicable Michigan Democratic Party rules. Candidates must submit an OCDP Membership Application before becoming eligible to stand for election or appointment. Officer elections will be conducted by the Oakland County Democratic Party Executive Committee in accordance with applicable party bylaws and election rules. Additional information regarding officer positions, eligibility, and election procedures is available through OCDP's governing documents at www.ocdp.org/bylaws. Newly elected officers will take office January 1, 2027."
     },
     {
-      "id": "5d7e21ee6707d1ad",
-      "title": "WCDP County Committee Executive Board Election",
+      "id": "8caeb203ae2e22aa",
+      "title": "6th District Holiday Party",
       "county": "Washtenaw",
-      "date": "2026-12-13",
-      "time": "13:00",
-      "end_time": "16:00",
-      "location": "Washtenaw County Learning Resource Center (WCLRC) 4135 Washtenaw Ave, Ann Arbor, MI, United States",
-      "city": "Ann Arbor",
+      "date": "2026-12-11",
+      "time": "18:00",
+      "end_time": "20:00",
+      "location": "734 Brewing Company 15 E Cross St, Ypsilanti, MI, United States",
+      "city": "Ypsilanti",
       "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Party Meeting",
-      "category": "party-meeting",
+      "type": "Public Event",
+      "category": "civic",
       "source_name": "Washtenaw County Democratic Party",
       "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/wcdp-county-committee-executive-board-election/",
-      "description": ""
+      "event_url": "https://www.washtenawdems.org/calendar/6th-district-holiday-party/",
+      "description": "December 11, 2026, 6 p.m. – 8 p.m. EST 734 Brewing 15 E Cross St. Ypsilanti, MI 48197 Come celebrate the hard work we put into campaigns and the victories […]"
     },
     {
       "id": "37a21a15c081a561",
