@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-20T02:09:05.287493-05:00",
+  "last_updated": "2026-11-20T15:10:03.099611-05:00",
   "timezone": "America/Detroit",
-  "event_count": 14,
+  "event_count": 15,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,12 +14,12 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 8,
-    "Washtenaw": 6
+    "Washtenaw": 7
   },
   "category_counts": {
     "party-meeting": 3,
     "civic": 7,
-    "fundraising": 2,
+    "fundraising": 3,
     "volunteer": 2
   },
   "sources": [
@@ -232,6 +232,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/membership-monday-happy-hour-1",
       "description": "We’ll have the coffee on! Stop by the Oakland County Democratic Party office after work for our first Membership Monday Happy Hour. Catch up with friends from election season or come meet us for the first time. Bring a friend or swing by on your own. We’d love to see you. November 30 is the last day for 2027 Early Bird membership. You can join or renew while you’re here. Everyone is welcome, whether you’re already a member or just curious about OCDP. Monday, November 30, 2026 · 5:30–7:30 p.m. OCDP Headquarters 17100 W. 12 Mile Rd., Suite 5, Southfield, MI 48075"
+    },
+    {
+      "id": "a6d6270cd29675fc",
+      "title": "Annual Holiday Dinner & 2026 Victory Celebration",
+      "county": "Washtenaw",
+      "date": "2026-12-04",
+      "time": "6:00 PM",
+      "end_time": "8:00 PM",
+      "location": "UAW Local 898 | 8975 Textile Rd, Ypsilanti, MI 48197, USA | Ypsilanti | MI | 48197",
+      "city": "Ypsilanti",
+      "host": "Michigan Democratic Party",
+      "type": "Fundraising Event",
+      "category": "fundraising",
+      "source_name": "Michigan Democratic Party",
+      "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
+      "event_url": "https://midems.controlshift.app/events/annual-holiday-dinner-2026-victory-celebration",
+      "description": "Join us for our Annual Holiday Dinner and 2026 Victory Celebration as we kick off the holiday season and celebrate our 2026 Blunami, Friday, December 4th @ UAW Local 898, 8975 Textile Road, Ypsilanti Township. Doors open at 6 pm, dinner is served at 7 pm. Tickets are $30 each or two for $55 and are available online: https://donorbox.org/swdc-holiday-party and at the door and include a door prize ticket, dinner by Veronica's Catering, dessert, beer, wine and set-ups plus lots of fun and fellowship with opportunities to win prizes in our gift-bag raffle and silent auction."
     },
     {
       "id": "696e5e6cf7cb87f4",
