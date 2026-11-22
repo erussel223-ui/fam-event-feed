@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-22T01:41:35.224544-05:00",
+  "last_updated": "2026-11-22T14:33:16.052065-05:00",
   "timezone": "America/Detroit",
-  "event_count": 11,
+  "event_count": 12,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,12 +14,12 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 8,
-    "Washtenaw": 3
+    "Washtenaw": 4
   },
   "category_counts": {
     "civic": 5,
     "fundraising": 2,
-    "party-meeting": 2,
+    "party-meeting": 3,
     "volunteer": 2
   },
   "sources": [
@@ -232,6 +232,23 @@
       "source_url": "https://www.washtenawdems.org/calendar/list/",
       "event_url": "https://www.washtenawdems.org/calendar/6th-district-holiday-party/",
       "description": "December 11, 2026, 6 p.m. – 8 p.m. EST 734 Brewing 15 E Cross St. Ypsilanti, MI 48197 Come celebrate the hard work we put into campaigns and the victories […]"
+    },
+    {
+      "id": "5d7e21ee6707d1ad",
+      "title": "WCDP County Committee Executive Board Election",
+      "county": "Washtenaw",
+      "date": "2026-12-13",
+      "time": "13:00",
+      "end_time": "16:00",
+      "location": "Washtenaw County Learning Resource Center (WCLRC) 4135 Washtenaw Ave, Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Party Meeting",
+      "category": "party-meeting",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/wcdp-county-committee-executive-board-election/",
+      "description": ""
     },
     {
       "id": "37a21a15c081a561",
