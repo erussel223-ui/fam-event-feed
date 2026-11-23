@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-23T02:31:04.587770-05:00",
+  "last_updated": "2026-11-23T18:50:05.956320-05:00",
   "timezone": "America/Detroit",
-  "event_count": 12,
+  "event_count": 13,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,10 +14,10 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 8,
-    "Washtenaw": 4
+    "Washtenaw": 5
   },
   "category_counts": {
-    "civic": 5,
+    "civic": 6,
     "fundraising": 2,
     "party-meeting": 3,
     "volunteer": 2
@@ -130,6 +130,23 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/thanksgiving-day-hfrjx",
       "description": "OCDP Offices are closed."
+    },
+    {
+      "id": "91c461ba871d7c43",
+      "title": "ICE Flights: National Day of Action",
+      "county": "Washtenaw",
+      "date": "2026-11-29",
+      "time": "12:00",
+      "end_time": "14:00",
+      "location": "Middlebelt Road & Wick Road Middlebelt Road & Wick Pora, Romulus, United States",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/ice-flights-national-day-of-action/",
+      "description": "Part of the Nationwide Week of Action - Communities across the country are taking action to demand an end to ICE deportation and detainee transfer flights. Join us as we […]"
     },
     {
       "id": "ac110b9867626aaf",
