@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-26T16:27:40.383394-05:00",
+  "last_updated": "2026-11-27T03:22:26.619922-05:00",
   "timezone": "America/Detroit",
-  "event_count": 13,
+  "event_count": 8,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -13,13 +13,13 @@
   "county_counts": {
     "Ingham": 0,
     "Wayne": 0,
-    "Oakland": 8,
-    "Washtenaw": 5
+    "Oakland": 7,
+    "Washtenaw": 1
   },
   "category_counts": {
-    "civic": 6,
-    "fundraising": 2,
-    "party-meeting": 3,
+    "civic": 3,
+    "fundraising": 1,
+    "party-meeting": 2,
     "volunteer": 2
   },
   "sources": [
@@ -98,23 +98,6 @@
   ],
   "events": [
     {
-      "id": "bca4a15eb1859e71",
-      "title": "Thanksgiving Day",
-      "county": "Oakland",
-      "date": "2026-11-26",
-      "time": "00:00",
-      "end_time": "",
-      "location": "",
-      "city": "",
-      "host": "Oakland County Democratic Party",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Oakland County Democratic Party",
-      "source_url": "https://www.oaklandcountydemocrats.org/events",
-      "event_url": "https://www.oaklandcountydemocrats.org/events/thanksgiving-day",
-      "description": "OCDP Offices are closed."
-    },
-    {
       "id": "65aca0d153416f35",
       "title": "Black Friday (Observed)",
       "county": "Oakland",
@@ -130,23 +113,6 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/thanksgiving-day-hfrjx",
       "description": "OCDP Offices are closed."
-    },
-    {
-      "id": "91c461ba871d7c43",
-      "title": "ICE Flights: National Day of Action",
-      "county": "Washtenaw",
-      "date": "2026-11-29",
-      "time": "12:00",
-      "end_time": "14:00",
-      "location": "Middlebelt Road & Wick Road Middlebelt Road & Wick Pora, Romulus, United States",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/ice-flights-national-day-of-action/",
-      "description": "Part of the Nationwide Week of Action - Communities across the country are taking action to demand an end to ICE deportation and detainee transfer flights. Join us as we […]"
     },
     {
       "id": "ac110b9867626aaf",
@@ -200,23 +166,6 @@
       "description": "Join us for our Annual Holiday Dinner and 2026 Victory Celebration as we kick off the holiday season and celebrate our 2026 Blunami, Friday, December 4th @ UAW Local 898, 8975 Textile Road, Ypsilanti Township. Doors open at 6 pm, dinner is served at 7 pm. Tickets are $30 each or two for $55 and are available online: https://donorbox.org/swdc-holiday-party and at the door and include a door prize ticket, dinner by Veronica's Catering, dessert, beer, wine and set-ups plus lots of fun and fellowship with opportunities to win prizes in our gift-bag raffle and silent auction."
     },
     {
-      "id": "696e5e6cf7cb87f4",
-      "title": "2nd Annual John D. Dingell Fundraising Dinner",
-      "county": "Washtenaw",
-      "date": "2026-12-06",
-      "time": "17:00",
-      "end_time": "20:00",
-      "location": "Provided with confirmation",
-      "city": "",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Fundraising Event",
-      "category": "fundraising",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/2nd-annual-john-d-dingell-fundraising-dinner/",
-      "description": "WCDP Annual Dinner! Sun, December 6, 5-8pm, 2nd Annual John D. Dingell Fundraising Dinner At this dangerous time in our nation’s history, we have never needed each other more. […]"
-    },
-    {
       "id": "76eabdaf93d4feb4",
       "title": "OCDP Executive Committee Meeting + Officer Elections",
       "county": "Oakland",
@@ -232,40 +181,6 @@
       "source_url": "https://www.oaklandcountydemocrats.org/events",
       "event_url": "https://www.oaklandcountydemocrats.org/events/ocdp-executive-committee-meeting-officer-elections",
       "description": "OFFICIAL NOTICE: OCDP OFFICER ELECTIONS The Oakland County Democratic Party hereby provides official notice that elections for OCDP Officers will take place during the regularly scheduled Executive Committee meeting. Date: Tuesday, December 8, 2026 Time: 7:00 PM Location: OCDP Headquarters 17100 W. 12 Mile Road, Suite 5 Southfield, MI 48076 Pursuant to OCDP Bylaws and Standing Rules, individuals interested in seeking an officer position, whether individually or as part of a slate, must submit a written Declaration of Candidacy no later than Tuesday, December 1, 2026 . Declarations must be submitted to the OCDP Director of Operations at staff@ocdp.org . All candidates must satisfy the membership and eligibility requirements established under OCDP Standing Rules #5 and #6 and applicable Michigan Democratic Party rules. Candidates must submit an OCDP Membership Application before becoming eligible to stand for election or appointment. Officer elections will be conducted by the Oakland County Democratic Party Executive Committee in accordance with applicable party bylaws and election rules. Additional information regarding officer positions, eligibility, and election procedures is available through OCDP's governing documents at www.ocdp.org/bylaws. Newly elected officers will take office January 1, 2027."
-    },
-    {
-      "id": "8caeb203ae2e22aa",
-      "title": "6th District Holiday Party",
-      "county": "Washtenaw",
-      "date": "2026-12-11",
-      "time": "18:00",
-      "end_time": "20:00",
-      "location": "734 Brewing Company 15 E Cross St, Ypsilanti, MI, United States",
-      "city": "Ypsilanti",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Public Event",
-      "category": "civic",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/6th-district-holiday-party/",
-      "description": "December 11, 2026, 6 p.m. – 8 p.m. EST 734 Brewing 15 E Cross St. Ypsilanti, MI 48197 Come celebrate the hard work we put into campaigns and the victories […]"
-    },
-    {
-      "id": "5d7e21ee6707d1ad",
-      "title": "WCDP County Committee Executive Board Election",
-      "county": "Washtenaw",
-      "date": "2026-12-13",
-      "time": "13:00",
-      "end_time": "16:00",
-      "location": "Washtenaw County Learning Resource Center (WCLRC) 4135 Washtenaw Ave, Ann Arbor, MI, United States",
-      "city": "Ann Arbor",
-      "host": "Washtenaw County Democratic Party Calendar",
-      "type": "Party Meeting",
-      "category": "party-meeting",
-      "source_name": "Washtenaw County Democratic Party",
-      "source_url": "https://www.washtenawdems.org/calendar/list/",
-      "event_url": "https://www.washtenawdems.org/calendar/wcdp-county-committee-executive-board-election/",
-      "description": ""
     },
     {
       "id": "37a21a15c081a561",
