@@ -1,9 +1,9 @@
 {
   "organization": "Freedmen Agenda League of Michigan",
   "feed": "Public Engagement Opportunities",
-  "last_updated": "2026-11-27T03:22:26.619922-05:00",
+  "last_updated": "2026-11-27T16:12:39.627680-05:00",
   "timezone": "America/Detroit",
-  "event_count": 8,
+  "event_count": 13,
   "counties_tracked": [
     "Ingham",
     "Wayne",
@@ -14,13 +14,15 @@
     "Ingham": 0,
     "Wayne": 0,
     "Oakland": 7,
-    "Washtenaw": 1
+    "Washtenaw": 6
   },
   "category_counts": {
-    "civic": 3,
-    "fundraising": 1,
-    "party-meeting": 2,
-    "volunteer": 2
+    "civic": 4,
+    "demonstration": 1,
+    "community": 1,
+    "volunteer": 3,
+    "fundraising": 2,
+    "party-meeting": 2
   },
   "sources": [
     {
@@ -115,6 +117,40 @@
       "description": "OCDP Offices are closed."
     },
     {
+      "id": "deee7ed4c7aeb00b",
+      "title": "FascistFighters Rally",
+      "county": "Washtenaw",
+      "date": "2026-11-28",
+      "time": "10:30",
+      "end_time": "12:00",
+      "location": "Tesla showroom 3530 Jackson Rd, Ann Arbor, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Demonstration",
+      "category": "demonstration",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/fascistfighters-rally/",
+      "description": "Visibility Event · Hosted by FACISTFIGHTERS Time Saturdays 10:30am – 12pm EST Location Tesla showroom 3530 Jackson Rd Ann Arbor, MI 48103 About this event Please join this NONVIOLENT PROTEST […]"
+    },
+    {
+      "id": "91c461ba871d7c43",
+      "title": "ICE Flights: National Day of Action",
+      "county": "Washtenaw",
+      "date": "2026-11-29",
+      "time": "12:00",
+      "end_time": "14:00",
+      "location": "Middlebelt Road & Wick Road Middlebelt Road & Wick Pora, Romulus, United States",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Public Event",
+      "category": "civic",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/ice-flights-national-day-of-action/",
+      "description": "Part of the Nationwide Week of Action - Communities across the country are taking action to demand an end to ICE deportation and detainee transfer flights. Join us as we […]"
+    },
+    {
       "id": "ac110b9867626aaf",
       "title": "Membership Monday Happy Hour",
       "county": "Oakland",
@@ -149,6 +185,40 @@
       "description": "We’ll have the coffee on! Stop by the Oakland County Democratic Party office after work for our first Membership Monday Happy Hour. Catch up with friends from election season or come meet us for the first time. Bring a friend or swing by on your own. We’d love to see you. November 30 is the last day for 2027 Early Bird membership. You can join or renew while you’re here. Everyone is welcome, whether you’re already a member or just curious about OCDP. Monday, November 30, 2026 · 5:30–7:30 p.m. OCDP Headquarters 17100 W. 12 Mile Rd., Suite 5, Southfield, MI 48075"
     },
     {
+      "id": "1e3db2e071d2e596",
+      "title": "Expanding Representation in Michigan: Proportional Representation and State Elections @ UM",
+      "county": "Washtenaw",
+      "date": "2026-12-02",
+      "time": "16:30",
+      "end_time": "17:00",
+      "location": "Private Address Ann Arbor, MI, United States",
+      "city": "Ann Arbor",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Community Event",
+      "category": "community",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/expanding-representation-in-michigan-proportional-representation-and-state-elections-um/",
+      "description": "Community Event · Hosted by Voters Not Politicians Time Wednesday, December 2 4:30 – 5:30pm EST Location This event's address is private. Sign up for more details. About this event […]"
+    },
+    {
+      "id": "12ab8e8feb1877b6",
+      "title": "De-ICE Thomson Reuters in Ann Arbor, Michigan",
+      "county": "Washtenaw",
+      "date": "2026-12-04",
+      "time": "15:00",
+      "end_time": "17:00",
+      "location": "",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Volunteer",
+      "category": "volunteer",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/de-ice-thomson-reuters-in-ann-arbor-michigan/",
+      "description": "Visibility Event · Volunteer organized for De-ICE Action Network Time Friday, December 4 3 – 5pm EST Location 6300 Interfirst Dr Ann Arbor, MI 48108 About this event Join GSD […]"
+    },
+    {
       "id": "a6d6270cd29675fc",
       "title": "Annual Holiday Dinner & 2026 Victory Celebration",
       "county": "Washtenaw",
@@ -164,6 +234,23 @@
       "source_url": "https://midems.controlshift.app/calendars/mi-statewide",
       "event_url": "https://midems.controlshift.app/events/annual-holiday-dinner-2026-victory-celebration",
       "description": "Join us for our Annual Holiday Dinner and 2026 Victory Celebration as we kick off the holiday season and celebrate our 2026 Blunami, Friday, December 4th @ UAW Local 898, 8975 Textile Road, Ypsilanti Township. Doors open at 6 pm, dinner is served at 7 pm. Tickets are $30 each or two for $55 and are available online: https://donorbox.org/swdc-holiday-party and at the door and include a door prize ticket, dinner by Veronica's Catering, dessert, beer, wine and set-ups plus lots of fun and fellowship with opportunities to win prizes in our gift-bag raffle and silent auction."
+    },
+    {
+      "id": "696e5e6cf7cb87f4",
+      "title": "2nd Annual John D. Dingell Fundraising Dinner",
+      "county": "Washtenaw",
+      "date": "2026-12-06",
+      "time": "17:00",
+      "end_time": "20:00",
+      "location": "Provided with confirmation",
+      "city": "",
+      "host": "Washtenaw County Democratic Party Calendar",
+      "type": "Fundraising Event",
+      "category": "fundraising",
+      "source_name": "Washtenaw County Democratic Party",
+      "source_url": "https://www.washtenawdems.org/calendar/list/",
+      "event_url": "https://www.washtenawdems.org/calendar/2nd-annual-john-d-dingell-fundraising-dinner/",
+      "description": "WCDP Annual Dinner! Sun, December 6, 5-8pm, 2nd Annual John D. Dingell Fundraising Dinner At this dangerous time in our nation’s history, we have never needed each other more. […]"
     },
     {
       "id": "76eabdaf93d4feb4",
